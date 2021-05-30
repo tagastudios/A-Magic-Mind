@@ -1,6 +1,6 @@
 ---
 title: Awesome kitties
-date: 2021-05-30T06:13:38.335Z
+date: 2021-05-30T23:37:39.133Z
 cats:
   - description: Maru is a Scottish Fold from Japan, and he loves boxes.
     name: Maru (まる)
