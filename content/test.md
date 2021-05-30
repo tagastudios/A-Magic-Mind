@@ -17,4 +17,4 @@ This page is built with NextJS, and content is managed in Netlify CMS
 
 **Cats:**
 
-![test](images/uploads/fad4f63c-dabe-42ba-a1ea-8855894635d4.jpg "test")
+![try](images/uploads/fad4f63c-dabe-42ba-a1ea-8855894635d4.jpg "try")
