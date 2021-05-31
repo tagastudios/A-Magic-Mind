@@ -16,24 +16,24 @@ collections:
     summary: "{{title}} -- {{year}}/{{month}}/{{{day}}"
     create: true
     view_filters:
-      -label: Posts With Index
-       field: title
-       pattern: "This is post #"
-      -label: Posts Without Index
-       field: title
-       pattern: front matter post
-      -label: Drafts
-       field: draft
-       pattern: true
+      - label: Posts With Index
+        field: title
+        pattern: "This is post #"
+      - label: Posts Without Index
+        field: title
+        pattern: front matter post
+      - label: Drafts
+        field: draft
+        pattern: true
     view_groups:
-      -label: Year
-       field: date
-       pattern: \d{4}
-      -label: Drafts
-       field: draft
+      - label: Year
+        field: date
+        pattern: \d{4}
+      - label: Drafts
+        field: draft
     field: # The fields each document in this collection have
-      -{label: "Title", name: "title", widget: "string", tagname: "h1"}
-      -{label: "Draft", name: "draft", widget: "boolean", default: false}
+      - {label: "Title", name: "title", widget: "string", tagname: "h1"}
+      - {label: "Draft", name: "draft", widget: "boolean", default: false}
       - {
           label: 'Publish Date',
           name: 'date',
