@@ -3,7 +3,7 @@ backend:
   #git-gateway for live site
   name: git-gateway
   branch: master
-  site_url: https://a-magic-mind.netlify.app/
+  site_url: amagicmind.com
 media_folder: public/images/uploads
 
 collections:
