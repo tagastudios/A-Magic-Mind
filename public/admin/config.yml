@@ -31,9 +31,9 @@ collections:
         pattern: \d{4}
       - label: Drafts
         field: draft
-    field: # The fields each document in this collection have
-      - {label: "Title", name: "title", widget: "string", tagname: "h1"}
-      - {label: "Draft", name: "draft", widget: "boolean", default: false}
+    fields: # The fields each document in this collection have
+      - { label: "Title", name: "title", widget: "string", tagname: "h1"}
+      - { label: "Draft", name: "draft", widget: "boolean", default: false}
       - {
           label: 'Publish Date',
           name: 'date',
