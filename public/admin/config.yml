@@ -1,5 +1,5 @@
 backend:
-  name: test-repo
+  name: git-gateway
   branch: master
   site_url: https://a-magic-mind.netlify.app/
 media_folder: public/images/uploads
