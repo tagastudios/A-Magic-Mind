@@ -187,6 +187,7 @@ collections:
           tagname: "h2",
           required: true,
         }
+      - { label: "Cliente", name: "customer", widget: "string" }
       - { label: "Review", name: "body", widget: "markdown", required: true }
 
   # ***** CORE WEBSITE SETTINGS *****
