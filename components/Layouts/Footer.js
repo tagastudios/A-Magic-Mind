@@ -19,7 +19,7 @@ function Footer() {
                     alt="image"
                   />
                 </a>
-                <p>""</p>
+                <p>{slogan}</p>
               </div>
 
               <ul className="social">

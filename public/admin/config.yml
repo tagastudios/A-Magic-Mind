@@ -2,7 +2,7 @@ backend:
   name: git-gateway #test-repo for production & git-gateway for live site
 branch: master
 site_url: https://a-magic-mind.netlify.app/
-display_url: https://a-magic-mind.netlify.app/
+display_url: https://a-magic-mind.netlify.app
 logo_url: https://a-magic-mind.netlify.app/images/logo.png
 # locale: "es" # LANGUAGE: ESP
 media_folder: public/images/uploads
