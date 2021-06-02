@@ -32,66 +32,15 @@ function PricingCard() {
               className="current"
               onClick={(e) => openTabSection(e, "MonthlyPlan")}
             >
-              Monthly Plan
+              Plan Mensual
             </li>
 
-            <li onClick={(e) => openTabSection(e, "YearlyPlan")}>
-              Yearly Plan
-            </li>
+            <li onClick={(e) => openTabSection(e, "YearlyPlan")}>Plan Anual</li>
           </ul>
 
           <div className="tab_content">
             <div id="MonthlyPlan" className="tabs-item">
               <div className="row">
-                {/* Single pricing table */}
-                <div className="col-lg-4 col-md-6">
-                  <div className="single-pricing-box">
-                    <div className="pricing-header">
-                      <h3>Free</h3>
-                      <p>
-                        Get your business up <br /> and running
-                      </p>
-                    </div>
-
-                    <div className="price">
-                      $0 <span>/Monthly</span>
-                    </div>
-
-                    <div className="buy-btn">
-                      <Link href="/pricing/#">
-                        <a className="btn btn-primary">Get Started Free</a>
-                      </Link>
-                    </div>
-
-                    <ul className="pricing-features">
-                      <li>
-                        <i className="flaticon-tick"></i> Drag & Drop Builder
-                      </li>
-                      <li>
-                        <i className="flaticon-tick"></i> Lead Generation &
-                        Sales
-                      </li>
-                      <li>
-                        <i className="flaticon-tick"></i> Boot & Digital
-                        Assistants
-                      </li>
-                      <li>
-                        <i className="flaticon-tick"></i> Customer Service
-                      </li>
-                      <li>
-                        <i className="fas fa-times"></i> Up to 1000 Subscribers
-                      </li>
-                      <li>
-                        <i className="fas fa-times"></i> Unlimited Broadcasts
-                      </li>
-                      <li>
-                        <i className="fas fa-times"></i> Landing Pages & Web
-                        Widgets
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
                 {/* Single pricing table */}
                 <div className="col-lg-4 col-md-6">
                   <div className="single-pricing-box active">

@@ -23,7 +23,7 @@ export default function Home() {
       <FunFacts />
       <Projects />
       <Webinar />
-      <Testimonials1 />
+
       <Testimonials2 />
       <BlogPost />
       <PricingPlan />
