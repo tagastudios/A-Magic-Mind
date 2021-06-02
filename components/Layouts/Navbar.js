@@ -88,7 +88,7 @@ export default function Navbar() {
                   </li>
 
                   <li className="nav-item">
-                    <Link href="#">
+                    <Link href="/#">
                       <a
                         className="nav-link"
                         onClick={(e) => e.preventDefault()}
@@ -99,15 +99,12 @@ export default function Navbar() {
 
                     <ul className="dropdown-menu">
                       <li className="nav-item">
-                        <Link
-                          href="/services/playpals"
-                          activeClassName="active"
-                        >
+                        <Link href="/#" activeClassName="active">
                           <a className="nav-link">PlayPals</a>
                         </Link>
                       </li>
                       <li className="nav-item">
-                        <Link href="/services/custom" activeClassName="active">
+                        <Link href="/#" activeClassName="active">
                           <a className="nav-link">Servivio Personalizado</a>
                         </Link>
                       </li>
@@ -115,19 +112,19 @@ export default function Navbar() {
                   </li>
 
                   <li className="nav-item">
-                    <Link href="/about-us">
+                    <Link href="/#">
                       <a className="nav-link">Nosotros</a>
                     </Link>
                   </li>
 
                   <li className="nav-item">
-                    <Link href="/blogs" activeClassName="active">
+                    <Link href="/#" activeClassName="active">
                       <a className="nav-link">Blogs</a>
                     </Link>
                   </li>
 
                   <li className="nav-item">
-                    <Link href="/contact" activeClassName="active">
+                    <Link href="/#" activeClassName="active">
                       <a className="nav-link">Contacto</a>
                     </Link>
                   </li>
@@ -144,28 +141,25 @@ export default function Navbar() {
 
                     <ul className="dropdown-menu">
                       <li className="nav-item">
-                        <Link href="/products/books" activeClassName="active">
+                        <Link href="/#" activeClassName="active">
                           <a className="nav-link">Libros</a>
                         </Link>
                       </li>
 
                       <li className="nav-item">
-                        <Link href="/products/videos" activeClassName="active">
+                        <Link href="/#" activeClassName="active">
                           <a className="nav-link">Videos</a>
                         </Link>
                       </li>
 
                       <li className="nav-item">
-                        <Link href="/products/toys" activeClassName="active">
+                        <Link href="/#" activeClassName="active">
                           <a className="nav-link">Juguetes</a>
                         </Link>
                       </li>
 
                       <li className="nav-item">
-                        <Link
-                          href="/products/merchandise"
-                          activeClassName="active"
-                        >
+                        <Link href="/#" activeClassName="active">
                           <a className="nav-link">Mercancías</a>
                         </Link>
                       </li>
@@ -176,7 +170,7 @@ export default function Navbar() {
                 <div className="others-options">
                   {isProducts ? (
                     <>
-                      <Link href="/cart">
+                      <Link href="/#">
                         <a className="cart-btn">
                           <i className="flaticon-commerce-and-shopping"></i>
                           <span>1</span>
@@ -223,7 +217,7 @@ export default function Navbar() {
                     </>
                   ) : null}
 
-                  <Link href="/contact">
+                  <Link href="/#">
                     <a className="btn btn-primary">Tienes Dudas?</a>
                   </Link>
                 </div>

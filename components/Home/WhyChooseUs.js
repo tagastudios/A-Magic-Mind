@@ -82,7 +82,7 @@ const WhyChooseUs = () => {
                 </div>
               </div>
 
-              <Link href="/about">
+              <Link href="/#">
                 <a className="btn btn-primary">Leer más..</a>
               </Link>
             </div>

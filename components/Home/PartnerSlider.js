@@ -52,25 +52,25 @@ const PartnerSlider = () => {
             {...options}
           >
             <div className="single-partner-item">
-              <a href="/index-5/#" target="_blank">
+              <a href="/#" target="_blank">
                 <img src="/images/partner/partner1.png" alt="image" />
               </a>
             </div>
 
             <div className="single-partner-item">
-              <a href="/index-5/#" target="_blank">
+              <a href="/#" target="_blank">
                 <img src="/images/partner/partner2.png" alt="image" />
               </a>
             </div>
 
             <div className="single-partner-item">
-              <a href="/index-5/#" target="_blank">
+              <a href="/#" target="_blank">
                 <img src="/images/partner/partner1.png" alt="image" />
               </a>
             </div>
 
             <div className="single-partner-item">
-              <a href="/index-5/#" target="_blank">
+              <a href="/#" target="_blank">
                 <img src="/images/partner/partner2.png" alt="image" />
               </a>
             </div>

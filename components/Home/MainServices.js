@@ -12,7 +12,7 @@ const MainServices = () => {
                 <i className="flaticon-robot-1"></i>
               </div>
               <h3>
-                <Link href="/service-details">
+                <Link href="/#">
                   <a>PlayPals</a>
                 </Link>
               </h3>
@@ -24,7 +24,7 @@ const MainServices = () => {
               </p>
               <br />
 
-              <Link href="/service-details">
+              <Link href="/#">
                 <a className="link-btn">Leer más..</a>
               </Link>
             </div>
@@ -36,7 +36,7 @@ const MainServices = () => {
                 <i className="flaticon-neural"></i>
               </div>
               <h3>
-                <Link href="/service-details">
+                <Link href="/#">
                   <a>Actividades Personalizadas</a>
                 </Link>
               </h3>
@@ -48,7 +48,7 @@ const MainServices = () => {
                 menos consciente, aprenden jugando.
               </p>
 
-              <Link href="/service-details">
+              <Link href="/#">
                 <a className="link-btn">Leer más..</a>
               </Link>
             </div>
@@ -60,7 +60,7 @@ const MainServices = () => {
                 <i className="flaticon-machine-learning"></i>
               </div>
               <h3>
-                <Link href="/service-details">
+                <Link href="/#">
                   <a>Productos</a>
                 </Link>
               </h3>
@@ -71,7 +71,7 @@ const MainServices = () => {
                 desarrollo de los niños.
               </p>
               <br />
-              <Link href="/service-details">
+              <Link href="/#">
                 <a className="link-btn">Leer más..</a>
               </Link>
             </div>

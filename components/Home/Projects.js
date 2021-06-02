@@ -59,7 +59,7 @@ const Projects = () => {
               <img src="/images/projects-img1.png" alt="image" />
 
               <div className="plus-icon">
-                <Link href="/projects-details">
+                <Link href="/#">
                   <a>
                     <span></span>
                   </a>
@@ -71,7 +71,7 @@ const Projects = () => {
               <img src="/images/projects-img2.png" alt="image" />
 
               <div className="plus-icon">
-                <Link href="/projects-details">
+                <Link href="/#">
                   <a>
                     <span></span>
                   </a>
@@ -83,7 +83,7 @@ const Projects = () => {
               <img src="/images/projects-img3.png" alt="image" />
 
               <div className="plus-icon">
-                <Link href="/projects-details">
+                <Link href="/#">
                   <a>
                     <span></span>
                   </a>
@@ -95,7 +95,7 @@ const Projects = () => {
               <img src="/images/projects-img4.png" alt="image" />
 
               <div className="plus-icon">
-                <Link href="/projects-details">
+                <Link href="/#">
                   <a>
                     <span></span>
                   </a>
@@ -107,7 +107,7 @@ const Projects = () => {
               <img src="/images/projects-img5.png" alt="image" />
 
               <div className="plus-icon">
-                <Link href="/projects-details">
+                <Link href="/#">
                   <a>
                     <span></span>
                   </a>

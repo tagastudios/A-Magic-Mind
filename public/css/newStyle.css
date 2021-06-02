@@ -44,6 +44,32 @@
   margin-right: -15px !important;
 }
 
+.nav-item ul {
+  background-color: transparent !important;
+}
+
+.nav-item ul li {
+  margin-bottom: 10px !important;
+  background-color: #ff5d5b !important;
+  width: 80%;
+  border-radius: 20px !important;
+}
+
+.nav-item ul li a {
+  background-color: #b660e5 !important;
+  border-radius: 20px !important;
+  color: white !important;
+  margin: -5px -5px !important;
+}
+
+.nav-item ul li:last-child:hover a {
+  margin-right: -5px !important;
+}
+
+.nav-item:last-child ul li:last-child:hover a {
+  margin-right: -15px !important;
+}
+
 @keyframes arcoiris {
   0% {
     background-color: #ff5d5b;
@@ -103,5 +129,9 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
+}
+
+.newsletter-form {
+  margin-left: 0 !important;
 }
 /*# sourceMappingURL=newStyle.css.map */

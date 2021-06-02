@@ -2,13 +2,13 @@ import React from "react";
 import Link from "next/link";
 
 function BlogPost() {
-  const linkBlog = "/blogs/test";
+  const linkBlog = "/#";
 
   return (
     <section className="blog-area ptb-110">
       <div className="container">
         <div className="section-title">
-          <h2>MagicBlogs</h2>
+          <h2>Magic Blogs</h2>
           <p>Conoce nuestra sección informativa </p>
         </div>
 

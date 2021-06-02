@@ -55,7 +55,7 @@ const FunFacts = () => {
           <h3>Tienes alguna pregunta sobre nosotros?</h3>
           <p>No dudes en contactarnos!</p>
 
-          <Link href="/contact">
+          <Link href="/#">
             <a className="btn btn-primary">
               Contáctanos<span></span>
             </a>

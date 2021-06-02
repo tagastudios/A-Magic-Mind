@@ -19,7 +19,7 @@ const MainBanner = () => {
           </p>
 
           <div className="btn-box">
-            <Link href="/">
+            <Link href="/#">
               <a className="btn btn-primary">Tienes una duda?</a>
             </Link>
           </div>

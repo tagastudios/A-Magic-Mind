@@ -49,7 +49,7 @@ export default class PricingPlan extends Component {
                 <div className="row">
                   <div className="col-lg-2 col-md-0"></div>
 
-                  <div className="col-lg-4 col-md-6">
+                  <div className="col-lg-4 col-md-6 offset-lg-0 ">
                     <div className="single-pricing-box active">
                       <div className="pricing-header">
                         <h3>Pro</h3>
@@ -97,7 +97,7 @@ export default class PricingPlan extends Component {
                     </div>
                   </div>
 
-                  <div className="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
+                  <div className="col-lg-4 col-md-6 offset-lg-0 ">
                     <div className="single-pricing-box">
                       <div className="pricing-header">
                         <h3>Premium</h3>
@@ -156,7 +156,7 @@ export default class PricingPlan extends Component {
                       <div className="pricing-header">
                         <h3>Pro</h3>
                         <p>
-                          MagicMind
+                          Magic Mind
                           <br />
                         </p>
                       </div>
@@ -166,7 +166,7 @@ export default class PricingPlan extends Component {
                       </div>
 
                       <div className="buy-btn">
-                        <Link href="/index-5/#">
+                        <Link href="/#">
                           <a className="btn btn-primary">Obtén un libro </a>
                         </Link>
                       </div>
@@ -202,7 +202,7 @@ export default class PricingPlan extends Component {
                       <div className="pricing-header">
                         <h3>Premium</h3>
                         <p>
-                          MagicMind <br />
+                          Magic Mind <br />
                         </p>
                       </div>
 
@@ -211,7 +211,7 @@ export default class PricingPlan extends Component {
                       </div>
 
                       <div className="buy-btn">
-                        <Link href="/index-5/#">
+                        <Link href="/#">
                           <a className="btn btn-primary">
                             Obtén un libro gratis
                           </a>
