@@ -1,0 +1,139 @@
+////////////////////////////////////
+// IMPORTS / VARS / MODULES
+// IMPORTS / VARS / MODULES
+// IMPORTS / VARS / MODULES
+// IMPORTS / VARS / MODULES
+// IMPORTS / VARS / MODULES
+// IMPORTS / VARS / MODULES
+// IMPORTS / VARS / MODULES
+// IMPORTS / VARS / MODULES
+// IMPORTS / VARS / MODULES
+// IMPORTS / VARS / MODULES
+// IMPORTS / VARS / MODULES
+// IMPORTS / VARS / MODULES
+// IMPORTS / VARS / MODULES
+// IMPORTS / VARS / MODULES
+// IMPORTS / VARS / MODULES
+// IMPORTS / VARS / MODULES
+// IMPORTS / VARS / MODULES
+// IMPORTS / VARS / MODULES
+// IMPORTS / VARS / MODULES
+// IMPORTS / VARS / MODULES
+// IMPORTS / VARS / MODULES
+// IMPORTS / VARS / MODULES
+// IMPORTS / VARS / MODULES
+////////////////////////////////////
+@import "modules/colors";
+
+////////////////////////////////////
+// HOME
+// HOME
+// HOME
+// HOME
+// HOME
+// HOME
+// HOME
+// HOME
+// HOME
+// HOME
+// HOME
+// HOME
+// HOME
+// HOME
+// HOME
+// HOME
+// HOME
+// HOME
+// HOME
+// HOME
+// HOME
+// HOME
+// HOME
+// HOME
+////////////////////////////////////
+.MainBanner__fix {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.MainBanner__fix::before {
+  position: absolute;
+  content: "";
+  height: 100vh;
+  width: 100vw;
+  background: $gradiant1;
+}
+.letras {
+  z-index: 1000;
+  position: relative;
+}
+
+.main-logo {
+  height: 100px;
+}
+
+.optional-logo {
+  height: 100px;
+}
+
+.navbar-nav .nav-item a.active {
+  color: #fff !important;
+}
+
+.main-nav .navbar .navbar-nav .nav-item:hover a {
+  background-color: $rojo;
+  color: #fff !important;
+  border-radius: 20px;
+  padding: 5px !important;
+  margin: -5px !important ;
+  margin-left: -10px !important;
+  animation: arcoiris 2s infinite;
+}
+@keyframes arcoiris {
+  0% {
+    background-color: $rojo;
+  }
+  20% {
+    background-color: $naranja;
+  }
+  40% {
+    background-color: $amarillo;
+  }
+  60% {
+    background-color: $verde;
+  }
+  80% {
+    background-color: $azul;
+  }
+}
+
+.MainBanner__fix2 {
+  height: 80vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.MainBanner__fix2::before {
+  position: absolute;
+  content: "";
+  height: 80vh;
+  width: 100vw;
+  background: $gradiant1;
+  top: 0;
+  left: 0;
+}
+
+.letras2 {
+  color: #000 !important;
+  font-family: "Dosis", sans-serif;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+.navbar-area {
+  z-index: 2000 !important;
+}

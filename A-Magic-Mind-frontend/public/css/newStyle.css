@@ -1,0 +1,90 @@
+.MainBanner__fix {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.MainBanner__fix::before {
+  position: absolute;
+  content: "";
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(135deg, rgba(222, 228, 140, 0.8) 20%, rgba(182, 96, 229, 0.5) 100%);
+}
+
+.letras {
+  z-index: 1000;
+  position: relative;
+}
+
+.main-logo {
+  height: 100px;
+}
+
+.optional-logo {
+  height: 100px;
+}
+
+.navbar-nav .nav-item a.active {
+  color: #fff !important;
+}
+
+.main-nav .navbar .navbar-nav .nav-item:hover a {
+  background-color: #ff5d5b;
+  color: #fff !important;
+  border-radius: 20px;
+  padding: 5px !important;
+  margin: -5px !important;
+  margin-left: -10px !important;
+  animation: arcoiris 2s infinite;
+}
+
+@keyframes arcoiris {
+  0% {
+    background-color: #ff5d5b;
+  }
+  20% {
+    background-color: #f87443;
+  }
+  40% {
+    background-color: #ffb001;
+  }
+  60% {
+    background-color: #83c853;
+  }
+  80% {
+    background-color: #27b7d9;
+  }
+}
+
+.MainBanner__fix2 {
+  height: 80vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.MainBanner__fix2::before {
+  position: absolute;
+  content: "";
+  height: 80vh;
+  width: 100vw;
+  background: linear-gradient(135deg, rgba(222, 228, 140, 0.8) 20%, rgba(182, 96, 229, 0.5) 100%);
+  top: 0;
+  left: 0;
+}
+
+.letras2 {
+  color: #000 !important;
+  font-family: "Dosis", sans-serif;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.navbar-area {
+  z-index: 2000 !important;
+}
+/*# sourceMappingURL=newStyle.css.map */
