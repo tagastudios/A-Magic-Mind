@@ -1,5 +1,5 @@
 backend:
-  name: test-repo #test-repo for production & git-gateway for live site
+  name: git-gateway #test-repo for production & git-gateway for live site
   branch: master
   site_url: https://a-magic-mind.netlify.app/
   display_url: https://a-magic-mind.netlify.app/
@@ -49,6 +49,16 @@ collections:
           widget: "image",
           required: true,
           tagname: "",
+        }
+      - {
+          label: "Autor",
+          name: "author",
+          widget: "relation",
+          collection: "settings",
+          file: "authors",
+          search_fields: ["authors.*.name"],
+          display_fields: ["authors.*.name"],
+          value_field: "author.*.name",
         }
       - {
           label: "Body",
@@ -114,8 +124,13 @@ collections:
             ],
         }
       - { label: "Titulo", name: "title", widget: "string" }
-      - { label: "Precio", name: "price", widget: "number" }
-      - { label: "Disponibilidad", name: "" }
+      - {
+          label: "Precio",
+          name: "price",
+          widget: "number",
+          value_type: "float",
+        }
+      - { label: "Disponibilidad", name: "available", widget: "boolean" }
       - { label: "Descripcion", name: "body", widget: "markdown" }
 
   # ***** REVIEWS ******
@@ -136,6 +151,7 @@ collections:
 
   - name: "settings"
     label: "Settings"
+    description: "Configuracion general de la pagina web."
     delete: false
     editor:
       preview: false
