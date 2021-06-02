@@ -9,7 +9,7 @@ function Footer() {
     <footer className="footer-area">
       <div className="container">
         <div className="row">
-          <div className="col-lg-3 col-md-6 col-sm-6">
+          <div className="col-lg-3 col-md-6 col-sm-6 mb-5">
             <div className="single-footer-widget">
               <div className="logo">
                 <a href="/">
@@ -55,9 +55,9 @@ function Footer() {
             </div>
           </div>
 
-          <div className="col-lg-3 col-md-6 col-sm-6">
+          <div className="col-lg-3 col-md-6 col-sm-6 mb-5">
             <div className="single-footer-widget">
-              <h3>Servicios</h3>
+              <h3>Servicios / Productos</h3>
 
               <ul className="footer-services-list">
                 <li>
@@ -72,14 +72,29 @@ function Footer() {
                 </li>
                 <li>
                   <Link href="/service-details">
-                    <a>Productos</a>
+                    <a>Libros</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/service-details">
+                    <a>Videos</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/service-details">
+                    <a>Juguetes</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/service-details">
+                    <a>Merchandise</a>
                   </Link>
                 </li>
               </ul>
             </div>
           </div>
 
-          <div className="col-lg-3 col-md-6 col-sm-6">
+          <div className="col-lg-3 col-md-6 col-sm-6 mb-5">
             <div className="single-footer-widget">
               <h3>Atajos</h3>
 
@@ -113,7 +128,7 @@ function Footer() {
             </div>
           </div>
 
-          <div className="col-lg-3 col-md-6 col-sm-6">
+          <div className="col-lg-3 col-md-6 col-sm-6 mb-5">
             <div className="single-footer-widget">
               <h3>Contactános</h3>
 
@@ -139,17 +154,16 @@ function Footer() {
       <div className="copyright-area">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-lg-6 col-md-6 col-sm-6">
+            <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12">
               <p>
-                Copyright &copy;{currentYear} A Magic Mind. All Rights Reserved{" "}
+                Copyright &copy;{currentYear} A Magic Mind. All Rights Reserved.{" "}
                 <a href="#" target="_blank">
                   by TagaStudios
                 </a>
-                .
               </p>
             </div>
 
-            <div className="col-lg-6 col-md-6 col-sm-6">
+            <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12">
               <ul>
                 <li>
                   <Link href="/privacy-policy">

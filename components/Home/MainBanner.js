@@ -1,15 +1,14 @@
 import React from "react";
 import Link from "next/link";
+import { slogan } from "../../content/settings/settings.json";
 
 const MainBanner = () => {
   return (
     <div className="startup-banner-inner MainBanner__fix">
       <div className="container">
         <div className="startup-banner-content letras">
-          <h1>
-            Son pequeños <br /> Pero Aprenden a lo Grande!!
-          </h1>
-          <p>
+          <h1>{slogan}!!</h1>
+          <p className="main-banner-text">
             Los niños aprenden mientras juegan, más importante aún, en el juego,
             los niños aprenden como aprender..! La educación no consiste en
             ofrecer las cosas ya hechas o dar las respuestas acertadas. Se trata

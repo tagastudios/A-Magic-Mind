@@ -1,10 +1,10 @@
-import React from "react";
+import React, { Component } from "react";
 import dynamic from "next/dynamic";
 const OwlCarousel = dynamic(import("react-owl-carousel3"));
 
 const options = {
   loop: true,
-  nav: false,
+  nav: true,
   dots: true,
   autoplayHoverPause: true,
   autoplay: true,
@@ -17,117 +17,121 @@ const options = {
   ],
 };
 
-const Testimonials = () => {
-  const [display, setDisplay] = React.useState(false);
+class FeedbackSlider extends Component {
+  _isMounted = false;
+  state = {
+    display: false,
+  };
+  componentDidMount() {
+    this._isMounted = true;
+    this.setState({ display: true });
+  }
+  componentWillUnmount() {
+    this._isMounted = false;
+  }
 
-  React.useEffect(() => {
-    setDisplay(true);
-  }, []);
-  return (
-    <div className="testimonials-area ptb-110">
-      <div className="container">
-        <div className="section-title">
-          <h2>Nuestros clientes y su experiencia</h2>
-          <p>Nos complace su confianza en nosotros</p>
+  render() {
+    return (
+      <div className="feedback-area">
+        <div className="container-flauid p-0">
+          {this.state.display ? (
+            <OwlCarousel
+              className="feedback-slides owl-carousel owl-theme"
+              {...options}
+            >
+              <div className="row m-0">
+                <div className="col-lg-6 col-md-12 p-0">
+                  <div className="feedback-item">
+                    <p>
+                      Las maestras y el personal administrativo es muy
+                      profesional y atento. A mi hijo le encanta y siempre está
+                      emocionado en cada lección. Y el nivel de aprendizaje es
+                      excelente..
+                    </p>
+
+                    <div className="client-info">
+                      <div className="client-pic">
+                        <img src="/images/clients/client1.jpg" alt="image" />
+                      </div>
+
+                      <h3>Filip Luis</h3>
+                      <span>MagicPadres</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col-lg-6 col-md-12 p-0">
+                  <div className="client-image bg1">
+                    <img src="/images/clients/client1.jpg" alt="image" />
+                  </div>
+                </div>
+              </div>
+
+              <div className="row m-0">
+                <div className="col-lg-6 col-md-12 p-0">
+                  <div className="feedback-item">
+                    <p>
+                      Mi hija ingresó desde los 2 años. Como madre primeriza
+                      sentí muchísimo miedo de dejarla tan pequeña con personas
+                      que no conocía! Hoy después de casi un año puedo compartir
+                      con ustedes mi sentimiento de felicidad cada vez q veo a
+                      mi hija sonriente, bajo un conocimiento cuidado y cariño
+                      excepcional, recomiendo MagicMind con los ojos cerrados,
+                      el personal en general es increíblemente amoroso con todos
+                      los niños!
+                    </p>
+
+                    <div className="client-info">
+                      <div className="client-pic">
+                        <img src="/images/clients/client2.jpg" alt="image" />
+                      </div>
+
+                      <h3>Sarah Taylor</h3>
+                      <span>MagicPadres</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col-lg-6 col-md-12 p-0">
+                  <div className="client-image bg2">
+                    <img src="/images/clients/client2.jpg" alt="image" />
+                  </div>
+                </div>
+              </div>
+
+              <div className="row m-0">
+                <div className="col-lg-6 col-md-12 p-0">
+                  <div className="feedback-item">
+                    <p>
+                      ¡Gran escuela, por favor! Los profesores son increíbles,
+                      todos lo son, a mi hija le encanta.
+                    </p>
+
+                    <div className="client-info">
+                      <div className="client-pic">
+                        <img src="/images/clients/client3.jpg" alt="image" />
+                      </div>
+
+                      <h3>Sarah Taylor</h3>
+                      <span>MagicPadres</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col-lg-6 col-md-12 p-0">
+                  <div className="client-image bg3">
+                    <img src="/images/clients/client3.jpg" alt="image" />
+                  </div>
+                </div>
+              </div>
+            </OwlCarousel>
+          ) : (
+            ""
+          )}
         </div>
+      </div>
+    );
+  }
+}
 
-        {display ? (
-          <OwlCarousel
-            className="testimonials-slides owl-carousel owl-theme"
-            {...options}
-          >
-            <div className="single-testimonials-item">
-              <div className="client-info">
-                <img src="/images/author3.jpg" alt="image" />
-                <h3>Sarah T</h3>
-                <span>Madre</span>
-              </div>
-              <p>
-                Las maestras y el personal administrativo es muy profesional y
-                atento. A mi hijo le encanta y siempre está emocionado en cada
-                lección. Y el nivel de aprendizaje es excelente.
-              </p>
-              <div className="rating">
-                <i className="fas fa-star"></i>
-                <i className="fas fa-star"></i>
-                <i className="fas fa-star"></i>
-                <i className="fas fa-star"></i>
-                <i className="fas fa-star"></i>
-              </div>
-            </div>
-
-            <div className="single-testimonials-item">
-              <div className="client-info">
-                <img src="/images/author1.jpg" alt="image" />
-                <h3>Camila P</h3>
-                <span>Madre</span>
-              </div>
-              <p>
-                Mi hija ingresó desde los 2 años. Como madre primeriza sentí
-                muchísimo miedo de dejarla tan pequeña con personas que no
-                conocía! Hoy después de casi un año puedo compartir con ustedes
-                mi sentimiento de felicidad cada vez q veo a mi hija sonriente,
-                bajo un conocimiento cuidado y cariño excepcional, recomiendo
-                MagicMind con los ojos cerrados, el personal en general es
-                increíblemente amoroso con todos los niños!
-              </p>
-              <div className="rating">
-                <i className="fas fa-star"></i>
-                <i className="fas fa-star"></i>
-                <i className="fas fa-star"></i>
-                <i className="fas fa-star"></i>
-                <i className="fas fa-star"></i>
-              </div>
-            </div>
-
-            <div className="single-testimonials-item">
-              <div className="client-info">
-                <img src="/images/author2.jpg" alt="image" />
-                <h3>James E</h3>
-                <span>Padre</span>
-              </div>
-              <p>
-                ¡Gran escuela, por favor! Los profesores son increíbles, todos
-                lo son, a mi hija le encanta.
-              </p>
-              <div className="rating">
-                <i className="fas fa-star"></i>
-                <i className="fas fa-star"></i>
-                <i className="fas fa-star"></i>
-                <i className="fas fa-star"></i>
-                <i className="fas fa-star"></i>
-              </div>
-            </div>
-          </OwlCarousel>
-        ) : (
-          ""
-        )}
-      </div>
-
-      {/* Shape Images */}
-      <div className="shape-img1">
-        <img src="/images/shape/shape1.png" alt="image" />
-      </div>
-      <div className="shape-img3">
-        <img src="/images/shape/shape3.png" alt="image" />
-      </div>
-      <div className="shape-img2">
-        <img src="/images/shape/shape2.svg" alt="image" />
-      </div>
-      <div className="shape-img5">
-        <img src="/images/shape/shape5.svg" alt="image" />
-      </div>
-      <div className="shape-img4">
-        <img src="/images/shape/shape4.svg" alt="image" />
-      </div>
-      <div className="dot-shape1">
-        <img src="/images/shape/dot1.png" alt="image" />
-      </div>
-      <div className="dot-shape2">
-        <img src="/images/shape/dot3.png" alt="image" />
-      </div>
-    </div>
-  );
-};
-
-export default Testimonials;
+export default FeedbackSlider;

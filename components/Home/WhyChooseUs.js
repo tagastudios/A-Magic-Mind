@@ -6,15 +6,19 @@ const WhyChooseUs = () => {
     <div className="why-choose-us-area">
       <div className="container">
         <div className="row">
-          <div className="col-lg-6 col-md-12">
-            <div className="why-choose-us-image text-center">
-              <img src="/images/team-smile.png" alt="image" />
+          <div className="col-lg-6 col-md-12 glue-bottom">
+            <div className="why-choose-us-image text-center glue-bottom">
+              <img
+                src="/images/team-smile.png"
+                alt="image"
+                className="maryan-img"
+              />
             </div>
           </div>
 
-          <div className="col-lg-6 col-md-12">
+          <div className="col-lg-6 col-md-12 py-5 mb-5">
             <div className="why-choose-us-content">
-              <h2>Por qúe MagicMind?</h2>
+              <h2>Por qúe A Magic Mind?</h2>
               <p>
                 En la gran aventura de la educación el papel de los educadores
                 es muy importante y solo le supera el de su entorno familiar. Es

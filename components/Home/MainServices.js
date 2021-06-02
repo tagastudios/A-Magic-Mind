@@ -6,23 +6,23 @@ const MainServices = () => {
     <div className="main-services-area ptb-110">
       <div className="container">
         <div className="row">
-          <div className="col-lg-4 col-sm-6 col-md-6">
+          <div className="col-lg-4 col-sm-12 col-md-6">
             <div className="single-main-services-box">
               <div className="icon">
                 <i className="flaticon-robot-1"></i>
               </div>
               <h3>
                 <Link href="/service-details">
-                  <a>PLAYPALS</a>
+                  <a>PlayPals</a>
                 </Link>
               </h3>
               <p>
-                "PLAYPALS" Es una persona calificada que irá a jugar, estimular
-                y enseñar a su hijo en la comodidad de su hogar. No es nanny, ni
+                PlayPals son personas calificadas que irán a jugar, estimular y
+                enseñar a su hijo en la comodidad de su hogar. No es nanny, ni
                 babysitter, es un compañero de juego. Usted puede elegir entre
-                varias actividades como, arte, idiomas, reforzamiento escolar
-                y/o música.
+                varias actividades como, arte, idiomas, música y/o entro otros.
               </p>
+              <br />
 
               <Link href="/service-details">
                 <a className="link-btn">Leer más..</a>
@@ -30,14 +30,14 @@ const MainServices = () => {
             </div>
           </div>
 
-          <div className="col-lg-4 col-sm-6 col-md-6">
+          <div className="col-lg-4 col-sm-12 col-md-6">
             <div className="single-main-services-box">
               <div className="icon">
                 <i className="flaticon-neural"></i>
               </div>
               <h3>
                 <Link href="/service-details">
-                  <a>ACTIVIDADES PERSONALIZADAS</a>
+                  <a>Actividades Personalizadas</a>
                 </Link>
               </h3>
               <p>
@@ -45,10 +45,7 @@ const MainServices = () => {
                 necesidades de su hijo para que aprenda de manera divertida, los
                 niños prefieren jugar que estudiar y es por eso que aprenderemos
                 jugando! Los niños no juegan para aprender, pero de manera más o
-                menos consciente, aprenden jugando. El juego es uno de los
-                aspectos protagonistas en la vida de un niño, pues es en lo que
-                ocupan la mayor parte de su tiempo, y cuando no, están pensando
-                en cuándo van a poder hacerlo.
+                menos consciente, aprenden jugando.
               </p>
 
               <Link href="/service-details">
@@ -57,14 +54,14 @@ const MainServices = () => {
             </div>
           </div>
 
-          <div className="col-lg-4 col-sm-6 col-md-6 offset-lg-0 offset-md-3 offset-sm-3">
+          <div className="col-lg-4 col-sm-12 col-md-6 offset-lg-0 offset-md-3 offset-sm-0">
             <div className="single-main-services-box">
               <div className="icon">
                 <i className="flaticon-machine-learning"></i>
               </div>
               <h3>
                 <Link href="/service-details">
-                  <a>PRODUCTOS</a>
+                  <a>Productos</a>
                 </Link>
               </h3>
               <p>
@@ -73,7 +70,7 @@ const MainServices = () => {
                 la formacion infantil y en busqueda de un beneficio para el
                 desarrollo de los niños.
               </p>
-
+              <br />
               <Link href="/service-details">
                 <a className="link-btn">Leer más..</a>
               </Link>

@@ -4646,7 +4646,7 @@ Footer Area CSS
 
 .copyright-area {
   background-color: #000000;
-  margin-top: 70px;
+  margin-top: 0px;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -5220,7 +5220,7 @@ Main Banner Area CSS
 }
 
 .startup-banner-inner {
-  background-position: left center;
+  background-position: 10% center;
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url(/images/startup-banner.jpg);
@@ -5230,6 +5230,7 @@ Main Banner Area CSS
 
 .startup-banner-content {
   max-width: 720px;
+  padding-top: 80px;
 }
 
 .startup-banner-content h1 {

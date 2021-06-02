@@ -98,7 +98,31 @@
     margin-bottom: 15px;
     font-size: 25px;
   }
-  .shape-img1, .shape-img2, .shape-img3, .shape-img4, .shape-img5, .shape-img6, .shape-img7, .shape-img8, .shape-img9, .shape-img10, .shape-img11, .shape-img12, .shape-img13, .shape-img14, .shape-img15, .dot-shape1, .dot-shape2, .dot-shape3, .dot-shape4, .dot-shape5, .dot-shape6, .dot-shape7, .dot-shape8, .dot-shape9, .dot-shape10 {
+  .shape-img1,
+  .shape-img2,
+  .shape-img3,
+  .shape-img4,
+  .shape-img5,
+  .shape-img6,
+  .shape-img7,
+  .shape-img8,
+  .shape-img9,
+  .shape-img10,
+  .shape-img11,
+  .shape-img12,
+  .shape-img13,
+  .shape-img14,
+  .shape-img15,
+  .dot-shape1,
+  .dot-shape2,
+  .dot-shape3,
+  .dot-shape4,
+  .dot-shape5,
+  .dot-shape6,
+  .dot-shape7,
+  .dot-shape8,
+  .dot-shape9,
+  .dot-shape10 {
     display: none;
   }
   .about-inner-area {
@@ -240,7 +264,7 @@
     opacity: 1;
     visibility: visible;
   }
-  .feedback-slides.owl-theme .owl-nav [class*=owl-] {
+  .feedback-slides.owl-theme .owl-nav [class*="owl-"] {
     left: 15px;
     font-size: 25px;
     z-index: 1;
@@ -248,10 +272,10 @@
     transform: translateY(0);
     bottom: 36px;
   }
-  .feedback-slides.owl-theme .owl-nav [class*=owl-] i::before {
+  .feedback-slides.owl-theme .owl-nav [class*="owl-"] i::before {
     font-size: 25px;
   }
-  .feedback-slides.owl-theme .owl-nav [class*=owl-].owl-next {
+  .feedback-slides.owl-theme .owl-nav [class*="owl-"].owl-next {
     left: auto;
     right: 15px;
   }
@@ -321,10 +345,12 @@
   .blog-details .article-footer .article-share .social {
     text-align: center;
   }
-  blockquote, .blockquote {
+  blockquote,
+  .blockquote {
     padding: 20px !important;
   }
-  blockquote p, .blockquote p {
+  blockquote p,
+  .blockquote p {
     font-size: 18px;
   }
   .comments-area .comments-title {
@@ -731,7 +757,8 @@
   .navbar-area {
     background-color: #ffffff;
   }
-  .navbar-area .container-fluid, .navbar-area .container {
+  .navbar-area .container-fluid,
+  .navbar-area .container {
     padding: 0;
   }
   .navbar-area .navbar-brand img {
@@ -894,7 +921,7 @@
     opacity: 1;
     visibility: visible;
   }
-  .home-slides.owl-theme .owl-nav [class*=owl-] {
+  .home-slides.owl-theme .owl-nav [class*="owl-"] {
     top: auto;
     left: 15px;
     transform: translateY(0);
@@ -903,10 +930,10 @@
     height: 32px;
     line-height: 34px;
   }
-  .home-slides.owl-theme .owl-nav [class*=owl-] i::before {
+  .home-slides.owl-theme .owl-nav [class*="owl-"] i::before {
     font-size: 15px;
   }
-  .home-slides.owl-theme .owl-nav [class*=owl-].owl-next {
+  .home-slides.owl-theme .owl-nav [class*="owl-"].owl-next {
     left: auto;
     right: 15px;
   }
@@ -1291,7 +1318,8 @@
   .projects-details-desc h3 {
     font-size: 19px;
   }
-  .projects-details-desc blockquote p, .projects-details-desc .blockquote p {
+  .projects-details-desc blockquote p,
+  .projects-details-desc .blockquote p {
     font-size: 18px;
   }
 }
@@ -1423,7 +1451,31 @@
   .about-content h2 {
     font-size: 35px;
   }
-  .shape-img1, .shape-img2, .shape-img3, .shape-img4, .shape-img5, .shape-img6, .shape-img7, .shape-img8, .shape-img9, .shape-img10, .shape-img11, .shape-img12, .shape-img13, .shape-img14, .shape-img15, .dot-shape1, .dot-shape2, .dot-shape3, .dot-shape4, .dot-shape5, .dot-shape6, .dot-shape7, .dot-shape8, .dot-shape9, .dot-shape10 {
+  .shape-img1,
+  .shape-img2,
+  .shape-img3,
+  .shape-img4,
+  .shape-img5,
+  .shape-img6,
+  .shape-img7,
+  .shape-img8,
+  .shape-img9,
+  .shape-img10,
+  .shape-img11,
+  .shape-img12,
+  .shape-img13,
+  .shape-img14,
+  .shape-img15,
+  .dot-shape1,
+  .dot-shape2,
+  .dot-shape3,
+  .dot-shape4,
+  .dot-shape5,
+  .dot-shape6,
+  .dot-shape7,
+  .dot-shape8,
+  .dot-shape9,
+  .dot-shape10 {
     display: none;
   }
   .team-area {
@@ -1512,16 +1564,16 @@
     opacity: 1;
     visibility: visible;
   }
-  .feedback-slides.owl-theme .owl-nav [class*=owl-] {
+  .feedback-slides.owl-theme .owl-nav [class*="owl-"] {
     left: 20px;
   }
-  .feedback-slides.owl-theme .owl-nav [class*=owl-] i {
+  .feedback-slides.owl-theme .owl-nav [class*="owl-"] i {
     font-size: 30px;
   }
-  .feedback-slides.owl-theme .owl-nav [class*=owl-] i::before {
+  .feedback-slides.owl-theme .owl-nav [class*="owl-"] i::before {
     font-size: 30px;
   }
-  .feedback-slides.owl-theme .owl-nav [class*=owl-].owl-next {
+  .feedback-slides.owl-theme .owl-nav [class*="owl-"].owl-next {
     left: auto;
     right: 20px;
   }
@@ -1892,16 +1944,16 @@
     opacity: 1;
     visibility: visible;
   }
-  .home-slides.owl-theme .owl-nav [class*=owl-] {
+  .home-slides.owl-theme .owl-nav [class*="owl-"] {
     left: 10px;
     width: 40px;
     height: 40px;
     line-height: 42px;
   }
-  .home-slides.owl-theme .owl-nav [class*=owl-] i::before {
+  .home-slides.owl-theme .owl-nav [class*="owl-"] i::before {
     font-size: 20px;
   }
-  .home-slides.owl-theme .owl-nav [class*=owl-].owl-next {
+  .home-slides.owl-theme .owl-nav [class*="owl-"].owl-next {
     left: auto;
     right: 10px;
   }
@@ -1997,7 +2049,8 @@
   .projects-details-desc h3 {
     font-size: 19px;
   }
-  .projects-details-desc blockquote p, .projects-details-desc .blockquote p {
+  .projects-details-desc blockquote p,
+  .projects-details-desc .blockquote p {
     font-size: 18px;
   }
 }
@@ -2037,12 +2090,12 @@
   .feedback-slides.owl-theme .owl-stage .owl-item::before {
     width: 75%;
   }
-  .feedback-slides.owl-theme .owl-nav [class*=owl-] {
+  .feedback-slides.owl-theme .owl-nav [class*="owl-"] {
     top: auto;
     transform: translateY(0);
     bottom: 15px;
   }
-  .feedback-slides.owl-theme .owl-nav [class*=owl-] i::before {
+  .feedback-slides.owl-theme .owl-nav [class*="owl-"] i::before {
     font-size: 30px;
   }
   .free-trial-area::before {
@@ -2219,6 +2272,19 @@
   }
   .feedback-item {
     max-width: 645px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .startup-banner-inner {
+    background-position: 65% center !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(/images/startup-banner.jpg);
+  }
+  .maryan-img {
+    height: 500px !important;
+    margin-top: -100px;
   }
 }
 /*# sourceMappingURL=responsive.css.map */

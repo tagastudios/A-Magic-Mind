@@ -6,8 +6,7 @@ import ProfessionalSolutions from "../components/Home/ProfessionalSolutions";
 import FunFacts from "../components/Home/FunFacts";
 import Projects from "../components/Home/Projects";
 import Webinar from "../components/Home/Webinar";
-import Testimonials1 from "../components/Home/Testimonials";
-import Testimonials2 from "../components/Home/FeedbackSlider";
+import Testimonials from "../components/Home/Testimonials";
 import BlogPost from "../components/Common/BlogPost";
 import PricingPlan from "../components/Home/PricingPlan";
 import FreeTrialForm from "../components/Home/FreeTrialForm";
@@ -23,7 +22,7 @@ export default function Home() {
       <FunFacts />
       <Projects />
       <Webinar />
-      <Testimonials2 />
+      <Testimonials />
       <BlogPost />
       <PricingPlan />
       <FreeTrialForm />

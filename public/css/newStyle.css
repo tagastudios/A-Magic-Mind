@@ -11,7 +11,7 @@
   content: "";
   height: 100vh;
   width: 100vw;
-  background: linear-gradient(135deg, rgba(222, 228, 140, 0.8) 20%, rgba(182, 96, 229, 0.5) 100%);
+  background: linear-gradient(135deg, rgba(222, 228, 140, 0.9) 10%, rgba(182, 96, 229, 0.7) 100%);
 }
 
 .letras {
@@ -31,14 +31,17 @@
   color: #fff !important;
 }
 
-.main-nav .navbar .navbar-nav .nav-item:hover a {
+.nav-item:hover a {
   background-color: #ff5d5b;
   color: #fff !important;
   border-radius: 20px;
-  padding: 5px !important;
+  padding: 5px 15px !important;
   margin: -5px !important;
-  margin-left: -10px !important;
   animation: arcoiris 2s infinite;
+}
+
+.nav-item:last-child:hover a {
+  margin-right: -15px !important;
 }
 
 @keyframes arcoiris {
@@ -72,7 +75,7 @@
   content: "";
   height: 80vh;
   width: 100vw;
-  background: linear-gradient(135deg, rgba(222, 228, 140, 0.8) 20%, rgba(182, 96, 229, 0.5) 100%);
+  background: linear-gradient(135deg, rgba(222, 228, 140, 0.9) 10%, rgba(182, 96, 229, 0.7) 100%);
   top: 0;
   left: 0;
 }
@@ -86,5 +89,19 @@
 
 .navbar-area {
   z-index: 2000 !important;
+}
+
+.main-banner-text {
+  font-weight: 600 !important;
+}
+
+.maryan-img {
+  height: 800px;
+}
+
+.glue-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 /*# sourceMappingURL=newStyle.css.map */

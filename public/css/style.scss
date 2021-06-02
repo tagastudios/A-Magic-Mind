@@ -45,7 +45,7 @@ Default CSS
 @import "modules/colors";
 $main-font-family: "Open Sans", sans-serif;
 $optional-font-family: "Dosis", sans-serif;
-$main-color:$rojo;
+$main-color: $rojo;
 $optional-color: $morado;
 $white-color: #ffffff;
 $black-color: #212529;
@@ -4830,7 +4830,7 @@ Footer Area CSS
 }
 .copyright-area {
   background-color: #000000;
-  margin-top: 70px;
+  margin-top: 0px;
   padding: {
     top: 20px;
     bottom: 20px;
@@ -5528,7 +5528,7 @@ Main Banner Area CSS
 }
 .startup-banner-inner {
   background: {
-    position: left center;
+    position: 10% center;
     size: cover;
     repeat: no-repeat;
     image: url(/images/startup-banner.jpg);
@@ -5540,6 +5540,7 @@ Main Banner Area CSS
 }
 .startup-banner-content {
   max-width: 720px;
+  padding-top: 80px;
 
   h1 {
     margin-bottom: 0;
