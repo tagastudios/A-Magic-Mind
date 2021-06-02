@@ -8,11 +8,8 @@ function BlogPost() {
     <section className="blog-area ptb-110">
       <div className="container">
         <div className="section-title">
-          <h2>Our Recent News</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
+          <h2>MagicBlogs</h2>
+          <p>Conoce nuestra sección informativa </p>
         </div>
 
         <div className="row">
@@ -34,24 +31,31 @@ function BlogPost() {
                         <a>Admin</a>
                       </Link>
                     </li>
-                    <li>March 10, 2020</li>
+                    <li>10 Marzo, 2020</li>
                   </ul>
                 </div>
 
                 <h3>
                   <Link href={linkBlog}>
-                    <a>Making Peace With The Feast Or Famine Of Freelancing</a>
+                    <a>
+                      Descubre 5 estrategias para que tu hijo recupere la
+                      motivación
+                    </a>
                   </Link>
                 </h3>
 
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod...
+                  Si detectas que tu hijo está pasando por una situación de
+                  desmotivación escolar, actúa rápido. Busca ayuda externa a
+                  través de profesionales expertos en niños y adolescentes. Si
+                  lo dejas pasar, no le das importancia o piensas que tu hijo va
+                  a ser capaz de superar esta situación solo, el problema se
+                  agravará y afectará a otras áreas de su vida....
                 </p>
 
                 <Link href={linkBlog}>
                   <a className="learn-more-btn">
-                    Read More <i className="flaticon-add"></i>
+                    Leer más.. <i className="flaticon-add"></i>
                   </a>
                 </Link>
               </div>
@@ -76,23 +80,30 @@ function BlogPost() {
                         <a>Admin</a>
                       </Link>
                     </li>
-                    <li>March 11, 2020</li>
+                    <li>11 Marzo, 2020</li>
                   </ul>
                 </div>
 
                 <h3>
                   <Link href={linkBlog}>
-                    <a>I Used The Web For A Day On A 50 MB Budget</a>
+                    <a>
+                      Mi hija es solitaria pero no hace nada para cambiarlo.
+                      ¿Debería forzarla a hacer planes y participar en
+                      actividades grupales?
+                    </a>
                   </Link>
                 </h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod...
+                  Pocas cosas perturban más que ver a su hijo quedarse solo
+                  después de clases mientras que los demás se han ido a jugar
+                  con sus amigos. O descubrir que su hijo almuerza solo en la
+                  escuela. O ver a su adolescente malhumorado en la casa durante
+                  los fines de semana porque no tiene nadie con quien salir....
                 </p>
 
                 <Link href={linkBlog}>
                   <a className="learn-more-btn">
-                    Read More <i className="flaticon-add"></i>
+                    Leer más... <i className="flaticon-add"></i>
                   </a>
                 </Link>
               </div>
@@ -117,23 +128,31 @@ function BlogPost() {
                         <a>Admin</a>
                       </Link>
                     </li>
-                    <li>March 12, 2020</li>
+                    <li>12 Marzo, 2020</li>
                   </ul>
                 </div>
 
                 <h3>
                   <Link href={linkBlog}>
-                    <a>Here are the 5 most telling signs of micromanagement</a>
+                    <a>
+                      Cómo ayudar a su hijo con la tarea escolar: Demuestre que
+                      la educación y la tarea son importantes para usted.
+                    </a>
                   </Link>
                 </h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod...
+                  Las investigaciones científicas demuestran claramente que los
+                  niños son mucho más aptos a tener éxito en el aprendizaje
+                  cuando sus familias los apoyan activamente. Cuando las
+                  familias leen con sus hijos, dialogan con sus maestros,
+                  participan en la escuela o en otras actividades educativas y
+                  les ayudan con sus tareas escolares, les otorgan una gran
+                  ventaja....
                 </p>
 
                 <Link href={linkBlog}>
                   <a className="learn-more-btn">
-                    Read More <i className="flaticon-add"></i>
+                    Leer más... <i className="flaticon-add"></i>
                   </a>
                 </Link>
               </div>

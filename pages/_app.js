@@ -37,7 +37,7 @@ function MyApp({ Component, pageProps }) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        <title>Bariton - React Next IT & Machine Learning Template</title>
+        <title>A Magic Mind</title>
       </Head>
 
       <NavBar />

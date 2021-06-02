@@ -52,12 +52,12 @@ export default function Navbar() {
               <Link href="/">
                 <a className="navbar-brand">
                   <img
-                    src="/images/white-logo.png"
+                    src="/images/LOGO.png"
                     className="main-logo"
                     alt="logo"
                   />
                   <img
-                    src="/images/black-logo.png"
+                    src="/images/LOGO.png"
                     className="optional-logo"
                     alt="logo"
                   />
@@ -83,7 +83,7 @@ export default function Navbar() {
                 <ul className="navbar-nav">
                   <li className="nav-item">
                     <Link href="/" activeClassName="active">
-                      <a className="nav-link">Home</a>
+                      <a className="nav-link">Inicio</a>
                     </Link>
                   </li>
 
@@ -93,7 +93,7 @@ export default function Navbar() {
                         className="nav-link"
                         onClick={(e) => e.preventDefault()}
                       >
-                        Services <i className="fas fa-chevron-down"></i>
+                        Servicios <i className="fas fa-chevron-down"></i>
                       </a>
                     </Link>
 
@@ -108,7 +108,7 @@ export default function Navbar() {
                       </li>
                       <li className="nav-item">
                         <Link href="/services/custom" activeClassName="active">
-                          <a className="nav-link">Custom</a>
+                          <a className="nav-link">Servivio Personalizado</a>
                         </Link>
                       </li>
                     </ul>
@@ -116,7 +116,7 @@ export default function Navbar() {
 
                   <li className="nav-item">
                     <Link href="/about-us">
-                      <a className="nav-link">About Us</a>
+                      <a className="nav-link">Nosotros</a>
                     </Link>
                   </li>
 
@@ -128,7 +128,7 @@ export default function Navbar() {
 
                   <li className="nav-item">
                     <Link href="/contact" activeClassName="active">
-                      <a className="nav-link">Contact</a>
+                      <a className="nav-link">Contacto</a>
                     </Link>
                   </li>
 
@@ -138,14 +138,14 @@ export default function Navbar() {
                         className="nav-link"
                         onClick={(e) => e.preventDefault()}
                       >
-                        Products <i className="fas fa-chevron-down"></i>
+                        Productos <i className="fas fa-chevron-down"></i>
                       </a>
                     </Link>
 
                     <ul className="dropdown-menu">
                       <li className="nav-item">
                         <Link href="/products/books" activeClassName="active">
-                          <a className="nav-link">Books</a>
+                          <a className="nav-link">Libros</a>
                         </Link>
                       </li>
 
@@ -157,7 +157,7 @@ export default function Navbar() {
 
                       <li className="nav-item">
                         <Link href="/products/toys" activeClassName="active">
-                          <a className="nav-link">Toys</a>
+                          <a className="nav-link">Juguetes</a>
                         </Link>
                       </li>
 
@@ -166,7 +166,7 @@ export default function Navbar() {
                           href="/products/merchandise"
                           activeClassName="active"
                         >
-                          <a className="nav-link">Merchandise</a>
+                          <a className="nav-link">Mercancías</a>
                         </Link>
                       </li>
                     </ul>
@@ -224,7 +224,7 @@ export default function Navbar() {
                   ) : null}
 
                   <Link href="/contact">
-                    <a className="btn btn-primary">Schedule a Demo</a>
+                    <a className="btn btn-primary">Tienes Dudas?</a>
                   </Link>
                 </div>
               </div>

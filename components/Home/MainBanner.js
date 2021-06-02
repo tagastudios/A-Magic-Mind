@@ -5,23 +5,23 @@ const MainBanner = () => {
   return (
     <div className="startup-banner-inner MainBanner__fix">
       <div className="container">
-        <div className="startup-banner-content">
+        <div className="startup-banner-content letras">
           <h1>
-            World’s Leading <br /> Machine Learning Company
+            Son pequeños <br /> Pero Aprenden a lo Grande!!
           </h1>
           <p>
-            ML today are able to supply needful of help, information, and
-            positive experience of maintaining intimacy with customers.
-            Eventually, chatbot ideas bring a pleasant experience of all these
-            qualities into the conversation.
+            Los niños aprenden mientras juegan, más importante aún, en el juego,
+            los niños aprenden como aprender..! La educación no consiste en
+            ofrecer las cosas ya hechas o dar las respuestas acertadas. Se trata
+            de mostrarles el camino para que con lo aprendido sean ellos los
+            protagonistas de sus propias decisiones y de sus propios errores.
+            Así irán construyendo y desarrollando su personalidad y sus
+            capacidades físicas e intelectuales.
           </p>
 
           <div className="btn-box">
             <Link href="/">
-              <a className="btn btn-primary">Schedule a Demo</a>
-            </Link>
-            <Link href="/">
-              <a className="optional-btn">Get Started Free</a>
+              <a className="btn btn-primary">Tienes una duda?</a>
             </Link>
           </div>
         </div>
