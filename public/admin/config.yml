@@ -1,10 +1,10 @@
 backend:
-  name: git-gateway #test-repo for production & git-gateway for live site
-  branch: master
-  site_url: https://a-magic-mind.netlify.app/
-  display_url: https://a-magic-mind.netlify.app/
-  logo_url: https://a-magic-mind.netlify.app/images/logo.png
-  # locale: "es" # LANGUAGE: ESP
+name: git-gateway #test-repo for production & git-gateway for live site
+branch: master
+site_url: https://a-magic-mind.netlify.app/
+display_url: https://a-magic-mind.netlify.app/
+logo_url: https://a-magic-mind.netlify.app/images/logo.png
+# locale: "es" # LANGUAGE: ESP
 media_folder: public/images/uploads
 public_folder: /images/uploads
 collections:
@@ -16,7 +16,7 @@ collections:
     description: "Entradas de Blog para el sitio web."
     folder: "content/blogs"
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    summary: "{{title}} on {{date}}"
+    summary: "POS: {{title}} ***** DATE: {{date}}"
     create: true
     view_filters:
       - label: Posts Activos
@@ -50,6 +50,7 @@ collections:
           name: "published",
           widget: "boolean",
           default: true,
+          required: true,
         }
       - {
           label: "Imagen de Vista Previa",
@@ -67,12 +68,14 @@ collections:
           search_fields: ["authors.*.name"],
           display_fields: ["authors.*.name"],
           value_field: "authors.*.name",
+          required: true,
         }
       - {
           label: "Body",
           name: "body",
           widget: "markdown",
           hint: "Redacte el contenido del Blog Post aqui.",
+          required: true,
         }
 
   # ***** FAQs INFO ******
@@ -86,8 +89,14 @@ collections:
     summary: "{{title}}"
     create: true
     fields:
-      - { label: "Question", name: "title", widget: "string", tagname: "h1" }
-      - { label: "Answer", name: "body", widget: "markdown" }
+      - {
+          label: "Question",
+          name: "title",
+          widget: "string",
+          tagname: "h1",
+          required: true,
+        }
+      - { label: "Answer", name: "body", widget: "markdown", required: true }
 
   # ***** WEBSITE PAGES INFO *****
 
@@ -105,8 +114,14 @@ collections:
           name: "title",
           widget: "string",
           tagname: "h1",
+          required: true,
         }
-      - { label: "Contenido de la pagina", name: "body", widget: "markdown" }
+      - {
+          label: "Contenido de la pagina",
+          name: "body",
+          widget: "markdown",
+          required: true,
+        }
 
   # ***** WEBSITE PRODUCTS INFO *****
 
@@ -123,6 +138,7 @@ collections:
           label: "Tipo de Producto",
           name: "productType",
           widget: "select",
+          required: true,
           options:
             [
               { label: "Libro", value: "Book" },
@@ -131,15 +147,27 @@ collections:
               { label: "Merchandise", value: "Merchandise" },
             ],
         }
-      - { label: "Titulo", name: "title", widget: "string" }
+      - { label: "Titulo", name: "title", widget: "string", required: true }
       - {
           label: "Precio",
           name: "price",
           widget: "number",
           value_type: "float",
+          required: true,
         }
-      - { label: "Disponibilidad", name: "available", widget: "boolean" }
-      - { label: "Descripcion", name: "body", widget: "markdown" }
+      - {
+          label: "Disponibilidad",
+          name: "available",
+          widget: "boolean",
+          default: true,
+          required: true,
+        }
+      - {
+          label: "Descripcion",
+          name: "body",
+          widget: "markdown",
+          required: true,
+        }
 
   # ***** REVIEWS ******
 
@@ -152,8 +180,14 @@ collections:
     summary: "{{title}}"
     create: true
     fields:
-      - { label: "Highlight", name: "title", widget: "string", tagname: "h2" }
-      - { label: "Review", name: "body", widget: "markdown" }
+      - {
+          label: "Highlight",
+          name: "title",
+          widget: "string",
+          tagname: "h2",
+          required: true,
+        }
+      - { label: "Review", name: "body", widget: "markdown", required: true }
 
   # ***** CORE WEBSITE SETTINGS *****
 
@@ -178,6 +212,7 @@ collections:
                   label: "Name",
                   name: "name",
                   widget: "string",
+                  required: true,
                   hint: "Nombre y Apellido",
                 }
               - {
@@ -200,6 +235,7 @@ collections:
         file: "content/settings/settings.json"
         description: "General Site Settings"
         fields:
+          - { label: "Slogan", name: "slogan", widget: "string" }
           - label: "Blog Settings"
             name: blogs
             widget: "object"
@@ -208,10 +244,16 @@ collections:
                   label: "Numero de Posts en la pagina principal",
                   name: front_limit,
                   widget: number,
+                  required: true,
                   min: 1,
                   max: 9,
                 }
-              - { label: "Autor por defecto", name: author, widget: string }
+              - {
+                  label: "Autor por defecto",
+                  name: author,
+                  widget: string,
+                  required: true,
+                }
               - {
                   label: "Foto Vista Previa por Defecto",
                   name: thumb,
