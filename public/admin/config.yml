@@ -19,23 +19,25 @@ collections:
     summary: "{{title}} on {{year}}/{{month}}/{{day}}"
     create: true
     view_filters:
-      - label: Drafts
-        field: draft
+      - label: Posts Activos
+        field: published
         pattern: true
     view_groups:
       - label: Year
         field: date
         pattern: \d{4}
+      - label: Autor
+        field: author
     fields:
       - {
-          label: "Title",
+          label: "Titulo",
           name: "title",
           widget: "string",
           tagname: "h1",
           required: true,
         }
       - {
-          label: "Publish Date",
+          label: "Fecha del Post",
           name: "date",
           widget: "datetime",
           date_format: "YYYY-MM-DD",
@@ -44,7 +46,13 @@ collections:
           required: true,
         }
       - {
-          label: "Cover Image",
+          label: "Post Activo",
+          name: "published",
+          widget: "boolean",
+          default: true,
+        }
+      - {
+          label: "Imagen de Vista Previa",
           name: "image",
           widget: "image",
           required: true,
