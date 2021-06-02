@@ -381,8 +381,6 @@ Navbar Area CSS
 
 .main-nav {
   background-color: transparent;
-  padding-top: 15px;
-  padding-bottom: 15px;
   padding-right: 20px;
   padding-left: 20px;
 }
@@ -447,7 +445,6 @@ Navbar Area CSS
 }
 
 .main-nav .navbar .navbar-nav .nav-item .dropdown-menu {
-  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
   background: #ffffff;
   position: absolute;
   border: none;
@@ -730,6 +727,8 @@ Navbar Area CSS
   position: absolute;
   left: 0;
   top: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
   width: 100%;
   height: auto;
   z-index: 999;
@@ -741,6 +740,8 @@ Navbar Area CSS
   position: fixed;
   top: 0;
   left: 0;
+  padding-top: 0;
+  padding-bottom: 0;
   width: 100%;
   z-index: 999;
   box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
@@ -751,8 +752,6 @@ Navbar Area CSS
 
 .navbar-area.is-sticky .main-nav {
   background-color: #ffffff;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
 
 .navbar-area.is-sticky .main-nav .navbar .navbar-nav .nav-item a {

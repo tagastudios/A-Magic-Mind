@@ -775,7 +775,6 @@
   }
   .main-nav .navbar .navbar-collapse {
     border-top: 1px solid #eee;
-    padding-top: 8px;
     margin-top: 12px;
     overflow-y: auto;
     max-height: 60vh;
@@ -811,6 +810,7 @@
     display: none;
   }
   .main-nav .navbar .navbar-nav .nav-item .dropdown-menu {
+    box-shadow: 0px 0px 15px 0px rgba(152, 0, 0, 0.1);
     border: 1px solid #eee;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -1759,8 +1759,6 @@
     right: 0;
   }
   .main-nav {
-    padding-top: 12px;
-    padding-bottom: 12px;
     padding-right: 10px;
     padding-left: 10px;
   }

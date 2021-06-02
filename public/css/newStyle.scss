@@ -79,6 +79,33 @@
   height: 100px;
 }
 
+@media only screen and (max-width: 768px) {
+  .active {
+    display: none !important;
+  }
+  .navbar-collapse {
+    background-color: white;
+    padding: 10px 0 30px 0 !important;
+  }
+  .navbar-collapse ul li {
+    margin: 0 20px !important;
+  }
+  .navbar-collapse ul li ul {
+    background-color: #fcfcfc !important;
+    width: 100% !important;
+    height: auto !important;
+    margin-top: -5px !important;
+  }
+  .navbar-collapse ul li a {
+    color: black !important;
+  }
+  .navbar-collapse .others-options a {
+    background-color: $azul !important;
+    color: white !important;
+    margin-left: 0 !important;
+  }
+}
+
 .navbar-nav .nav-item a.active {
   color: #fff !important;
 }
@@ -97,6 +124,12 @@
 
 .nav-item ul {
   background-color: transparent !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav .nav-item ul {
+    background-color: rgba($color: $amarillo, $alpha: 0.5) !important;
+  }
 }
 
 .nav-item ul li {

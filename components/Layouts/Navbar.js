@@ -82,7 +82,7 @@ export default function Navbar() {
               <div className={classOne} id="navbarSupportedContent">
                 <ul className="navbar-nav">
                   <li className="nav-item">
-                    <Link href="/" activeClassName="active">
+                    <Link href="/">
                       <a className="nav-link">Inicio</a>
                     </Link>
                   </li>
@@ -99,38 +99,38 @@ export default function Navbar() {
 
                     <ul className="dropdown-menu">
                       <li className="nav-item">
-                        <Link href="/#" activeClassName="active">
+                        <Link href="/services/playpals">
                           <a className="nav-link">PlayPals</a>
                         </Link>
                       </li>
                       <li className="nav-item">
-                        <Link href="/#" activeClassName="active">
-                          <a className="nav-link">Servivio Personalizado</a>
+                        <Link href="/services/custom">
+                          <a className="nav-link">Servicio Personalizado</a>
                         </Link>
                       </li>
                     </ul>
                   </li>
 
                   <li className="nav-item">
-                    <Link href="/#">
+                    <Link href="/about-us">
                       <a className="nav-link">Nosotros</a>
                     </Link>
                   </li>
 
                   <li className="nav-item">
-                    <Link href="/#" activeClassName="active">
+                    <Link href="/blogs">
                       <a className="nav-link">Blogs</a>
                     </Link>
                   </li>
 
                   <li className="nav-item">
-                    <Link href="/#" activeClassName="active">
+                    <Link href="/contact">
                       <a className="nav-link">Contacto</a>
                     </Link>
                   </li>
 
                   <li className="nav-item">
-                    <Link href="#">
+                    <Link href="/#">
                       <a
                         className="nav-link"
                         onClick={(e) => e.preventDefault()}
@@ -141,25 +141,25 @@ export default function Navbar() {
 
                     <ul className="dropdown-menu">
                       <li className="nav-item">
-                        <Link href="/#" activeClassName="active">
+                        <Link href="/products/books">
                           <a className="nav-link">Libros</a>
                         </Link>
                       </li>
 
                       <li className="nav-item">
-                        <Link href="/#" activeClassName="active">
+                        <Link href="/products/videos">
                           <a className="nav-link">Videos</a>
                         </Link>
                       </li>
 
                       <li className="nav-item">
-                        <Link href="/#" activeClassName="active">
+                        <Link href="/products/toys">
                           <a className="nav-link">Juguetes</a>
                         </Link>
                       </li>
 
                       <li className="nav-item">
-                        <Link href="/#" activeClassName="active">
+                        <Link href="/products/merchandise">
                           <a className="nav-link">Mercancías</a>
                         </Link>
                       </li>
@@ -170,7 +170,7 @@ export default function Navbar() {
                 <div className="others-options">
                   {isProducts ? (
                     <>
-                      <Link href="/#">
+                      <Link href="/cart">
                         <a className="cart-btn">
                           <i className="flaticon-commerce-and-shopping"></i>
                           <span>1</span>
@@ -204,7 +204,7 @@ export default function Navbar() {
                               <input
                                 className="search-input"
                                 name="search"
-                                placeholder="Search"
+                                placeholder="Buscar"
                                 type="text"
                               />
                               <button className="search-button" type="submit">
@@ -217,7 +217,7 @@ export default function Navbar() {
                     </>
                   ) : null}
 
-                  <Link href="/#">
+                  <Link href="/contact">
                     <a className="btn btn-primary">Tienes Dudas?</a>
                   </Link>
                 </div>

@@ -16,7 +16,7 @@ collections:
     description: "Entradas de Blog para el sitio web."
     folder: "content/blogs"
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    summary: "POS: {{title}} ***** DATE: {{date}}"
+    summary: "POST: {{title}} ***** DATE: {{date}}"
     create: true
     view_filters:
       - label: Posts Activos
@@ -177,7 +177,7 @@ collections:
     description: "Reviews o feedback por clientes."
     folder: "content/reviews"
     slug: "{{slug}}"
-    summary: "{{title}}"
+    summary: "{{title}} - {{customer}}"
     create: true
     fields:
       - {
