@@ -16,7 +16,7 @@ collections:
     description: "Entradas de Blog para el sitio web."
     folder: "content/blogs"
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    summary: "{{title}} on {{year}}/{{month}}/{{day}}"
+    summary: "{{title}} on {{date}}"
     create: true
     view_filters:
       - label: Posts Activos
