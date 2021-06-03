@@ -88,6 +88,8 @@
   }
   .navbar-collapse {
     background-color: white;
+    height: 100vh !important;
+    max-height: fit-content !important;
     padding: 10px 0 30px 0 !important;
   }
   .navbar-collapse ul li {
@@ -97,7 +99,8 @@
     background-color: #fcfcfc !important;
     width: 100% !important;
     height: auto !important;
-    margin-top: -5px !important;
+    margin-top: 5px !important;
+    padding-top: 15px !important;
   }
   .navbar-collapse ul li a {
     color: black !important;
