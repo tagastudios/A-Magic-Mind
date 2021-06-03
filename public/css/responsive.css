@@ -761,6 +761,10 @@
   .navbar-area .container {
     padding: 0;
   }
+  .navbar-area padding {
+    top: 0px !important;
+    bottom: 0px !important;
+  }
   .navbar-area .navbar-brand img {
     max-width: 130px;
   }
@@ -775,9 +779,10 @@
   }
   .main-nav .navbar .navbar-collapse {
     border-top: 1px solid #eee;
+    padding-top: 8px;
     margin-top: 12px;
     overflow-y: auto;
-    max-height: 60vh;
+    max-height: 100vh;
   }
   .main-nav .navbar .navbar-collapse::-webkit-scrollbar {
     width: 7px;

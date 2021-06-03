@@ -83,7 +83,9 @@ export default function Navbar() {
                 <ul className="navbar-nav">
                   <li className="nav-item">
                     <Link href="/">
-                      <a className="nav-link">Inicio</a>
+                      <a className="nav-link" onClick={toggleNavbar}>
+                        Inicio
+                      </a>
                     </Link>
                   </li>
 
@@ -100,12 +102,16 @@ export default function Navbar() {
                     <ul className="dropdown-menu">
                       <li className="nav-item">
                         <Link href="/services/playpals">
-                          <a className="nav-link">PlayPals</a>
+                          <a className="nav-link" onClick={toggleNavbar}>
+                            PlayPals
+                          </a>
                         </Link>
                       </li>
                       <li className="nav-item">
                         <Link href="/services/custom">
-                          <a className="nav-link">Servicio Personalizado</a>
+                          <a className="nav-link" onClick={toggleNavbar}>
+                            Servicio Personalizado
+                          </a>
                         </Link>
                       </li>
                     </ul>
@@ -113,19 +119,25 @@ export default function Navbar() {
 
                   <li className="nav-item">
                     <Link href="/about-us">
-                      <a className="nav-link">Nosotros</a>
+                      <a className="nav-link" onClick={toggleNavbar}>
+                        Nosotros
+                      </a>
                     </Link>
                   </li>
 
                   <li className="nav-item">
                     <Link href="/blogs">
-                      <a className="nav-link">Blogs</a>
+                      <a className="nav-link" onClick={toggleNavbar}>
+                        Blogs
+                      </a>
                     </Link>
                   </li>
 
                   <li className="nav-item">
                     <Link href="/contact">
-                      <a className="nav-link">Contacto</a>
+                      <a className="nav-link" onClick={toggleNavbar}>
+                        Contacto
+                      </a>
                     </Link>
                   </li>
 
@@ -142,25 +154,33 @@ export default function Navbar() {
                     <ul className="dropdown-menu">
                       <li className="nav-item">
                         <Link href="/products/books">
-                          <a className="nav-link">Libros</a>
+                          <a className="nav-link" onClick={toggleNavbar}>
+                            Libros
+                          </a>
                         </Link>
                       </li>
 
                       <li className="nav-item">
                         <Link href="/products/videos">
-                          <a className="nav-link">Videos</a>
+                          <a className="nav-link" onClick={toggleNavbar}>
+                            Videos
+                          </a>
                         </Link>
                       </li>
 
                       <li className="nav-item">
                         <Link href="/products/toys">
-                          <a className="nav-link">Juguetes</a>
+                          <a className="nav-link" onClick={toggleNavbar}>
+                            Juguetes
+                          </a>
                         </Link>
                       </li>
 
                       <li className="nav-item">
                         <Link href="/products/merchandise">
-                          <a className="nav-link">Mercancías</a>
+                          <a className="nav-link" onClick={toggleNavbar}>
+                            Mercancías
+                          </a>
                         </Link>
                       </li>
                     </ul>
@@ -171,7 +191,7 @@ export default function Navbar() {
                   {isProducts ? (
                     <>
                       <Link href="/cart">
-                        <a className="cart-btn">
+                        <a className="cart-btn" onClick={toggleNavbar}>
                           <i className="flaticon-commerce-and-shopping"></i>
                           <span>1</span>
                         </a>
@@ -218,7 +238,9 @@ export default function Navbar() {
                   ) : null}
 
                   <Link href="/contact">
-                    <a className="btn btn-primary">Tienes Dudas?</a>
+                    <a className="btn btn-primary" onClick={toggleNavbar}>
+                      Tienes Dudas?
+                    </a>
                   </Link>
                 </div>
               </div>

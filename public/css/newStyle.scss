@@ -82,36 +82,6 @@
   height: 100px;
 }
 
-@media only screen and (max-width: 767px) {
-  .active {
-    display: none !important;
-  }
-  .navbar-collapse {
-    background-color: white;
-    height: 100vh !important;
-    max-height: fit-content !important;
-    padding: 10px 0 30px 0 !important;
-  }
-  .navbar-collapse ul li {
-    margin: 0 20px !important;
-  }
-  .navbar-collapse ul li ul {
-    background-color: #fcfcfc !important;
-    width: 100% !important;
-    height: auto !important;
-    margin-top: 5px !important;
-    padding-top: 15px !important;
-  }
-  .navbar-collapse ul li a {
-    color: black !important;
-  }
-  .navbar-collapse .others-options a {
-    background-color: $azul !important;
-    color: white !important;
-    margin-left: 0 !important;
-  }
-}
-
 .navbar-nav .nav-item a.active {
   color: #fff !important;
 }
@@ -130,12 +100,6 @@
 
 .nav-item ul {
   background-color: transparent !important;
-}
-
-@media only screen and (max-width: 767px) {
-  .nav .nav-item ul {
-    background-color: rgba($color: $amarillo, $alpha: 0.5) !important;
-  }
 }
 
 .nav-item ul li {
@@ -225,4 +189,94 @@
 
 .newsletter-form {
   margin-left: 0 !important;
+}
+
+.navbar button {
+  background-color: transparent !important;
+}
+
+////////////////////////////////////
+// MOBILE
+// MOBILE
+// MOBILE
+// MOBILE
+// MOBILE
+// MOBILE
+// MOBILE
+// MOBILE
+// MOBILE
+// MOBILE
+// MOBILE
+// MOBILE
+// MOBILE
+// MOBILE
+// MOBILE
+// MOBILE
+// MOBILE
+// MOBILE
+// MOBILE
+// MOBILE
+// MOBILE
+// MOBILE
+// MOBILE
+// MOBILE
+////////////////////////////////////
+
+@media only screen and (max-width: 767px) {
+  .active {
+    display: none !important;
+  }
+  .navbar-collapse {
+    // background-color: white;
+    height: 110vh !important;
+    max-height: fit-content !important;
+    min-height: 100vh !important;
+    padding: 10px 0 30px 0 !important;
+    overflow-y: auto !important;
+  }
+  .navbar-collapse ul li {
+    margin: 0 20px !important;
+  }
+  .navbar-collapse ul li ul {
+    background-color: #fcfcfc !important;
+    width: 100% !important;
+    height: auto !important;
+    margin-top: 5px !important;
+    padding-top: 10px !important;
+  }
+  .navbar-collapse ul li a {
+    color: black !important;
+  }
+
+  .navbar-collapse ul li ul li {
+    margin-top: 15px !important;
+    margin-bottom: 10px !important;
+  }
+
+  .navbar-collapse .others-options a {
+    background-color: $azul !important;
+    color: white !important;
+    margin-left: 0 !important;
+  }
+
+  .navbar-area {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
+
+  .nav .nav-item ul {
+    background-color: rgba($color: $amarillo, $alpha: 0.5) !important;
+  }
+  .nav-item ul li a {
+    background-color: white !important;
+    border: 2px solid $rojo;
+  }
+  .nav-item:hover a {
+    color: black !important;
+  }
+  .dropdown-menu {
+    box-shadow: none !important;
+    border: none !important;
+    border-radius: 50px !important;
+  }
 }

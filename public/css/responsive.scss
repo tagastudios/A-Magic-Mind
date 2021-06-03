@@ -1054,6 +1054,10 @@ $value_seven: 1550px;
     .container {
       padding: 0;
     }
+    padding {
+      top: 0px !important;
+      bottom: 0px !important;
+    }
     .navbar-brand {
       img {
         max-width: 130px;
@@ -1075,10 +1079,10 @@ $value_seven: 1550px;
     .navbar {
       .navbar-collapse {
         border-top: 1px solid #eee;
-        // padding-top: 8px;
+        padding-top: 8px;
         margin-top: 12px;
         overflow-y: auto;
-        max-height: 60vh;
+        max-height: 100vh;
 
         &::-webkit-scrollbar {
           width: 7px;
