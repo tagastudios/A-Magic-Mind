@@ -57,14 +57,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .MainBanner__fix::before {
   position: absolute;
   content: "";
   height: 100vh;
-  width: 100vw;
+  width: 100%;
+  left: 0;
   background: $gradiant1;
+  overflow: hidden;
 }
 .letras {
   z-index: 1000;
@@ -79,7 +82,7 @@
   height: 100px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .active {
     display: none !important;
   }
@@ -126,7 +129,7 @@
   background-color: transparent !important;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .nav .nav-item ul {
     background-color: rgba($color: $amarillo, $alpha: 0.5) !important;
   }
@@ -178,16 +181,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .MainBanner__fix2::before {
   position: absolute;
   content: "";
-  height: 80vh;
-  width: 100vw;
-  background: $gradiant1;
+  height: 81vh;
+  width: 100%;
+  background: $gradiant2;
   top: 0;
   left: 0;
+  overflow: hidden;
 }
 
 .letras2 {

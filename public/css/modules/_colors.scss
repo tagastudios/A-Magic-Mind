@@ -15,3 +15,9 @@ $gradiant1: linear-gradient(
   rgba(rgb(222, 228, 140), 0.9) 10%,
   rgba($morado, 0.7) 100%
 );
+
+$gradiant2: linear-gradient(
+  180deg,
+  rgba($morado, 0.5) 50%,
+  rgba(white, 1) 100%
+);
