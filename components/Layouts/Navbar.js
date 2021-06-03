@@ -45,7 +45,10 @@ export default function Navbar() {
 
   return (
     <>
-      <div id="navbar" className="navbar-area">
+      <div
+        id="navbar"
+        className={`navbar-area ${collapsed ? "" : "white-nav"}`}
+      >
         <div className="main-nav">
           <div className="container-fluid">
             <nav className="navbar navbar-expand-md navbar-light">

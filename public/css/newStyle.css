@@ -144,6 +144,15 @@
   background-color: transparent !important;
 }
 
+.navbar-area {
+  background-color: transparent !important;
+}
+
+.white-nav {
+  background-color: #fff !important;
+  transition: 0s;
+}
+
 @media only screen and (max-width: 767px) {
   .active {
     display: none !important;
