@@ -18,20 +18,20 @@ function Books() {
             <div className="row align-items-center">
               <div className="col-lg-8 col-md-7 col-sm-6">
                 <div className="woocommerce-result-count">
-                  <p>Showing 1-8 of 14 results</p>
+                  <p>Mostrando 1-8 de 14 resultados</p>
                 </div>
               </div>
 
               <div className="col-lg-4 col-md-5 col-sm-6">
                 <div className="woocommerce-topbar-ordering">
                   <select className="form-select">
-                    <option value="1">Default sorting</option>
-                    <option value="2">Sort by popularity</option>
-                    <option value="0">Sort by average rating</option>
-                    <option value="3">Sort by latest</option>
-                    <option value="4">Sort by price: low to high</option>
-                    <option value="5">Sort by price: high to low</option>
-                    <option value="6">Sort by new</option>
+                    <option value="1">Clasificación por defecto</option>
+                    <option value="2">Clasificar por popularidad</option>
+                    <option value="0">Clasificar por calificación media</option>
+                    <option value="3">Ultimo visto</option>
+                    <option value="4">Clasificar por precio: bajo</option>
+                    <option value="5">Clasificar por precio: alto</option>
+                    <option value="6">Articulos nuevos</option>
                   </select>
                 </div>
               </div>
@@ -48,13 +48,13 @@ function Books() {
                   </a>
 
                   <a href="#" className="add-to-cart-btn">
-                    Add To Cart <i className="fas fa-cart-plus"></i>
+                    Agregar al carrito <i className="fas fa-cart-plus"></i>
                   </a>
                 </div>
 
                 <div className="product-content">
                   <h3>
-                    <a href="#">White Book</a>
+                    <a href="#">Magic Libros</a>
                   </h3>
                   <div className="price">
                     <span className="new">$8.50</span>
@@ -80,15 +80,15 @@ function Books() {
                   </a>
 
                   <a href="#" className="add-to-cart-btn">
-                    Add To Cart <i className="fas fa-cart-plus"></i>
+                    Agregar al carrito <i className="fas fa-cart-plus"></i>
                   </a>
 
-                  <div className="sale-btn">Sale!</div>
+                  <div className="sale-btn">Oferta!</div>
                 </div>
 
                 <div className="product-content">
                   <h3>
-                    <a href="#">Red Side Book</a>
+                    <a href="#">MagicLibro</a>
                   </h3>
                   <div className="price">
                     <span className="new">$12.50</span>
@@ -114,13 +114,13 @@ function Books() {
                   </a>
 
                   <a href="#" className="add-to-cart-btn">
-                    Add To Cart <i className="fas fa-cart-plus"></i>
+                    Agregar al carrito <i className="fas fa-cart-plus"></i>
                   </a>
                 </div>
 
                 <div className="product-content">
                   <h3>
-                    <a href="#">Book With Pen</a>
+                    <a href="#">MagicLibro</a>
                   </h3>
                   <div className="price">
                     <span className="new">$8.50</span>
@@ -146,13 +146,13 @@ function Books() {
                   </a>
 
                   <a href="#" className="add-to-cart-btn">
-                    Add To Cart <i className="fas fa-cart-plus"></i>
+                    Agregar al carrito <i className="fas fa-cart-plus"></i>
                   </a>
                 </div>
 
                 <div className="product-content">
                   <h3>
-                    <a href="#">Drop Side Book</a>
+                    <a href="#">MagicLibros</a>
                   </h3>
                   <div className="price">
                     <span className="new">$7.50</span>
@@ -178,13 +178,13 @@ function Books() {
                   </a>
 
                   <a href="#" className="add-to-cart-btn">
-                    Add To Cart <i className="fas fa-cart-plus"></i>
+                    Agregar al carrito <i className="fas fa-cart-plus"></i>
                   </a>
                 </div>
 
                 <div className="product-content">
                   <h3>
-                    <a href="#">Color Book</a>
+                    <a href="#">MagicLibros</a>
                   </h3>
                   <div className="price">
                     <span className="new">$10.50</span>
@@ -209,13 +209,13 @@ function Books() {
                   </a>
 
                   <a href="#" className="add-to-cart-btn">
-                    Add To Cart <i className="fas fa-cart-plus"></i>
+                    Agregar al carrito <i className="fas fa-cart-plus"></i>
                   </a>
                 </div>
 
                 <div className="product-content">
                   <h3>
-                    <a href="#">Last Book</a>
+                    <a href="#">Magic Liubros ultimo </a>
                   </h3>
                   <div className="price">
                     <span className="new">$15.00</span>

@@ -1,19 +1,19 @@
 import React from "react";
+import About from "../components/About/About";
+import PageBanner from "../components/Common/PageBanner";
 
 function AboutUs() {
   return (
-    <div
-      style={{
-        backgroundColor: "black",
-        height: "100vh",
-        width: "100vw",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <h1 style={{ color: "white" }}>About Us</h1>
-    </div>
+    <>
+      <PageBanner
+        pageTitle="Contacto"
+        homePageUrl="/"
+        homePageText="Home"
+        activePageText="Contact"
+        bgImgClass="item-bg3"
+      />
+      <About />
+    </>
   );
 }
 
