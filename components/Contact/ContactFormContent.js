@@ -7,11 +7,11 @@ function ContactFormContent() {
     <section className="contact-area ptb-110">
       <div className="container">
         <div className="section-title">
-          <span>Message Us</span>
-          <h2>Drop us Message for any Query</h2>
+          <span>Contáctanos</span>
+          <h2>Envíanos un mensaje y responderes cualquier inquietud</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            No dudes consultarnos cualquier duda o sugerencia que tengas para
+            nosotros..
           </p>
         </div>
 
@@ -32,11 +32,11 @@ function ContactFormContent() {
         {/* Contact info */}
         <div className="contact-info">
           <div className="contact-info-content">
-            <h3>Contact us by Phone Number or Email Address</h3>
+            <h3>Contáctanos</h3>
             <h2>
-              <span className="number">+088 130 629 8615</span>
-              <span className="or">OR</span>
-              <span className="email">hello@bariton.com</span>
+              <span className="number">+7863012529</span>
+              <span className="or">O</span>
+              <span className="email">amagicmind.us@gmail.com</span>
             </h2>
 
             <ul className="social">

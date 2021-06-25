@@ -6,21 +6,26 @@ function ServiceDetailsContent() {
       <div className="container">
         <div className="services-details-overview">
           <div className="services-details-desc mb-30">
-            <h3>Incredible Infrastructure</h3>
+            <h3>Playpals</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo.
+              Nuestras Playpals se van a convertir en el "mejor amigo de tu
+              hijo". En Magic Mind estamos conscientes de todo lo que conlleva
+              ser Padre y sabemos que siempre tu prioridad es que tus pequeños
+              tengan lo mejor.Buena parte de madres y padres trabajan fuera de
+              casa. Por lo que vuelven al final de la tarde y en la noche a sus
+              hogares. A veces sus hijos pueden tener dificultades para realizar
+              sus trabajos solos, es decir sin supervisión o sin ayuda de
+              adultos. Magic Mind y sus Playpals son la solución a eso!
             </p>
 
             <p>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inventore veritatis et quasi architecto beatae vitae
-              dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-              aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
-              eos qui ratione voluptatem sequi nesciunt.
+              Los niños a veces no captan las metodologías de los profesores en
+              diferentes materias del colegio. Por ello es recomendable que
+              recurran a acompañamientos educacionales que les permitan no tener
+              'vacíos' que luego son más difíciles de superar. Con nuestras
+              playpals tus hijos podrán disfrutar de actividades y metodologías
+              diferentes, les enseñarán por medio de otros caminos para llegar
+              al mismo resultado. Aprende nunca será tan divertido!!
             </p>
           </div>
 
@@ -41,28 +46,29 @@ function ServiceDetailsContent() {
           </div>
 
           <div className="services-details-desc">
-            <h3>Working Process</h3>
+            <h3>Nuestra metodología</h3>
             <p>
-              There are many variations of passages of Lorem Ipsum available,
-              but the majority have suffered alteration in some form, by
-              injected humour, or randomised words which don't look even
-              slightly believable.
+              Implementamos herramientas pedagógicas que además de fortalecer el
+              aprendizaje, motiva e inspira a tus hijo en su proceso de
+              aprendizaje de cualquier ámbito.
             </p>
 
             <ul>
               <li>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Las playpals analizan los aspectos en los cuales tus niños
+                necesitan apoyo y con herramientas y técnicas emplean diversas
+                actividades para lograr alcanzar los objetivos solicitados por
+                ti.
               </li>
               <li>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                quae ab illo.
+                Tus hijos van a sentirse libres y motivados, vamos a trabajar en
+                la construcción de objetivos y metas a través de los juegos.
               </li>
               <li>
-                But I must explain to you how all this mistaken idea of
-                denouncing pleasure and praising pain was born and I will give
-                you a complete.
+                Nuestras técnicas promueven un mayor nivel de compromiso
+                académico y sobre todo por la metodología utilizada, si el niño
+                siente que no está estudiando, sino jugando, su compromiso será
+                mayor!
               </li>
             </ul>
           </div>

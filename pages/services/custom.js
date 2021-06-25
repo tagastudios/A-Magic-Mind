@@ -1,6 +1,6 @@
 import React from "react";
 import PageBanner from "../../components/Common/PageBanner";
-import ServiceDetailsContent from "../../components/Services/ServiceDetailsContent";
+import ServiceDetailsContent from "../../components/Services/ServiceDetailsContent1";
 
 function Custom() {
   return (

@@ -6,7 +6,7 @@ function Contact() {
   return (
     <>
       <PageBanner
-        pageTitle="Contact"
+        pageTitle="Contacto"
         homePageUrl="/"
         homePageText="Home"
         activePageText="Contact"
