@@ -199,11 +199,6 @@
   background-color: transparent !important;
 }
 
-.white-nav {
-  background-color: #fff !important;
-  transition: 0s;
-}
-
 ////////////////////////////////////
 // MOBILE
 // MOBILE
@@ -287,5 +282,10 @@
     box-shadow: none !important;
     border: none !important;
     border-radius: 50px !important;
+  }
+
+  .white-nav {
+    background-color: #fff !important;
+    transition: 0s;
   }
 }

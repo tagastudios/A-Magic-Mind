@@ -148,11 +148,6 @@
   background-color: transparent !important;
 }
 
-.white-nav {
-  background-color: #fff !important;
-  transition: 0s;
-}
-
 @media only screen and (max-width: 767px) {
   .active {
     display: none !important;
@@ -204,6 +199,10 @@
     box-shadow: none !important;
     border: none !important;
     border-radius: 50px !important;
+  }
+  .white-nav {
+    background-color: #fff !important;
+    transition: 0s;
   }
 }
 /*# sourceMappingURL=newStyle.css.map */
