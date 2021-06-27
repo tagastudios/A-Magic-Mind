@@ -33,15 +33,15 @@ class FeedbackSlider extends Component {
   render() {
     return (
       <div className="feedback-area">
-        <div className="container-flauid p-0">
+        <div className="container-fluid p-0">
           {this.state.display ? (
             <OwlCarousel
               className="feedback-slides owl-carousel owl-theme"
               {...options}
             >
-              <div className="row m-0">
+              <div className="row m-0 testimonials-fix">
                 <div className="col-lg-6 col-md-12 p-0">
-                  <div className="feedback-item">
+                  <div className="feedback-item testimonials-fix">
                     <p>
                       Las maestras y el personal administrativo es muy
                       profesional y atento. A mi hijo le encanta y siempre está
@@ -67,18 +67,16 @@ class FeedbackSlider extends Component {
                 </div>
               </div>
 
-              <div className="row m-0">
+              <div className="row m-0 testimonials-fix">
                 <div className="col-lg-6 col-md-12 p-0">
-                  <div className="feedback-item">
+                  <div className="feedback-item testimonials-fix">
                     <p>
                       Mi hija ingresó desde los 2 años. Como madre primeriza
                       sentí muchísimo miedo de dejarla tan pequeña con personas
                       que no conocía! Hoy después de casi un año puedo compartir
-                      con ustedes mi sentimiento de felicidad cada vez q veo a
+                      con ustedes mi sentimiento de felicidad cada vez que veo a
                       mi hija sonriente, bajo un conocimiento cuidado y cariño
-                      excepcional, recomiendo MagicMind con los ojos cerrados,
-                      el personal en general es increíblemente amoroso con todos
-                      los niños!
+                      excepcional, recomiendo MagicMind con los ojos cerrados!
                     </p>
 
                     <div className="client-info">
@@ -99,12 +97,13 @@ class FeedbackSlider extends Component {
                 </div>
               </div>
 
-              <div className="row m-0">
+              <div className="row m-0 testimonials-fix">
                 <div className="col-lg-6 col-md-12 p-0">
-                  <div className="feedback-item">
+                  <div className="feedback-item testimonials-fix">
                     <p>
                       ¡Gran escuela, por favor! Los profesores son increíbles,
-                      todos lo son, a mi hija le encanta.
+                      todos lo son, a mi hija le encanta y la enseñanza es otro
+                      nivel.
                     </p>
 
                     <div className="client-info">

@@ -19,12 +19,13 @@ export default function Home() {
       <MainServices />
       <WhyChooseUs />
       <ProfessionalSolutions />
-      <FunFacts />
-      <Projects />
       <Webinar />
+      <FunFacts />
+
+      <Projects />
       <Testimonials />
       <BlogPost />
-      <PricingPlan />
+      {/* <PricingPlan /> */}
       <FreeTrialForm />
       <PartnerSlide />
     </>

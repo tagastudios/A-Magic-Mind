@@ -104,24 +104,32 @@ collections:
     label: "Pages"
     label_singular: "Page"
     description: "Contenido de dinamico de paginas dentro del sitio web"
-    folder: "content/pages"
-    slug: "{{slug}}"
-    summary: "{{title}}"
-    create: true
-    fields:
-      - {
-          label: "Titulo de la pagina",
-          name: "title",
-          widget: "string",
-          tagname: "h1",
-          required: true,
-        }
-      - {
-          label: "Contenido de la pagina",
-          name: "body",
-          widget: "markdown",
-          required: true,
-        }
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: "home"
+        label: "Inicio"
+        file: "content/pages/home.json"
+        description: "Contenido en la pagina de home."
+        fields:
+          - {
+              label: "Texto Principal",
+              name: "highlight_text",
+              widget: "string",
+            }
+          - { label: "Servicios", name: "services", widget: "string" }
+          - { label: "Porque A Magic Mind", name: "whyus", widget: "string" }
+          - { label: "Frase", name: "quote", widget: "string" }
+          - {
+              label: "Video Principal",
+              name: "highlight_video",
+              widget: "string",
+            }
+          - { label: "Call To Action #1", name: "CTA1", widget: "string" }
+          - { label: "Playpals Galeria", name: "gallery", widget: "string" }
+          - { label: "Call TO Action #2", name: "CTA2", widget: "string" }
+          - { label: "Nuestros Socios", name: "partners", widget: "string" }
 
   # ***** WEBSITE PRODUCTS INFO *****
 

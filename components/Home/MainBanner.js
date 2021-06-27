@@ -6,7 +6,7 @@ const MainBanner = () => {
   return (
     <div className="startup-banner-inner MainBanner__fix">
       <div className="container">
-        <div className="startup-banner-content letras">
+        <div className="startup-banner-content letras-title">
           <h1>{slogan}!!</h1>
           <p className="main-banner-text">
             Los niños aprenden mientras juegan, más importante aún, en el juego,

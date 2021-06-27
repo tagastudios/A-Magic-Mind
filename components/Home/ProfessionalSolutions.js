@@ -5,7 +5,7 @@ const ProfessionalSolutions = () => {
   return (
     <div className="solutions-area ptb-110 MainBanner__fix2">
       <div className="container">
-        <div className="section-title letras ">
+        <div className="section-title letras">
           <p className="letras2">
             {" "}
             "Los niños cuando llegan al mundo son lienzos en blanco y se
