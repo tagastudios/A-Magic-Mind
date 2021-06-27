@@ -14,9 +14,9 @@ class Webinar extends Component {
     return (
       <>
         <section className="webinar-area">
-          <div className="row m-0">
+          <div className="row m-0 mt-5">
             <div className="col-lg-6 p-0">
-              <div className="webinar-content">
+              <div className="webinar-content center-align">
                 <h2>Nuestros videos</h2>
                 <p>Vive la experiencia junto a tus hijos</p>
 
@@ -27,7 +27,7 @@ class Webinar extends Component {
             </div>
 
             <div className="col-lg-6 p-0">
-              <div className="webinar-video-image">
+              <div className="webinar-video-image video-gradiant-cover">
                 <img src="/images/woman.jpg" alt="image" />
 
                 <div

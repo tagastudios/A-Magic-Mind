@@ -69,9 +69,45 @@
   background: $gradiant1;
   overflow: hidden;
 }
+.letras-title {
+  z-index: 1000;
+  position: relative;
+  background-color: rgba($color: white, $alpha: 0.15);
+  padding: 2rem;
+  border-radius: 50px;
+  box-shadow: $naranja 0px 0px 2px 0px;
+
+  h1 {
+    color: $morado !important;
+    text-shadow: #2a2a2a 2px 2px 0px;
+  }
+  p {
+    color: #fff !important;
+    text-shadow: #333 1px 1px 1px;
+  }
+}
 .letras {
   z-index: 1000;
   position: relative;
+  background-color: rgba($color: white, $alpha: 0.2);
+  padding: 2rem;
+  border-radius: 100%;
+  height: 70vw;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+
+  h1 {
+    color: $morado !important;
+    text-shadow: #2a2a2a 2px 2px 0px;
+  }
+  p {
+    color: #fff !important;
+    text-shadow: #333 1px 1px 1px;
+  }
 }
 
 .main-logo {
@@ -163,7 +199,8 @@
 }
 
 .letras2 {
-  color: #000 !important;
+  color: #fafafa !important;
+  text-shadow: #2a2a2a 2px 2px 0px;
   font-family: "Dosis", sans-serif;
   font-weight: 700;
   font-size: 1.4rem;
@@ -187,10 +224,6 @@
   align-items: flex-end;
 }
 
-.newsletter-form {
-  margin-left: 0 !important;
-}
-
 .navbar button {
   background-color: transparent !important;
 }
@@ -199,6 +232,32 @@
   background-color: transparent !important;
 }
 
+<<<<<<< HEAD
+=======
+.testimonials-fix {
+  height: 450px;
+}
+
+.video-gradiant-cover {
+  position: relative;
+}
+.video-gradiant-cover::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1000;
+  background: rgb(251, 251, 251);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0) 50%,
+    rgba(251, 251, 251, 1) 95%
+  );
+}
+
+>>>>>>> feature1
 ////////////////////////////////////
 // MOBILE
 // MOBILE
@@ -283,9 +342,43 @@
     border: none !important;
     border-radius: 50px !important;
   }
+<<<<<<< HEAD
 
+=======
+>>>>>>> feature1
   .white-nav {
     background-color: #fff !important;
     transition: 0s;
   }
+<<<<<<< HEAD
+=======
+  .letras-title {
+    border-radius: 100%;
+    height: 70vw;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-height: 70vh;
+    max-width: 70vh;
+    h1 {
+      font-size: 42px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+  .nav-shadow {
+    -webkit-filter: drop-shadow(5px 5px 5px #fafafa);
+    filter: drop-shadow(1px 1px 0px black);
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .center-align {
+    text-align: center;
+  }
+>>>>>>> feature1
 }
