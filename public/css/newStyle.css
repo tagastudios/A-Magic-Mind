@@ -184,8 +184,6 @@
   background-color: transparent !important;
 }
 
-<<<<<<< HEAD
-=======
 .testimonials-fix {
   height: 450px;
 }
@@ -206,7 +204,6 @@
   background: linear-gradient(0deg, rgba(255, 255, 255, 0) 50%, #fbfbfb 95%);
 }
 
->>>>>>> feature1
 @media only screen and (max-width: 767px) {
   .active {
     display: none !important;
@@ -263,8 +260,6 @@
     background-color: #fff !important;
     transition: 0s;
   }
-<<<<<<< HEAD
-=======
   .letras-title {
     border-radius: 100%;
     height: 70vw;
@@ -292,6 +287,5 @@
   .center-align {
     text-align: center;
   }
->>>>>>> feature1
 }
 /*# sourceMappingURL=newStyle.css.map */
