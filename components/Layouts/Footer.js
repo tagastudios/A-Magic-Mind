@@ -24,28 +24,22 @@ function Footer() {
 
               <ul className="social">
                 <li>
-                  <Link href="/#">
+                  <Link href="https://m.facebook.com/A-Magic-Mind-108413051350515/">
                     <a target="_blank">
                       <i className="flaticon-facebook-letter-logo"></i>
                     </a>
                   </Link>
                 </li>
+
                 <li>
-                  <Link href="/#">
-                    <a target="_blank">
-                      <i className="flaticon-twitter"></i>
-                    </a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/#">
+                  <Link href="https://instagram.com/amagicmindus?utm_medium=copy_link">
                     <a target="_blank">
                       <i className="flaticon-instagram-logo"></i>
                     </a>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/#">
+                  <Link href="https://www.youtube.com/">
                     <a target="_blank">
                       <i className="flaticon-youtube-play-button"></i>
                     </a>
@@ -61,33 +55,33 @@ function Footer() {
 
               <ul className="footer-services-list">
                 <li>
-                  <Link href="/service-details">
+                  <Link href="/services/playpals/">
                     <a>PlayPals</a>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/service-details">
+                  <Link href="/services/custom/">
                     <a>Servicios Personalizados</a>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/service-details">
+                  <Link href="/products/books/">
                     <a>Libros</a>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/service-details">
+                  <Link href="/products/videos/">
                     <a>Videos</a>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/service-details">
+                  <Link href="/products/toys/">
                     <a>Juguetes</a>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/service-details">
-                    <a>Merchandise</a>
+                  <Link href="/products/merchandise/">
+                    <a>Mercancía</a>
                   </Link>
                 </li>
               </ul>
@@ -100,28 +94,18 @@ function Footer() {
 
               <ul className="quick-links-list">
                 <li>
-                  <Link href="/about">
+                  <Link href="/about-us/">
                     <a>Nosotros</a>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/blog">
+                  <Link href="/blogs/">
                     <a>Blogs</a>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/contact">
+                  <Link href="/contact/">
                     <a>Contactános</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/services">
-                    <a>Servicios</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/pricing">
-                    <a>Planes</a>
                   </Link>
                 </li>
               </ul>
