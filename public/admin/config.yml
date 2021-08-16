@@ -118,6 +118,7 @@ collections:
               name: "highlight_text",
               widget: "string",
             }
+
           - { label: "Servicios", name: "services", widget: "string" }
           - { label: "Porque A Magic Mind", name: "whyus", widget: "string" }
           - { label: "Frase", name: "quote", widget: "string" }

@@ -16,16 +16,32 @@ import GoTop from "../components/Shared/GoTop";
 import NavBar from "../components/Layouts/Navbar";
 import Footer from "../components/Layouts/Footer";
 
+import { BlogProvider } from "../components/Context/BlogProvider";
+
 function MyApp({ Component, pageProps }) {
   // Preloader
   const [loading, setLoading] = useState(true);
 
+  // Blog Data
+  function updateBlogData() {
+    console.log("Loading blogs..");
+    const importAll = (r) => r.keys().map(r);
+    return importAll(require.context("../content/blogs", false, /\.md$/))
+      .sort()
+      .reverse();
+  }
+
+  // Blog State
+  const [blogData, setBlogData] = useState(updateBlogData);
+
   useEffect(() => {
-    const timerHandle = setTimeout(() => setLoading(false), 2000);
+    const timerHandle = setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+
     return () => {
       if (timerHandle) {
         clearTimeout(timerHandle);
-        timerHandle = 0;
       }
     };
   }, []);
@@ -41,7 +57,9 @@ function MyApp({ Component, pageProps }) {
       </Head>
 
       <NavBar />
-      <Component {...pageProps} />
+      <BlogProvider value={blogData}>
+        <Component {...pageProps} />
+      </BlogProvider>
       <Footer />
 
       {/* Preloader */}

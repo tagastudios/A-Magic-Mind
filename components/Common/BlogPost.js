@@ -1,8 +1,11 @@
 import React from "react";
 import Link from "next/link";
+import { homeBlogContext } from "../Context/BlogProvider";
+import { blogs as defaultBlog } from "../../content/settings/settings.json";
+import parseMarkdown from "front-matter-markdown";
 
 function BlogPost() {
-  const linkBlog = "/#";
+  const blogs = homeBlogContext();
 
   return (
     <section className="blog-area ptb-110">
@@ -13,151 +16,58 @@ function BlogPost() {
         </div>
 
         <div className="row">
-          <div className="col-lg-4 col-md-6">
-            <div className="single-blog-post">
-              <div className="entry-thumbnail">
-                <Link href={linkBlog}>
-                  <a>
-                    <img src="/images/blog/blog1.jpg" alt="image" />
-                  </a>
-                </Link>
-              </div>
+          {blogs.map((blog, index) => {
+            const { author, date, image, title, slug } = blog.attributes;
+            console.log(blog.react);
+            const img = image.replace(
+              "https://a-magic-mind.netlify.app" ||
+                "https://amagicmindus.com" ||
+                "https://www.amagicmindus.com" ||
+                "amagicmindus.com" ||
+                "www.amagicmindus.com",
+              ""
+            );
+            return (
+              <div className="col-lg-4 col-md-6" key={index}>
+                <div className="single-blog-post">
+                  <div className="entry-thumbnail">
+                    <Link href={slug || "#"}>
+                      <a>
+                        <img src={img} alt={title} />
+                      </a>
+                    </Link>
+                  </div>
 
-              <div className="entry-post-content">
-                <div className="entry-meta">
-                  <ul>
-                    <li>
-                      <Link href="/#">
-                        <a>Admin</a>
+                  <div className="entry-post-content">
+                    <div className="entry-meta">
+                      <ul>
+                        <li>
+                          <Link href={slug || "#"}>
+                            <a>{author || defaultBlog.author}</a>
+                          </Link>
+                        </li>
+                        <li>{date}</li>
+                      </ul>
+                    </div>
+
+                    <h3>
+                      <Link href={slug || "#"}>
+                        <a>{title}</a>
                       </Link>
-                    </li>
-                    <li>10 Marzo, 2020</li>
-                  </ul>
+                    </h3>
+
+                    <h2>{}</h2>
+
+                    <Link href={slug || "#"}>
+                      <a className="learn-more-btn">
+                        Leer más.. <i className="flaticon-add"></i>
+                      </a>
+                    </Link>
+                  </div>
                 </div>
-
-                <h3>
-                  <Link href={linkBlog}>
-                    <a>
-                      Descubre 5 estrategias para que tu hijo recupere la
-                      motivación
-                    </a>
-                  </Link>
-                </h3>
-
-                <p>
-                  Si detectas que tu hijo está pasando por una situación de
-                  desmotivación escolar, actúa rápido. Busca ayuda externa a
-                  través de profesionales expertos en niños y adolescentes. Si
-                  lo dejas pasar, no le das importancia o piensas que tu hijo va
-                  a ser capaz de superar esta situación solo, el problema se
-                  agravará y afectará a otras áreas de su vida....
-                </p>
-
-                <Link href={linkBlog}>
-                  <a className="learn-more-btn">
-                    Leer más.. <i className="flaticon-add"></i>
-                  </a>
-                </Link>
               </div>
-            </div>
-          </div>
-
-          <div className="col-lg-4 col-md-6">
-            <div className="single-blog-post">
-              <div className="entry-thumbnail">
-                <Link href={linkBlog}>
-                  <a>
-                    <img src="/images/blog/blog2.jpg" alt="image" />
-                  </a>
-                </Link>
-              </div>
-
-              <div className="entry-post-content">
-                <div className="entry-meta">
-                  <ul>
-                    <li>
-                      <Link href="/#">
-                        <a>Admin</a>
-                      </Link>
-                    </li>
-                    <li>11 Marzo, 2020</li>
-                  </ul>
-                </div>
-
-                <h3>
-                  <Link href={linkBlog}>
-                    <a>
-                      Mi hija es solitaria pero no hace nada para cambiarlo.
-                      ¿Debería forzarla a hacer planes y participar en
-                      actividades grupales?
-                    </a>
-                  </Link>
-                </h3>
-                <p>
-                  Pocas cosas perturban más que ver a su hijo quedarse solo
-                  después de clases mientras que los demás se han ido a jugar
-                  con sus amigos. O descubrir que su hijo almuerza solo en la
-                  escuela. O ver a su adolescente malhumorado en la casa durante
-                  los fines de semana porque no tiene nadie con quien salir....
-                </p>
-
-                <Link href={linkBlog}>
-                  <a className="learn-more-btn">
-                    Leer más... <i className="flaticon-add"></i>
-                  </a>
-                </Link>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-lg-4 col-md-6 offset-md-3 offset-lg-0">
-            <div className="single-blog-post">
-              <div className="entry-thumbnail">
-                <Link href={linkBlog}>
-                  <a>
-                    <img src="/images/blog/blog3.jpg" alt="image" />
-                  </a>
-                </Link>
-              </div>
-
-              <div className="entry-post-content">
-                <div className="entry-meta">
-                  <ul>
-                    <li>
-                      <Link href="/#">
-                        <a>Admin</a>
-                      </Link>
-                    </li>
-                    <li>12 Marzo, 2020</li>
-                  </ul>
-                </div>
-
-                <h3>
-                  <Link href={linkBlog}>
-                    <a>
-                      Cómo ayudar a su hijo con la tarea escolar: Demuestre que
-                      la educación y la tarea son importantes para usted.
-                    </a>
-                  </Link>
-                </h3>
-                <p>
-                  Las investigaciones científicas demuestran claramente que los
-                  niños son mucho más aptos a tener éxito en el aprendizaje
-                  cuando sus familias los apoyan activamente. Cuando las
-                  familias leen con sus hijos, dialogan con sus maestros,
-                  participan en la escuela o en otras actividades educativas y
-                  les ayudan con sus tareas escolares, les otorgan una gran
-                  ventaja....
-                </p>
-
-                <Link href={linkBlog}>
-                  <a className="learn-more-btn">
-                    Leer más... <i className="flaticon-add"></i>
-                  </a>
-                </Link>
-              </div>
-            </div>
-          </div>
+            );
+          })}
         </div>
       </div>
 
