@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Link from "../../utils/ActiveLink";
 import { useRouter } from "next/router";
+import Icons from "../../utils/Icons";
+import Colors from "../../utils/Colors";
 
 export default function Navbar() {
   // Search Form
@@ -45,6 +47,31 @@ export default function Navbar() {
 
   return (
     <>
+      <div className="bg-white container-fluid prenavPad">
+        <div id="prenavbar">
+          <div>
+            <a href="tel:+17863012529">
+              <Icons icon="phone" color={Colors("red")} />
+              <span>+1(786)301-2529</span>
+            </a>
+          </div>
+          <div>
+            <a href="mailto:info@magicmindus.com?subject=Information%20Request%20-%20WebLink.1&body=Hi%20I%20want%to%request%more%information%about%Magic%Mind:">
+              <Icons icon="email" color={Colors("orange")} />
+              <span>info@magicmindus.com</span>
+            </a>
+          </div>
+          <div>
+            <Link href="/login">
+              <a>
+                {/* <img src="/images/icons/sign-in-alt-solid.svg" /> */}
+                <Icons icon="login" color={Colors("yellow")} />
+                <span>Login</span>
+              </a>
+            </Link>
+          </div>
+        </div>
+      </div>
       <div
         id="navbar"
         className={`navbar-area ${collapsed ? "" : "white-nav"}`}

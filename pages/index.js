@@ -1,5 +1,5 @@
 import React from "react";
-import MainBanner from "../components/Home/MainBanner";
+import MainBanner from "../components/Home/MainBanner copy";
 import MainServices from "../components/Home/MainServices";
 import WhyChooseUs from "../components/Home/WhyChooseUs";
 import ProfessionalSolutions from "../components/Home/ProfessionalSolutions";
