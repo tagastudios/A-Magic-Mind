@@ -26,6 +26,97 @@
 @import "modules/colors";
 
 ////////////////////////////////////
+// NAVBAR & PreNav
+// NAVBAR & PreNav
+// NAVBAR & PreNav
+// NAVBAR & PreNav
+// NAVBAR & PreNav
+// NAVBAR & PreNav
+// NAVBAR & PreNav
+// NAVBAR & PreNav
+// NAVBAR & PreNav
+// NAVBAR & PreNav
+// NAVBAR & PreNav
+// NAVBAR & PreNav
+// NAVBAR & PreNav
+// NAVBAR & PreNav
+// NAVBAR & PreNav
+// NAVBAR & PreNav
+// NAVBAR & PreNav
+// NAVBAR & PreNav
+// NAVBAR & PreNav
+// NAVBAR & PreNav
+// NAVBAR & PreNav
+// NAVBAR & PreNav
+// NAVBAR & PreNav
+// NAVBAR & PreNav
+////////////////////////////////////
+.prenavPad {
+  padding-left: 0;
+  padding-right: 0;
+}
+#prenavbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 22px clamp(30px, 5vw, 50px);
+  z-index: 1000;
+  background: white;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 93, 91, 1) 16%,
+      rgba(255, 176, 1, 1) 16%,
+      rgba(255, 176, 1, 1) 33%,
+      rgba(131, 200, 83, 1) 33%,
+      rgba(131, 200, 83, 1) 50%,
+      rgba(248, 116, 67, 1) 50%,
+      rgba(248, 116, 67, 1) 66%,
+      rgba(39, 183, 217, 1) 66%,
+      rgba(39, 183, 217, 1) 83%,
+      rgba(182, 96, 229, 1) 83%
+    );
+  }
+
+  div {
+    margin-left: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    span {
+      min-width: max-content;
+    }
+
+    a {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 0.5rem;
+
+      svg {
+        height: 16px;
+      }
+    }
+  }
+}
+
+.navbar {
+  height: 70px;
+}
+
+.main-nav a {
+  color: #212529 !important;
+}
+
+////////////////////////////////////
 // HOME
 // HOME
 // HOME
@@ -111,7 +202,7 @@
 }
 
 .main-logo {
-  height: 100px;
+  max-height: 180px !important;
 }
 
 .optional-logo {
@@ -255,6 +346,27 @@
   );
 }
 
+.bg-blurry {
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    background: linear-gradient(180deg, rgba(white, 1) 0%, rgba(black, 0) 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+  }
+}
+
+.z1000 {
+  z-index: 1000 !important;
+  position: inherit;
+}
+
 ////////////////////////////////////
 // MOBILE
 // MOBILE
@@ -365,10 +477,35 @@
     -webkit-filter: drop-shadow(5px 5px 5px #fafafa);
     filter: drop-shadow(1px 1px 0px black);
   }
+
+  #prenavbar {
+    padding: 12px clamp(30px, 5vw, 50px) !important;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
   .center-align {
     text-align: center;
+  }
+}
+
+@media only screen and (max-width: 501px) {
+  .prenavPad {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #prenavbar {
+    background: linear-gradient(0deg, white 0%, #a8a8a8 100%) !important;
+    padding: 10px 5px;
+    justify-content: space-around;
+    div {
+      margin-left: 0;
+      a {
+        svg {
+          height: 12px !important;
+        }
+      }
+      font-size: clamp(0.35rem, calc(-0.45rem + 4.1vw), 1rem);
+    }
   }
 }

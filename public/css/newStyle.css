@@ -1,3 +1,57 @@
+.prenavPad {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#prenavbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 22px clamp(30px, 5vw, 50px);
+  z-index: 1000;
+  background: white;
+}
+
+#prenavbar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, #ff5d5b 16%, #ffb001 16%, #ffb001 33%, #83c853 33%, #83c853 50%, #f87443 50%, #f87443 66%, #27b7d9 66%, #27b7d9 83%, #b660e5 83%);
+}
+
+#prenavbar div {
+  margin-left: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#prenavbar div span {
+  min-width: max-content;
+}
+
+#prenavbar div a {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#prenavbar div a svg {
+  height: 16px;
+}
+
+.navbar {
+  height: 70px;
+}
+
+.main-nav a {
+  color: #212529 !important;
+}
+
 .MainBanner__fix {
   height: 100vh;
   position: relative;
@@ -62,7 +116,7 @@
 }
 
 .main-logo {
-  height: 100px;
+  max-height: 180px !important;
 }
 
 .optional-logo {
@@ -204,6 +258,27 @@
   background: linear-gradient(0deg, rgba(255, 255, 255, 0) 50%, #fbfbfb 95%);
 }
 
+.bg-blurry {
+  position: relative;
+  z-index: 1;
+}
+
+.bg-blurry::before {
+  content: "";
+  background: linear-gradient(180deg, white 0%, rgba(0, 0, 0, 0) 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.z1000 {
+  z-index: 1000 !important;
+  position: inherit;
+}
+
 @media only screen and (max-width: 767px) {
   .active {
     display: none !important;
@@ -281,11 +356,33 @@
   .nav-shadow {
     filter: drop-shadow(1px 1px 0px black);
   }
+  #prenavbar {
+    padding: 12px clamp(30px, 5vw, 50px) !important;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
   .center-align {
     text-align: center;
+  }
+}
+
+@media only screen and (max-width: 501px) {
+  .prenavPad {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #prenavbar {
+    background: linear-gradient(0deg, white 0%, #a8a8a8 100%) !important;
+    padding: 10px 5px;
+    justify-content: space-around;
+  }
+  #prenavbar div {
+    margin-left: 0;
+    font-size: clamp(0.35rem, calc(-0.45rem + 4.1vw), 1rem);
+  }
+  #prenavbar div a svg {
+    height: 12px !important;
   }
 }
 /*# sourceMappingURL=newStyle.css.map */

@@ -726,8 +726,6 @@ Navbar Area CSS
 .navbar-area {
   position: absolute;
   left: 0;
-  top: 0;
-  padding-top: 20px;
   padding-bottom: 20px;
   width: 100%;
   height: auto;
@@ -5161,7 +5159,7 @@ Main Banner Area CSS
 }
 
 .home-slides .main-banner.item-bg1 {
-  background-image: url(/images/main-banner-bg1.jpg);
+  background-image: url(/images/woman.jpg);
 }
 
 .home-slides .main-banner.item-bg2 {
