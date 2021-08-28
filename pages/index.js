@@ -11,12 +11,14 @@ import BlogPost from "../components/Common/BlogPost";
 import PricingPlan from "../components/Home/PricingPlan";
 import FreeTrialForm from "../components/Home/FreeTrialForm";
 import PartnerSlide from "../components/Home/PartnerSlider";
+import Avioncito from "../components/Home/avioncito";
 
 export default function Home() {
   return (
     <>
       <MainBanner />
       <MainServices />
+      <Avioncito />
       <WhyChooseUs />
       <ProfessionalSolutions />
       <Webinar />
