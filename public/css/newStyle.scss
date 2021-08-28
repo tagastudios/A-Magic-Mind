@@ -488,6 +488,28 @@
     text-align: center;
   }
 }
+
+@media only screen and (max-width: 501px) {
+  .prenavPad {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #prenavbar {
+    background: linear-gradient(0deg, white 0%, #a8a8a8 100%) !important;
+    padding: 10px 5px;
+    justify-content: space-around;
+    div {
+      margin-left: 0;
+      a {
+        svg {
+          height: 12px !important;
+        }
+      }
+      font-size: clamp(0.35rem, calc(-0.45rem + 4.1vw), 1rem);
+    }
+  }
+}
+
 ////////////////////////////////////
 // MOBILE
 // MOBILE
@@ -556,24 +578,4 @@
 .item6 {
   grid-column: 2 / span 2;
   grid-row: 5;
-}
-@media only screen and (max-width: 501px) {
-  .prenavPad {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  #prenavbar {
-    background: linear-gradient(0deg, white 0%, #a8a8a8 100%) !important;
-    padding: 10px 5px;
-    justify-content: space-around;
-    div {
-      margin-left: 0;
-      a {
-        svg {
-          height: 12px !important;
-        }
-      }
-      font-size: clamp(0.35rem, calc(-0.45rem + 4.1vw), 1rem);
-    }
-  }
 }
