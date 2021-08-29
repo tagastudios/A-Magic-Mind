@@ -539,15 +539,20 @@
 .grid-container {
   display: grid;
   grid-gap: 2px;
-  background-color: #ffffff;
+  height: 90vh;
+  // width: 90vh;
+  aspect-ratio: 0.5;
   padding: 10px;
 }
 
 .grid-item {
-  background-color: rgba(219, 85, 85, 0.8);
+  background-color: $rojo;
   text-align: center;
-  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 30px;
+  color: white;
 }
 
 .item1 {
@@ -578,4 +583,273 @@
 .item6 {
   grid-column: 2 / span 2;
   grid-row: 5;
+}
+
+.avioncito-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.avioncito-left {
+  display: flex;
+  overflow: hidden;
+  height: 90vh;
+  flex: 1;
+  flex-wrap: wrap;
+  position: relative;
+  & img {
+    opacity: 0.2;
+  }
+}
+.avioncito-right {
+  display: flex;
+  padding: 0 20px;
+  height: 90vh;
+  flex: 1;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  & h2,
+  h3,
+  p {
+    text-align: center !important;
+  }
+  & img {
+    width: 20vw;
+    opacity: 0.2;
+  }
+}
+.avioncito-kids1 {
+  height: 200px !important;
+  width: auto;
+  animation-name: floating1;
+  -webkit-animation-name: floating1;
+}
+
+.avioncito-kids2 {
+  height: 125px !important;
+  width: auto;
+  animation-name: floating2;
+  -webkit-animation-name: floating2;
+}
+.avioncito-kids3 {
+  height: 150px !important;
+  width: auto;
+  position: absolute;
+  top: 50%;
+  animation-name: floating3;
+  -webkit-animation-name: floating3;
+
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.avioncito-kids4 {
+  height: 125px !important;
+  width: auto;
+  animation-name: floating4;
+  -webkit-animation-name: floating4;
+}
+.avioncito-kids5 {
+  height: 100px !important;
+  width: auto;
+  animation-name: floating5;
+  -webkit-animation-name: floating5;
+}
+
+// Adaptive is not attached.
+// Font Awesome icons is not attached.
+// Place tool is not attached.
+// This is only simpliest showcase of how this can be written.
+
+/* Shapes & Animation
+*/
+
+.floating {
+  position: absolute;
+
+  animation-duration: 10s;
+  -webkit-animation-duration: 10s;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes floating1 {
+  0% {
+    transform: translate(0%, 0%) rotate(-40deg);
+  }
+  33% {
+    transform: translate(10%, 100%) rotate(30deg);
+  }
+  66% {
+    transform: translate(100%, 10%) rotate(-60deg);
+  }
+  100% {
+    transform: translate(0%, 0%) rotate(-40deg);
+  }
+}
+
+@-webkit-keyframes floating1 {
+  0% {
+    -webkit-transform: translate(0%, 0%);
+  }
+  33% {
+    transform: translate(10%, 100%);
+  }
+  66% {
+    transform: translate(100%, 10%);
+  }
+  100% {
+    transform: translate(0%, 0%);
+  }
+}
+
+@keyframes floating2 {
+  0% {
+    transform: translate(0%, 0%) rotate(0deg);
+  }
+  33% {
+    transform: translate(-10%, -100%) rotate(30deg);
+  }
+  66% {
+    transform: translate(-100%, -10%) rotate(-60deg);
+  }
+  100% {
+    transform: translate(0%, 0%) rotate(0deg);
+  }
+}
+
+@-webkit-keyframes floating2 {
+  0% {
+    -webkit-transform: translate(0%, 0%);
+  }
+  33% {
+    transform: translate(-10%, -100%);
+  }
+  66% {
+    transform: translate(-100%, -10%);
+  }
+  100% {
+    transform: translate(0%, 0%);
+  }
+}
+@keyframes floating3 {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  12% {
+    transform: translate(-50%, 0%) rotate(30deg);
+  }
+  24% {
+    transform: translate(-50%, -50%) rotate(-20deg);
+  }
+  36% {
+    transform: translate(0, -50%) rotate(0deg);
+  }
+  48% {
+    transform: translate(-50%, -50%) rotate(20deg);
+  }
+  60% {
+    transform: translate(-50%, -100%) rotate(0deg);
+  }
+  72% {
+    transform: translate(-50%, -50%) rotate(-30deg);
+  }
+  84% {
+    transform: translate(-100%, -50%) rotate(10deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+}
+
+@-webkit-keyframes floating3 {
+  0% {
+    transform: translate(0%, 0%);
+  }
+  25% {
+    transform: translate(-100%, 100%);
+  }
+  50% {
+    transform: translate(-10%, 100%);
+  }
+  75% {
+    transform: translate(-100%, 10%);
+  }
+  100% {
+    transform: translate(0%, 0%);
+  }
+}
+
+@keyframes floating4 {
+  0% {
+    transform: translate(0%, 0%) rotate(0deg);
+  }
+  25% {
+    transform: translate(100%, -100%) rotate(30deg);
+  }
+  50% {
+    transform: translate(10%, -100%) rotate(-60deg);
+  }
+  75% {
+    transform: translate(100%, -10%) rotate(0deg);
+  }
+  100% {
+    transform: translate(0%, 0%) rotate(0deg);
+  }
+}
+
+@-webkit-keyframes floating4 {
+  0% {
+    transform: translate(0%, 0%);
+  }
+  25% {
+    transform: translate(100%, -100%);
+  }
+  50% {
+    transform: translate(10%, -100%);
+  }
+  75% {
+    transform: translate(100%, -10%);
+  }
+  100% {
+    transform: translate(0%, 0%);
+  }
+}
+
+@keyframes floating5 {
+  0% {
+    transform: translate(0%, 0%) rotate(0deg);
+  }
+  25% {
+    transform: translate(-100%, 100%) rotate(30deg);
+  }
+  50% {
+    transform: translate(-10%, 10%) rotate(-60deg);
+  }
+  75% {
+    transform: translate(-100%, 10%) rotate(0deg);
+  }
+  100% {
+    transform: translate(0%, 0%) rotate(0deg);
+  }
+}
+
+@-webkit-keyframes floating5 {
+  0% {
+    transform: translate(0%, 0%);
+  }
+  25% {
+    transform: translate(-100%, 100%);
+  }
+  50% {
+    transform: translate(-10%, 100%);
+  }
+  75% {
+    transform: translate(-100%, 10%);
+  }
+  100% {
+    transform: translate(0%, 0%);
+  }
 }
