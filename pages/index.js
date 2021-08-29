@@ -21,10 +21,10 @@ export default function Home() {
       <Avioncito />
       <WhyChooseUs />
       <ProfessionalSolutions />
-      <Webinar />
+      <Projects />
+      {/* <Webinar /> */}
       <FunFacts />
 
-      <Projects />
       <Testimonials />
       <BlogPost />
       {/* <PricingPlan /> */}

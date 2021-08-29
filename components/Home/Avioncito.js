@@ -35,7 +35,7 @@ const Avioncito = () => {
   const [play, setPlay] = useState(false);
   const [active, setActive] = useState("");
   return (
-    <section className="avioncito-center">
+    <section id="path" className="avioncito-center">
       <div className="avioncito-left">
         <img
           className="avioncito-kids1 floating"
@@ -87,7 +87,8 @@ const Avioncito = () => {
         ></img>
       </div>
       <div class="grid-container">
-        <div
+        <a
+          href="#path"
           className="grid-item item1"
           onClick={() => {
             setPlay(true);
@@ -95,8 +96,9 @@ const Avioncito = () => {
           }}
         >
           1
-        </div>
-        <div
+        </a>
+        <a
+          href="#path"
           className="grid-item item2"
           onClick={() => {
             setPlay(true);
@@ -104,8 +106,9 @@ const Avioncito = () => {
           }}
         >
           2
-        </div>
-        <div
+        </a>
+        <a
+          href="#path"
           className="grid-item item3"
           onClick={() => {
             setPlay(true);
@@ -113,8 +116,9 @@ const Avioncito = () => {
           }}
         >
           3
-        </div>
-        <div
+        </a>
+        <a
+          href="#path"
           className="grid-item item4"
           onClick={() => {
             setPlay(true);
@@ -122,8 +126,9 @@ const Avioncito = () => {
           }}
         >
           4
-        </div>
-        <div
+        </a>
+        <a
+          href="#path"
           className="grid-item item5"
           onClick={() => {
             setPlay(true);
@@ -131,8 +136,9 @@ const Avioncito = () => {
           }}
         >
           5
-        </div>
-        <div
+        </a>
+        <a
+          href="#path"
           className="grid-item item6"
           onClick={() => {
             setPlay(true);
@@ -140,12 +146,12 @@ const Avioncito = () => {
           }}
         >
           6
-        </div>
+        </a>
       </div>
       {play ? (
         <div
           className="avioncito-right"
-          style={{ justifyContent: "Flex-start" }}
+          style={{ justifyContent: "flex-start" }}
         >
           <h2>{active.titulo}</h2>
           <p>{active.texto}</p>

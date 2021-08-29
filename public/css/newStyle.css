@@ -288,6 +288,27 @@
   position: inherit;
 }
 
+.main-services-area {
+  text-align: center;
+}
+
+.services-area-title {
+  margin-bottom: 4rem;
+}
+
+.single-main-services-box {
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.single-main-services-box img {
+  flex: 1;
+  object-fit: cover;
+}
+
 @media only screen and (min-width: 992px) {
   .navbar-area {
     height: 88px;
@@ -304,6 +325,23 @@
   }
   .bg-blurry {
     min-height: calc(100vh - 43px) !important;
+  }
+}
+
+@media only screen and (max-width: 959px) {
+  .avioncito-left {
+    display: none !important;
+  }
+  .avioncito-right {
+    margin-bottom: 4rem;
+  }
+  .avioncito-center {
+    padding: 6rem 2rem 4rem 2rem;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
+  .grid-container {
+    height: 60vh !important;
   }
 }
 
@@ -345,6 +383,9 @@
     padding-bottom: 0px !important;
     height: 80px;
     border-bottom: 2px #a8a8a8 dashed;
+  }
+  .navbar-toggler {
+    transform: translateY(-50%);
   }
   .nav .nav-item ul {
     background-color: rgba(255, 176, 1, 0.5) !important;
@@ -416,9 +457,15 @@
 .grid-container {
   display: grid;
   grid-gap: 2px;
-  height: 90vh;
+  height: 80vh;
   aspect-ratio: 0.5;
   padding: 10px;
+}
+
+.grid-container :hover {
+  background: #ffb001 !important;
+  color: white !important;
+  transform: scale(0.95) !important;
 }
 
 .grid-item {
@@ -462,6 +509,7 @@
 }
 
 .avioncito-center {
+  padding: 6rem 2rem 4rem 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -471,7 +519,7 @@
 .avioncito-left {
   display: flex;
   overflow: hidden;
-  height: 90vh;
+  height: 80vh;
   flex: 1;
   flex-wrap: wrap;
   position: relative;
@@ -484,7 +532,7 @@
 .avioncito-right {
   display: flex;
   padding: 0 20px;
-  height: 90vh;
+  height: 80vh;
   flex: 1;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -542,8 +590,6 @@
   -webkit-animation-name: floating5;
 }
 
-/* Shapes & Animation
-*/
 .floating {
   position: absolute;
   animation-duration: 10s;
