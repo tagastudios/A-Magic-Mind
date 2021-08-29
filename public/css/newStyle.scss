@@ -116,6 +116,10 @@
   color: #212529 !important;
 }
 
+.is-sticky .navbar {
+  height: auto !important;
+}
+
 ////////////////////////////////////
 // HOME
 // HOME
@@ -320,7 +324,9 @@
 }
 
 .navbar-area {
-  background-color: transparent !important;
+  background-color: white !important;
+  height: 74px;
+  border-bottom: 3px $gris dashed;
 }
 
 .testimonials-fix {
@@ -349,10 +355,19 @@
 .bg-blurry {
   position: relative;
   z-index: 1;
+  min-height: calc(100vh - 149px);
+  display: flex;
+  align-items: center;
 
   &::before {
     content: "";
-    background: linear-gradient(180deg, rgba(white, 1) 0%, rgba(black, 0) 100%);
+    background: linear-gradient(
+      180deg,
+      rgba(white, 1) 0%,
+      rgba($morado, 1) 70px,
+      rgba($morado, 0.8) 140px,
+      rgba($morado, 0.6) 100%
+    );
     position: absolute;
     top: 0;
     left: 0;
@@ -393,6 +408,24 @@
 // MOBILE
 // MOBILE
 ////////////////////////////////////
+@media only screen and (min-width: 992px) {
+  .navbar-area {
+    height: 88px;
+    border-bottom: 4px $gris dashed;
+  }
+  .bg-blurry {
+    max-height: calc(100vh - 65px) !important;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .center-align {
+    text-align: center;
+  }
+  .bg-blurry {
+    min-height: calc(100vh - 43px) !important;
+  }
+}
 
 @media only screen and (max-width: 767px) {
   .active {
@@ -434,6 +467,9 @@
   .navbar-area {
     padding-top: 0px !important;
     padding-bottom: 0px !important;
+
+    height: 80px;
+    border-bottom: 2px $gris dashed;
   }
 
   .nav .nav-item ul {
@@ -483,12 +519,6 @@
   }
 }
 
-@media only screen and (max-width: 1024px) {
-  .center-align {
-    text-align: center;
-  }
-}
-
 @media only screen and (max-width: 501px) {
   .prenavPad {
     padding-left: 0;
@@ -507,6 +537,10 @@
       }
       font-size: clamp(0.35rem, calc(-0.45rem + 4.1vw), 1rem);
     }
+  }
+
+  .bg-blurry {
+    min-height: calc(100vh - 43px);
   }
 }
 
