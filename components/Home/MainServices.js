@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Icons from "../../utils/Icons";
 
 const MainServices = () => {
   return (
@@ -13,12 +14,12 @@ const MainServices = () => {
           <Link href="services/playpals/">
             <a className="col-lg-3 col-sm-6 col-md-4">
               <div className="single-main-services-box">
-                <div className="icon">
-                  <i className="flaticon-robot-1"></i>
+                <div className="icon-new">
+                  <Icons icon="login" color="black" />
                 </div>
                 <h3>
                   <Link href="services/playpals/">
-                    <a>Categorías de Enseñanza</a>
+                    <a>Nuestras Categorías</a>
                   </Link>
                 </h3>
                 <img src="/images/Helpfull-links/Categorias.png"></img>
@@ -29,8 +30,8 @@ const MainServices = () => {
           <Link href="/blogs/">
             <a className="col-lg-3 col-sm-6 col-md-4">
               <div className="single-main-services-box">
-                <div className="icon">
-                  <i className="flaticon-neural"></i>
+                <div className="icon-new">
+                  <Icons icon="tips" color="black" />
                 </div>
                 <h3>
                   <Link href="/blogs/">
@@ -45,8 +46,8 @@ const MainServices = () => {
           <Link href="/about-us/">
             <a className="col-lg-3 col-sm-6 col-md-4">
               <div className="single-main-services-box">
-                <div className="icon">
-                  <i className="flaticon-machine-learning"></i>
+                <div className="icon-new">
+                  <Icons icon="team" color="black" />
                 </div>
                 <h3>
                   <Link href="/about-us/">
@@ -62,8 +63,8 @@ const MainServices = () => {
           <Link href="/#">
             <a className="col-lg-3 col-sm-6 col-md-4">
               <div className="single-main-services-box">
-                <div className="icon">
-                  <i className="flaticon-machine-learning"></i>
+                <div className="icon-new">
+                  <Icons icon="enroll" color="black" />
                 </div>
                 <h3>
                   <Link href="/#">
@@ -75,27 +76,11 @@ const MainServices = () => {
               </div>
             </a>
           </Link>
-          <Link href="/about-us/">
-            <a className="col-lg-3 col-sm-6 col-md-4">
-              <div className="single-main-services-box">
-                <div className="icon">
-                  <i className="flaticon-machine-learning"></i>
-                </div>
-                <h3>
-                  <Link href="/about-us/">
-                    <a>Nuestro Equipo</a>
-                  </Link>
-                </h3>
-                <img src="/images/Helpfull-links/team.png"></img>
-                <a className="link-btn">Leer más..</a>
-              </div>
-            </a>
-          </Link>
           <Link href="/contact/">
             <a className="col-lg-3 col-sm-6 col-md-4">
               <div className="single-main-services-box">
-                <div className="icon">
-                  <i className="flaticon-machine-learning"></i>
+                <div className="icon-new ml-1">
+                  <Icons icon="info" color="black" />
                 </div>
                 <h3>
                   <Link href="/contact/">
