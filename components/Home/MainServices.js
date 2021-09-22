@@ -19,7 +19,7 @@ const MainServices = () => {
                 </div>
                 <h3>
                   <Link href="services/playpals/">
-                    <a>Nuestras Categorías</a>
+                    <a>Nuestos Servicios</a>
                   </Link>
                 </h3>
                 <img src="/images/Helpfull-links/Categorias.png"></img>

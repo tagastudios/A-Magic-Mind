@@ -13,7 +13,7 @@ class FreeTrialForm extends Component {
 
           <div className="col-lg-6 col-md-12 p-0">
             <div className="free-trial-content">
-              <h2>Quieres saber más sobre nuestros métodos?</h2>
+              <h2>Quieres saber más sobre nuestro método?</h2>
 
               <form className="newsletter-form">
                 <input

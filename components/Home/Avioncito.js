@@ -159,10 +159,8 @@ const Avioncito = () => {
       ) : (
         <div className="avioncito-right">
           <h2> Cómo enseñamos en Magic Mind? </h2>
-          <h3>
-            Para conocer nuestros Magic Métodos, Vamos a jugar el avioncito
-          </h3>
-          <p> Te mostramos nuestras estratégias en 5 pasos!</p>
+          <h3>Para conocer nuestro Magic Método, Vamos a jugar el avioncito</h3>
+          <p> Te mostramos nuestra estrategia en 5 pasos!</p>
           <img src="/images/avioncito/kids6.svg"></img>
         </div>
       )}

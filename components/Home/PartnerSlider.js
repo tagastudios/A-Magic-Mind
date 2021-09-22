@@ -43,7 +43,7 @@ const PartnerSlider = () => {
     <div className="partner-section ptb-110">
       <div className="container">
         <div className="section-title">
-          <h2>Nuestros Socios Comerciales</h2>
+          <h2>Magic Partner</h2>
         </div>
 
         {display ? (

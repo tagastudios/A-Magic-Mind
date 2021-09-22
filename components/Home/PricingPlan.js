@@ -37,10 +37,10 @@ export default class PricingPlan extends Component {
                 className="current"
                 onClick={(e) => this.openTabSection(e, "tab1")}
               >
-                Plan Mensual
+                Planes Básicos
               </li>
               <li onClick={(e) => this.openTabSection(e, "tab2")}>
-                Plan Anual
+                Planes Avanzados
               </li>
             </ul>
 
@@ -52,46 +52,39 @@ export default class PricingPlan extends Component {
                   <div className="col-lg-4 col-md-6 offset-lg-0 ">
                     <div className="single-pricing-box active">
                       <div className="pricing-header">
-                        <h3>Pro</h3>
+                        <h3>Magic Basic</h3>
                         <p>
-                          PlayPals
+                          Duración 1.5 Horas a la semana
                           <br />
                         </p>
                       </div>
 
                       <div className="price">
-                        $149 <span>/m</span>
+                        Incluye <span></span>
                       </div>
 
                       <div className="buy-btn">
                         <Link href="/index-5/#">
                           <a className="btn btn-primary">
-                            Obtén un libro gratis
+                            Conocer más de este paquete
                           </a>
                         </Link>
                       </div>
 
                       <ul className="pricing-features">
                         <li>
-                          <i className="flaticon-tick"></i> MagicMind
+                          <i className="flaticon-tick"></i> Traslado
                         </li>
                         <li>
-                          <i className="flaticon-tick"></i> MagicMind
+                          <i className="flaticon-tick"></i> Material Educativo
                         </li>
                         <li>
-                          <i className="flaticon-tick"></i> MagicMind
+                          <i className="flaticon-tick"></i> Planificación y
+                          atención personalizada
                         </li>
                         <li>
-                          <i className="flaticon-tick"></i> MagicMind
-                        </li>
-                        <li>
-                          <i className="flaticon-tick"></i> MagicMind
-                        </li>
-                        <li>
-                          <i className="flaticon-tick"></i> MagicMind
-                        </li>
-                        <li>
-                          <i className="flaticon-tick"></i> MagicMind
+                          <i className="flaticon-tick"></i> Exclusividad en la
+                          comodidad de tu hogar
                         </li>
                       </ul>
                     </div>
@@ -100,46 +93,39 @@ export default class PricingPlan extends Component {
                   <div className="col-lg-4 col-md-6 offset-lg-0 ">
                     <div className="single-pricing-box">
                       <div className="pricing-header">
-                        <h3>Premium</h3>
+                        <h3> Magic Bronce</h3>
                         <p>
-                          Todo incluido
+                          Duración 3 Horas a la Semana
                           <br />
                         </p>
                       </div>
 
                       <div className="price">
-                        $179 <span>/m</span>
+                        Incluye <span></span>
                       </div>
 
                       <div className="buy-btn">
                         <Link href="/index-5/#">
                           <a className="btn btn-primary">
-                            Obtén un libro gratis
+                            Conoce más de este paquete
                           </a>
                         </Link>
                       </div>
 
                       <ul className="pricing-features">
                         <li>
-                          <i className="flaticon-tick"></i> MagicMind
+                          <i className="flaticon-tick"></i> Traslado
                         </li>
                         <li>
-                          <i className="flaticon-tick"></i> MagicMind
+                          <i className="flaticon-tick"></i> Material Educativo
                         </li>
                         <li>
-                          <i className="flaticon-tick"></i> MagicMind
+                          <i className="flaticon-tick"></i> Planificación y
+                          atención personalizada
                         </li>
                         <li>
-                          <i className="flaticon-tick"></i> MagicMind
-                        </li>
-                        <li>
-                          <i className="flaticon-tick"></i> MagicMind
-                        </li>
-                        <li>
-                          <i className="flaticon-tick"></i> MagicMind
-                        </li>
-                        <li>
-                          <i className="flaticon-tick"></i> MagicMind
+                          <i className="flaticon-tick"></i> Exclusividad en la
+                          comodidad de tu hogar
                         </li>
                       </ul>
                     </div>
@@ -149,96 +135,138 @@ export default class PricingPlan extends Component {
 
               <div id="tab2" className="tabs-item">
                 <div className="row">
-                  <div className="col-lg-2 col-md-0"></div>
-
-                  <div className="col-lg-4 col-md-6">
+                  <div className="col-lg-4 col-md-4">
                     <div className="single-pricing-box active">
                       <div className="pricing-header">
-                        <h3>Pro</h3>
+                        <h3>Magic Silver</h3>
                         <p>
-                          Magic Mind
+                          Duración 4.5 horas a la semana
                           <br />
                         </p>
                       </div>
 
                       <div className="price">
-                        $249 <span>/y</span>
-                      </div>
-
-                      <div className="buy-btn">
-                        <Link href="/#">
-                          <a className="btn btn-primary">Obtén un libro </a>
-                        </Link>
-                      </div>
-
-                      <ul className="pricing-features">
-                        <li>
-                          <i className="flaticon-tick"></i> MagicMind
-                        </li>
-                        <li>
-                          <i className="flaticon-tick"></i> MagicMind
-                        </li>
-                        <li>
-                          <i className="flaticon-tick"></i> MagicMind
-                        </li>
-                        <li>
-                          <i className="flaticon-tick"></i> MagicMind
-                        </li>
-                        <li>
-                          <i className="flaticon-tick"></i> MagicMind
-                        </li>
-                        <li>
-                          <i className="flaticon-tick"></i> MagicMind
-                        </li>
-                        <li>
-                          <i className="flaticon-tick"></i> MagicMind
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div className="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
-                    <div className="single-pricing-box">
-                      <div className="pricing-header">
-                        <h3>Premium</h3>
-                        <p>
-                          Magic Mind <br />
-                        </p>
-                      </div>
-
-                      <div className="price">
-                        $279 <span>/y</span>
+                        Incluye <span></span>
                       </div>
 
                       <div className="buy-btn">
                         <Link href="/#">
                           <a className="btn btn-primary">
-                            Obtén un libro gratis
+                            Conoce Más sobre este paquete{" "}
                           </a>
                         </Link>
                       </div>
 
                       <ul className="pricing-features">
                         <li>
-                          <i className="flaticon-tick"></i> MagicMind
+                          <i className="flaticon-tick"></i> Traslado
                         </li>
                         <li>
-                          <i className="flaticon-tick"></i> MagicMind
+                          <i className="flaticon-tick"></i> Material Educativo
                         </li>
                         <li>
-                          <i className="flaticon-tick"></i> MagicMind
+                          <i className="flaticon-tick"></i> Planificación y
+                          atención personalizada
                         </li>
                         <li>
-                          <i className="flaticon-tick"></i> MagicMind
+                          <i className="flaticon-tick"></i> Exclusividad en la
+                          comodidad de tu hogar
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div className="col-lg-4 col-md-4">
+                    <div className="single-pricing-box">
+                      <div className="pricing-header">
+                        <h3>Magic Gold</h3>
+                        <p>
+                          Duración 6 horas a la semana <br />
+                        </p>
+                      </div>
+
+                      <div className="price">
+                        Incluye <span></span>
+                      </div>
+
+                      <div className="buy-btn">
+                        <Link href="/#">
+                          <a className="btn btn-primary">
+                            Conoce más sobre este paquete
+                          </a>
+                        </Link>
+                      </div>
+
+                      <ul className="pricing-features">
+                        <li>
+                          <i className="flaticon-tick"></i> Traslado
                         </li>
                         <li>
-                          <i className="flaticon-tick"></i> MagicMind
+                          <i className="flaticon-tick"></i> Cámaras de seguridad
                         </li>
                         <li>
-                          <i className="flaticon-tick"></i> MagicMind
+                          <i className="flaticon-tick"></i> Horas ilimitadas de
+                          actividaes especiales (cumpleaños/ aniversarios/play
+                          date/ holidays)
                         </li>
                         <li>
-                          <i className="flaticon-tick"></i> MagicMind
+                          <i className="flaticon-tick"></i> Material educativo
+                        </li>
+                        <li>
+                          <i className="flaticon-tick"></i> Planificación y
+                          atención personalizada
+                        </li>
+                        <li>
+                          <i className="flaticon-tick"></i> Exclusividad en la
+                          comodidad de tu hogar
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div className="col-lg-4 col-md-4">
+                    <div className="single-pricing-box">
+                      <div className="pricing-header">
+                        <h3>Magic Diamond</h3>
+                        <p>
+                          Duración 9 horas a la semana <br />
+                        </p>
+                      </div>
+
+                      <div className="price">
+                        Incluye <span></span>
+                      </div>
+
+                      <div className="buy-btn">
+                        <Link href="/#">
+                          <a className="btn btn-primary">
+                            Conoce más sobre este paquete
+                          </a>
+                        </Link>
+                      </div>
+
+                      <ul className="pricing-features">
+                        <li>
+                          <i className="flaticon-tick"></i> Traslado
+                        </li>
+                        <li>
+                          <i className="flaticon-tick"></i> Cámaras de seguridad
+                        </li>
+                        <li>
+                          <i className="flaticon-tick"></i> Horas ilimitadas de
+                          actividaes especiales (cumpleaños/ aniversarios/play
+                          date/ holidays)
+                        </li>
+                        <li>
+                          <i className="flaticon-tick"></i> Material educativo
+                        </li>
+                        <li>
+                          <i className="flaticon-tick"></i> Planificación y
+                          atención personalizada
+                        </li>
+                        <li>
+                          <i className="flaticon-tick"></i> Exclusividad en la
+                          comodidad de tu hogar
                         </li>
                       </ul>
                     </div>
