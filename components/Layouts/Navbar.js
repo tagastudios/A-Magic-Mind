@@ -144,6 +144,13 @@ export default function Navbar() {
                           </a>
                         </Link>
                       </li>
+                      <li className="nav-item">
+                        <Link href="/services/paquetes">
+                          <a className="nav-link" onClick={toggleNavbar}>
+                            Paquetes
+                          </a>
+                        </Link>
+                      </li>
                     </ul>
                   </li>
 
@@ -171,7 +178,7 @@ export default function Navbar() {
                     </Link>
                   </li>
 
-                  <li className="nav-item">
+                  {/* <li className="nav-item">
                     <Link href="/#">
                       <a
                         className="nav-link"
@@ -215,6 +222,7 @@ export default function Navbar() {
                       </li>
                     </ul>
                   </li>
+                 */}
                 </ul>
 
                 <div className="others-options">

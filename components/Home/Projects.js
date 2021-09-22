@@ -45,7 +45,7 @@ const Projects = () => {
     <div className="projects-area pt-0 ptb-110">
       <div className="container">
         <div className="section-title">
-          <h2>Un día con nuestras PLAYPALS!</h2>
+          <h2>Un día con nuestros PLAYPALS!</h2>
         </div>
       </div>
 

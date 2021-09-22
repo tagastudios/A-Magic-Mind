@@ -52,11 +52,11 @@ const FunFacts = () => {
         </div> */}
 
         <div className="contact-cta-box">
-          <h3>Tienes alguna pregunta sobre nosotros?</h3>
+          <h3>Parte de nuestros ingresos son en beneficio de YES!</h3>
 
           <Link href="/#">
             <a className="btn btn-primary">
-              Contáctanos<span></span>
+              LOGO DE YES<span></span>
             </a>
           </Link>
         </div>
