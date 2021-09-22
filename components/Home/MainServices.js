@@ -15,7 +15,7 @@ const MainServices = () => {
             <a className="col-lg-3 col-sm-6 col-md-4">
               <div className="single-main-services-box">
                 <div className="icon-new">
-                  <Icons icon="login" color="black" />
+                  <Icons icon="category" color="black" />
                 </div>
                 <h3>
                   <Link href="services/playpals/">

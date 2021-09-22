@@ -34,6 +34,24 @@ const Avioncito = () => {
 
   const [play, setPlay] = useState(false);
   const [active, setActive] = useState("");
+
+  const stickers = [];
+  for (let i = 1; i <= 6; i++) {
+    stickers.push(
+      <a
+        href="#path"
+        className={`grid-item item${i}`}
+        onClick={() => {
+          if (active.titulo === data[i].titulo && play) {
+            setPlay(false);
+          } else setPlay(true);
+          setActive(data[i]);
+        }}
+      >
+        {i}
+      </a>
+    );
+  }
   return (
     <section id="path" className="avioncito-center">
       <div className="avioncito-left">
@@ -86,68 +104,7 @@ const Avioncito = () => {
           }}
         ></img>
       </div>
-      <div class="grid-container">
-        <a
-          href="#path"
-          className="grid-item item1"
-          onClick={() => {
-            setPlay(true);
-            setActive(data[1]);
-          }}
-        >
-          1
-        </a>
-        <a
-          href="#path"
-          className="grid-item item2"
-          onClick={() => {
-            setPlay(true);
-            setActive(data[2]);
-          }}
-        >
-          2
-        </a>
-        <a
-          href="#path"
-          className="grid-item item3"
-          onClick={() => {
-            setPlay(true);
-            setActive(data[3]);
-          }}
-        >
-          3
-        </a>
-        <a
-          href="#path"
-          className="grid-item item4"
-          onClick={() => {
-            setPlay(true);
-            setActive(data[4]);
-          }}
-        >
-          4
-        </a>
-        <a
-          href="#path"
-          className="grid-item item5"
-          onClick={() => {
-            setPlay(true);
-            setActive(data[5]);
-          }}
-        >
-          5
-        </a>
-        <a
-          href="#path"
-          className="grid-item item6"
-          onClick={() => {
-            setPlay(true);
-            setActive(data[6]);
-          }}
-        >
-          6
-        </a>
-      </div>
+      <div class="grid-container">{stickers}</div>
       {play ? (
         <div
           className="avioncito-right"
