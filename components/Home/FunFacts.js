@@ -3,9 +3,9 @@ import Link from "next/link";
 
 const FunFacts = () => {
   return (
-    <div className="fun-facts-area espacioabajo my-5">
+    <div className="fun-facts-area espacioabajo my-1">
       <div className="container">
-        <div className="section-title flex">
+        <div className="section-title flex funfacts-resp">
           <img src="/images/logoMMYES.png" />
           <h2>By </h2>
           <img src="/images/logoLGAYES.png" className="logoLGAYES" />

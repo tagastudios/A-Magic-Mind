@@ -2,33 +2,38 @@ import React, { useState } from "react";
 
 const Avioncito = () => {
   const [data, setData] = useState([
-    {},
+    {
+      titulo: "Beneficios del Juego",
+      texto:
+        "1. Proporciona mayor desarrollo sensorial -sentido y percepción 2.Aumenta la motricidad fina y gruesa 3. Estimula la memoria, atención, cognición y procesamiento lógico e imaginación 4. Facilita la comunicación, expresión, socialización  ",
+      clase: "texto-rojo",
+    },
     {
       titulo: "Escuchar",
       texto: "Les impartimos las instrucciones y los invitamos a jugar",
+      clase: "texto-naranja",
     },
     {
       titulo: "Entender",
       texto:
         "Nos aseguramos que las instrucciones sean comprendidas por nuestros peques",
+      clase: "texto-verde",
     },
     {
       titulo: "Hacer",
       texto: "manos a la obra! hacer para aprender",
+      clase: "texto-azul",
     },
     {
       titulo: "Vivir",
       texto:
         "apoyamos y acompañamos a nuestros peques a seguirlo intentando con alegrias y frustraciones hasta que lo logren.",
+      clase: "texto-morado",
     },
     {
       titulo: "Aprender",
       texto: "celebramos con ellos sus logros. ",
-    },
-    {
-      titulo: "Beneficios del Juego",
-      texto:
-        "1. Proporciona mayor desarrollo sensorial -sentido y percepción 2.Aumenta la motricidad fina y gruesa 3. Estimula la memoria, atención, cognición y procesamiento lógico e imaginación 4. Facilita la comunicación, expresión, socialización  ",
+      clase: "texto-amarillo",
     },
   ]);
 
@@ -36,7 +41,7 @@ const Avioncito = () => {
   const [active, setActive] = useState("");
 
   const stickers = [];
-  for (let i = 1; i <= 6; i++) {
+  for (let i = 0; i < 6; i++) {
     stickers.push(
       <a
         href="#path"
@@ -107,10 +112,9 @@ const Avioncito = () => {
       <div class="grid-container">{stickers}</div>
       {play ? (
         <div
-          className="avioncito-right"
-          style={{ justifyContent: "flex-start" }}
+          className={`avioncito-right ${play ? "avioncito-right-items" : ""}`}
         >
-          <h2>{active.titulo}</h2>
+          <h2 className={`${active.clase} texto-avioncito`}>{active.titulo}</h2>
           <p>{active.texto}</p>
         </div>
       ) : (
