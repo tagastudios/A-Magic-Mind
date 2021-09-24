@@ -3,15 +3,17 @@ import Link from "next/link";
 
 const FunFacts = () => {
   return (
-    <div className="fun-facts-area ptb-110 my-5">
+    <div className="fun-facts-area espacioabajo my-5">
       <div className="container">
-        <div className="section-title">
-          <h2>MagicMind By My Little Genius Academy International</h2>
-          <p>
-            "La constancia es la virtud por la cual todas las otras virtudes dan
-            frutos"
-          </p>
+        <div className="section-title flex">
+          <img src="/images/logoMMYES.png" />
+          <h2>By </h2>
+          <img src="/images/logoLGAYES.png" className="logoLGAYES" />
         </div>
+        <p className="text-center">
+          "La constancia es la virtud por la cual todas las otras virtudes dan
+          frutos"
+        </p>
 
         {/* <div className="row">
           <div className="col-lg-3 col-6 col-sm-3 col-md-3">
@@ -52,7 +54,7 @@ const FunFacts = () => {
         </div> */}
 
         <div className="contact-cta-box">
-          <h3>Parte de nuestros ingresos son en beneficio de YES!</h3>
+          <h3>Parte de nuestros ingresos son a beneficio de YES!</h3>
 
           <Link href="/#">
             <a className="btn btn-primary">

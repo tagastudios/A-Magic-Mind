@@ -34,8 +34,8 @@ const MainServices = () => {
                   <Icons icon="tips" color="black" />
                 </div>
                 <h3>
-                  <Link href="/blogs/">
-                    <a>Tips Para Papás</a>
+                  <Link href="/playpals/">
+                    <a>Playpals</a>
                   </Link>
                 </h3>
                 <img src="/images/Helpfull-links/Tips.png"></img>

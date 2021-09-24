@@ -130,13 +130,13 @@ export default function Navbar() {
                     </Link>
 
                     <ul className="dropdown-menu">
-                      <li className="nav-item">
+                      {/* <li className="nav-item">
                         <Link href="/services/playpals">
                           <a className="nav-link" onClick={toggleNavbar}>
                             PlayPals
                           </a>
                         </Link>
-                      </li>
+                      </li> */}
                       <li className="nav-item">
                         <Link href="/services/custom">
                           <a className="nav-link" onClick={toggleNavbar}>
