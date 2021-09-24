@@ -20,12 +20,15 @@ const WhyChooseUs = () => {
             <div className="why-choose-us-content">
               <h2>Por qúe A Magic Mind?</h2>
               <p>
-                En la gran aventura de la educación el papel de los educadores
-                es muy importante y solo le supera el de su entorno familiar. Es
-                fundamental que los niños y niñas se sientan protegidos y
-                valorados para que el proceso educativo, tanto curricular como
-                emocional, sea efectivo y se convierta en verdadero motor de
-                desarrollo para construir sociedades más justas y equitativas.
+                <ul>
+                  <li>Porque quieres lo mejor para tus hijos.</li>
+                  <li>
+                    Porque quieres que tus hijos sepan que el aprendizaje puede
+                    ser divertido.
+                  </li>
+                  <li>Por su salud mental, emocional y física.</li>
+                  <li>Porque quieres que tengan riqueza cultural.</li>
+                </ul>
               </p>
               <div className="row">
                 <div className="col-lg-6 col-md-6 col-sm-6">
@@ -33,9 +36,8 @@ const WhyChooseUs = () => {
                     <h3>Somos tu aliado en la formación de tus hijos</h3>
                     <p>
                       Como Padres siempre vamos a escoger la mejor opción para
-                      nuestros hijos, mucho mas cuando se trata de su educación
-                      infantil, esa que va a determinar cómo serán los adultos
-                      del mañana.
+                      ellos, mucho más cuando se trata de su educación, esa que
+                      va a determinar lo que serán como adultos del mañana.
                     </p>
                   </div>
                 </div>

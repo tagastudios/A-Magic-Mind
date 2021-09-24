@@ -771,6 +771,16 @@
   -webkit-animation-iteration-count: infinite;
 }
 
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.espacioabajo {
+  padding-bottom: 55px;
+}
+
 @keyframes floating1 {
   0% {
     transform: translate(0%, 0%) rotate(-40deg);

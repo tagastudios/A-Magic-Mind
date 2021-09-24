@@ -38,16 +38,16 @@ const MainBanner = () => {
                 <h1>{slogan}!!</h1>
                 <p>
                   Los niños aprenden mientras juegan, más importante aún, en el
-                  juego, los niños aprenden como aprender..! La educación no
+                  juego, los niños aprenden cómo aprender.! La educación no
                   consiste en ofrecer las cosas ya hechas o dar las respuestas
-                  acertadas. Se trata de mostrarles el camino para que con lo
+                  acertadas, se trata de mostrarles el camino para que con lo
                   aprendido sean ellos los protagonistas de sus propias
-                  decisiones y de sus propios errores. Así irán construyendo y
-                  desarrollando su personalidad y sus capacidades físicas e
-                  intelectuales.
+                  decisiones y de sus propios errores, siempre el apoyo y la
+                  guía necesaria. Así irán construyendo y desarrollando su
+                  personalidad y sus capacidades físicas e intelectuales.
                 </p>
 
-                <div className="btn-box">
+                {/* <div className="btn-box">
                   <Link href="/index-4/#">
                     <a className="btn btn-primary">Schedule a Demo</a>
                   </Link>
@@ -55,11 +55,12 @@ const MainBanner = () => {
                     <a className="optional-btn">Get Started Free</a>
                   </Link>
                 </div>
+               */}
               </div>
             </div>
           </div>
 
-          <div className="main-banner item-bg2 bg-blurry">
+          {/* <div className="main-banner item-bg2 bg-blurry">
             <div className="container z1000">
               <div className="main-banner-content">
                 <h1>World’s Leading Machine Learning Company</h1>
@@ -81,6 +82,7 @@ const MainBanner = () => {
               </div>
             </div>
           </div>
+         */}
         </OwlCarousel>
       ) : (
         ""

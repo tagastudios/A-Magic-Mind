@@ -15,25 +15,31 @@ class AboutContact extends Component {
 
             <div className="col-lg-6 col-md-12">
               <div className="about-content">
-                <h2>
-                  Conectamos con nuestros MagicNiños a través de metodologías
-                  inteligentes
-                </h2>
+                <h2>Nuestra Fundadora</h2>
                 <p>
-                  En MagicMind nos estamos replanteando el modo de enseñar a los
-                  niños pequeños a aprovechar su enorme potencial de
-                  aprendizaje. El juego constituye una de las formas más
-                  importantes en las que los niños pequeños obtienen
-                  conocimientos y competencias esenciales. Por esta razón, las
-                  oportunidades de juego y los entornos que favorecen el juego,
-                  la exploración y el aprendizaje práctico constituyen el
-                  fundamento de los programas de educación eficaces.
+                  Maryangelica Torres es Licenciada en Educación, graduada en la
+                  Universidad Católica Andrés Bello - Caracas Venezuela. Tiene
+                  una especialización en Terapia de Juegos para niños. Maestra
+                  de preescolar. Con 26 años de experiencia en crianza y
+                  desarrollo del niño, motivada para ayudar a los niños a ser
+                  felices y saludables a nivel físico, emocional, cognitiva y
+                  psicológicamente. Experta en diseñar actividades académicas
+                  que sean atractivas y divertidas para los niños. Entusiasta y
+                  talentosa en la enseñanza de artes visuales, música y teatro.
+                  Involucra a los niños con actividades diversas y divertidas
+                  que incluyen obras de teatro, instrumentos musicales, otros
+                  idiomas, manualidades y muchas más actividades de aprendizaje
+                  divertidas. Es emprendedora, fue también propietaria y
+                  directora de una productiva academia de inglés para niños.
                 </p>
                 <p>
-                  Un aspecto importante del juego es la capacidad de acción de
-                  los niños y su control de la experiencia. Por capacidad de
-                  acción se entiende la iniciativa de los niños, su proceso de
-                  toma de decisiones y su nivel de decisión propia en el juego.
+                  “Mi mejor definición es FAMILIA. Soy maestra, terapeuta y mamá
+                  de crianza, trabajo con niños y sus familias por amor a ellos,
+                  disfruto al máximo esta aventura por el mundo de los
+                  chiquiticos, el cual es un mundo lleno de risas. Yo más que
+                  prepararlos para su futuro he aprendido de ellos lecciones de
+                  vida, pues los niños son más sabios que los adultos, solo
+                  tenemos que aprender a escuchar su idioma.”
                 </p>
               </div>
             </div>
@@ -43,22 +49,20 @@ class AboutContact extends Component {
             <div className="row">
               <div className="col-lg-4 col-md-6 col-sm-6">
                 <div className="about-text">
-                  <h3>Nuestra Fundadora</h3>
+                  <h3>Magic Visión </h3>
                   <p>
-                    Maryangelica Torres es Licenciada en Educación, graduada en
-                    la Universidad Católica Andrés Bello - Caracas Venezuela.
-                    Tiene una especialización en Terapia de Juegos para niños.
-                    Maestra de preescolar. Con 26 años de experiencia en crianza
-                    y desarrollo del niño, motivada para ayudar a los niños a
-                    ser felices y saludables a nivel físico, emocional,
-                    cognitiva y psicológicamente.
+                    La visión de A MAGIC MIND es convertirse en un líder
+                    reconocido en la complementación de la educación temprana y
+                    de apoyo familiar. Ser una marca reconocida y admirada en la
+                    industria infantil, gracias a nuestros productos y
+                    servicios.
                   </p>
                 </div>
               </div>
 
               <div className="col-lg-4 col-md-6 col-sm-6">
                 <div className="about-text">
-                  <h3>Nuestra Misión</h3>
+                  <h3>Magic Misión</h3>
                   <p>
                     La misión de A MAGIC MIND es proporcionar a los niños, un
                     desarrollo y preparación personal, académico, social y
@@ -73,13 +77,17 @@ class AboutContact extends Component {
 
               <div className="col-lg-4 col-md-6 col-sm-6 offset-lg-0 offset-md-3 offset-sm-3">
                 <div className="about-text">
-                  <h3>Visión</h3>
+                  <h3>Magic Valores</h3>
                   <p>
-                    La visión de A MAGIC MIND es convertirse en un líder
-                    reconocido en la complementación de la educación temprana y
-                    de apoyo familiar. Ser una marca reconocida y admirada en la
-                    industria infantil, gracias a nuestros productos y
-                    servicios.
+                    <ul>
+                      <li> Etica </li>
+                      <li> Familiaridad </li>
+                      <li> Respeto </li>
+                      <li> Responsabilidad </li>
+                      <li> Honestidad </li>
+                      <li> Solidaridad </li>
+                      <li> Trabajo en equipo </li>
+                    </ul>
                   </p>
                 </div>
               </div>
