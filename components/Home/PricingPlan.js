@@ -51,6 +51,10 @@ export default class PricingPlan extends Component {
 
                   <div className="col-lg-4 col-md-6 offset-lg-0 ">
                     <div className="single-pricing-box active">
+                      <img
+                        src="/images/VaritaMagica.svg"
+                        className="varita basico"
+                      />
                       <div className="pricing-header">
                         <h3>Magic Basic</h3>
                         <p>
@@ -89,6 +93,10 @@ export default class PricingPlan extends Component {
 
                   <div className="col-lg-4 col-md-6 offset-lg-0 ">
                     <div className="single-pricing-box">
+                      <img
+                        src="/images/VaritaMagica.svg"
+                        className="varita bronce"
+                      />
                       <div className="pricing-header">
                         <h3> Magic Bronce</h3>
                         <p>
@@ -131,6 +139,10 @@ export default class PricingPlan extends Component {
                 <div className="row">
                   <div className="col-lg-4 col-md-4">
                     <div className="single-pricing-box active">
+                      <img
+                        src="/images/VaritaMagica.svg"
+                        className="varita plata"
+                      />
                       <div className="pricing-header">
                         <h3>Magic Silver</h3>
                         <p>
@@ -169,6 +181,10 @@ export default class PricingPlan extends Component {
 
                   <div className="col-lg-4 col-md-4">
                     <div className="single-pricing-box">
+                      <img
+                        src="/images/VaritaMagica.svg"
+                        className="varita dorado"
+                      />
                       <div className="pricing-header">
                         <h3>Magic Gold</h3>
                         <p>
@@ -214,6 +230,10 @@ export default class PricingPlan extends Component {
 
                   <div className="col-lg-4 col-md-4">
                     <div className="single-pricing-box">
+                      <img
+                        src="/images/VaritaMagica.svg"
+                        className="varita diamante"
+                      />
                       <div className="pricing-header">
                         <h3>Magic Diamond</h3>
                         <p>

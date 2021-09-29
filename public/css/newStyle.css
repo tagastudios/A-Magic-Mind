@@ -882,6 +882,19 @@
   margin-top: 60px;
 }
 
+.single-pricing-box {
+  position: relative;
+}
+
+.varita {
+  position: absolute;
+  width: 50px;
+  height: auto;
+  z-index: 10;
+  top: 0;
+  left: 0;
+}
+
 @keyframes floating1 {
   0% {
     transform: translate(0%, 0%) rotate(-40deg);
