@@ -76,19 +76,22 @@ class AboutContact extends Component {
               </div>
 
               <div className="col-lg-4 col-md-6 col-sm-6 offset-lg-0 offset-md-3 offset-sm-3">
-                <div className="about-text">
-                  <h3>Magic Valores</h3>
-                  <p>
-                    <ul>
-                      <li> Etica </li>
-                      <li> Familiaridad </li>
-                      <li> Respeto </li>
-                      <li> Responsabilidad </li>
-                      <li> Honestidad </li>
-                      <li> Solidaridad </li>
-                      <li> Trabajo en equipo </li>
-                    </ul>
-                  </p>
+                <div className="about-text nosotros-mounstro">
+                  <div>
+                    <h3>Magic Valores</h3>
+                    <p>
+                      <ul>
+                        <li> Etica </li>
+                        <li> Familiaridad </li>
+                        <li> Respeto </li>
+                        <li> Responsabilidad </li>
+                        <li> Honestidad </li>
+                        <li> Solidaridad </li>
+                        <li> Trabajo en equipo </li>
+                      </ul>
+                    </p>
+                  </div>
+                  <img src="/images/mounstrico.png" className="mounstro-img" />
                 </div>
               </div>
             </div>

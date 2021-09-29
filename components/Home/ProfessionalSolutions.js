@@ -4,9 +4,9 @@ import Link from "next/link";
 const ProfessionalSolutions = () => {
   const text = {
     corto:
-      "Los niños cuando llegan al mundo son lienzos en blanco y se convertirán en una persona u otra dependiendo de...",
+      "En A MAGIC MIND Consideramos que  para el desarrollo exitoso de nuestros niños deben existir los siguientes elementos: Comunicación entre los educadores, criadores y cuidadores para que actúen como una misma persona. ...",
     largo:
-      "Los niños cuando llegan al mundo son lienzos en blanco y se convertirán en una persona u otra dependiendo de la educación que haya recibido y del entorno en el que crezca. Ellos pueden absorber mucha información cuando son pequeños, el amor incondicional y el cariño no pueden faltarles para su buen desarrollo, pero a medida que crecen y se van desarrollando, es necesario centrarse en la educación",
+      "En A MAGIC MIND Consideramos que  para el desarrollo exitoso de nuestros niños deben existir los siguientes elementos: Comunicación entre los educadores, criadores y cuidadores para que actúen como una misma persona. Consideración Mutua entre los padres y/o representantes y los educadores, Desarrollo de nuevas ideas periódicamente, confianza, aceptar y saber dar críticas constructivas entre ellos, Reconocer y celebrar los trabajos creativos de los niños y de todas la personas involucradas, el grupo de trabajo debe ser unido, se deben trazar metas conjuntas pero al mismo tiempo dar la libertad para trabajar individualmente y desarrollar su potencial, contar con los materiales adecuados y necesarios y con el tiempo suficiente para el trabajo, y lo más importante VOCACION Y AMOR A NUESTROS NIÑOS.",
   };
   const [leerMas, setLeerMas] = useState(false);
   return (

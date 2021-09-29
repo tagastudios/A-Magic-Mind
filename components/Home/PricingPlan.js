@@ -26,8 +26,8 @@ export default class PricingPlan extends Component {
     return (
       <div className="pricing-area ptb-110 pt-0">
         <div className="container">
-          <div className="section-title">
-            <h2>Magic Planes</h2>
+          <div className="section-title titulo-espacio">
+            <h2>Magic Plans</h2>
             <p>Atrevete a ser parte de MagicMind</p>
           </div>
 
@@ -73,9 +73,6 @@ export default class PricingPlan extends Component {
 
                       <ul className="pricing-features">
                         <li>
-                          <i className="flaticon-tick"></i> Traslado
-                        </li>
-                        <li>
                           <i className="flaticon-tick"></i> Material Educativo
                         </li>
                         <li>
@@ -113,9 +110,6 @@ export default class PricingPlan extends Component {
                       </div>
 
                       <ul className="pricing-features">
-                        <li>
-                          <i className="flaticon-tick"></i> Traslado
-                        </li>
                         <li>
                           <i className="flaticon-tick"></i> Material Educativo
                         </li>
@@ -159,9 +153,6 @@ export default class PricingPlan extends Component {
 
                       <ul className="pricing-features">
                         <li>
-                          <i className="flaticon-tick"></i> Traslado
-                        </li>
-                        <li>
                           <i className="flaticon-tick"></i> Material Educativo
                         </li>
                         <li>
@@ -198,9 +189,6 @@ export default class PricingPlan extends Component {
                       </div>
 
                       <ul className="pricing-features">
-                        <li>
-                          <i className="flaticon-tick"></i> Traslado
-                        </li>
                         <li>
                           <i className="flaticon-tick"></i> Cámaras de seguridad
                         </li>
@@ -246,9 +234,6 @@ export default class PricingPlan extends Component {
                       </div>
 
                       <ul className="pricing-features">
-                        <li>
-                          <i className="flaticon-tick"></i> Traslado
-                        </li>
                         <li>
                           <i className="flaticon-tick"></i> Cámaras de seguridad
                         </li>

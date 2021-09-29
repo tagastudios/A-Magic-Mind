@@ -138,16 +138,16 @@ export default function Navbar() {
                         </Link>
                       </li> */}
                       <li className="nav-item">
-                        <Link href="/services/custom">
+                        <Link href="/services/MagicPlans">
                           <a className="nav-link" onClick={toggleNavbar}>
-                            Servicio Personalizado
+                            Magic Plans
                           </a>
                         </Link>
                       </li>
                       <li className="nav-item">
-                        <Link href="/services/paquetes">
+                        <Link href="/services/custom">
                           <a className="nav-link" onClick={toggleNavbar}>
-                            Paquetes
+                            Magic Activities
                           </a>
                         </Link>
                       </li>

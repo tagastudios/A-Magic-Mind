@@ -1,19 +1,19 @@
 import React from "react";
 import PageBanner from "../../components/Common/PageBanner";
-import Paquetes from "../../components/Home/PricingPlan";
+import MagicPlans from "../../components/Home/PricingPlan";
 
 function PlayPals() {
   return (
     <>
       <PageBanner
-        pageTitle="Paquetes"
+        pageTitle="Magic Plans"
         homePageUrl="/"
-        homePageText="Home"
-        activePageText="Service Details"
+        homePageText="Inicio"
+        activePageText="Detalles del servicio"
         bgImgClass="item-bg2"
       />
 
-      <Paquetes />
+      <MagicPlans />
     </>
   );
 }

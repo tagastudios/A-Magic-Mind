@@ -1003,6 +1003,33 @@
 .espacioabajo {
   padding-bottom: 55px;
 }
+
+.iconos-actividades {
+  width: 50px;
+  height: auto;
+}
+
+.subcategorias li {
+  line-height: 6px !important;
+}
+
+.lista-actividades {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nosotros-mounstro {
+  display: flex;
+  justify-content: space-between;
+}
+.mounstro-img {
+  width: 200px;
+  height: 200px;
+}
+.titulo-espacio {
+  margin-top: 60px;
+}
+
 @keyframes floating1 {
   0% {
     transform: translate(0%, 0%) rotate(-40deg);
