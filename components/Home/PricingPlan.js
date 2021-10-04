@@ -28,7 +28,11 @@ export default class PricingPlan extends Component {
         <div className="container">
           <div className="section-title titulo-espacio">
             <h2>Magic Plans</h2>
-            <p>Atrevete a ser parte de MagicMind</p>
+            <p>
+              Ofrecemos planes personalizados, con las características de una
+              membresía, flexibles y adaptables a las necesidades tanto del niño
+              como de los padres.
+            </p>
           </div>
 
           <div className="tab pricing-tab pricing-bg-color">
@@ -50,13 +54,16 @@ export default class PricingPlan extends Component {
                   <div className="col-lg-2 col-md-0"></div>
 
                   <div className="col-lg-4 col-md-6 offset-lg-0 ">
-                    <div className="single-pricing-box active">
-                      <img
-                        src="/images/VaritaMagica.svg"
-                        className="varita basico"
-                      />
+                    <div className="single-pricing-box basico">
                       <div className="pricing-header">
-                        <h3>Magic Basic</h3>
+                        <h3>
+                          Magic Basic
+                          <img
+                            src="/images/VaritaMagica.svg"
+                            className="varita varita-basico"
+                          />
+                        </h3>
+
                         <p>
                           Duración 1.5 Horas a la semana
                           <br />
@@ -69,7 +76,7 @@ export default class PricingPlan extends Component {
 
                       <div className="buy-btn">
                         <Link href="/index-5/#">
-                          <a className="btn btn-primary">
+                          <a className="btn btn-primary btn-basico">
                             Conocer más de este paquete
                           </a>
                         </Link>
@@ -92,13 +99,16 @@ export default class PricingPlan extends Component {
                   </div>
 
                   <div className="col-lg-4 col-md-6 offset-lg-0 ">
-                    <div className="single-pricing-box">
-                      <img
-                        src="/images/VaritaMagica.svg"
-                        className="varita bronce"
-                      />
+                    <div className="single-pricing-box bronce">
                       <div className="pricing-header">
-                        <h3> Magic Bronce</h3>
+                        <h3>
+                          {" "}
+                          Magic Bronce{" "}
+                          <img
+                            src="/images/VaritaMagica.svg"
+                            className=" varita varita-bronce"
+                          />
+                        </h3>
                         <p>
                           Duración 3 Horas a la Semana
                           <br />
@@ -111,7 +121,7 @@ export default class PricingPlan extends Component {
 
                       <div className="buy-btn">
                         <Link href="/index-5/#">
-                          <a className="btn btn-primary">
+                          <a className="btn btn-primary btn-bronce">
                             Conoce más de este paquete
                           </a>
                         </Link>
@@ -138,13 +148,15 @@ export default class PricingPlan extends Component {
               <div id="tab2" className="tabs-item">
                 <div className="row">
                   <div className="col-lg-4 col-md-4">
-                    <div className="single-pricing-box active">
-                      <img
-                        src="/images/VaritaMagica.svg"
-                        className="varita plata"
-                      />
+                    <div className="single-pricing-box silver">
                       <div className="pricing-header">
-                        <h3>Magic Silver</h3>
+                        <h3>
+                          Magic Silver{" "}
+                          <img
+                            src="/images/VaritaMagica.svg"
+                            className="varita plata"
+                          />
+                        </h3>
                         <p>
                           Duración 4.5 horas a la semana
                           <br />
@@ -157,7 +169,7 @@ export default class PricingPlan extends Component {
 
                       <div className="buy-btn">
                         <Link href="/#">
-                          <a className="btn btn-primary">
+                          <a className="btn btn-primary btn-silver">
                             Conoce Más sobre este paquete{" "}
                           </a>
                         </Link>
@@ -180,13 +192,15 @@ export default class PricingPlan extends Component {
                   </div>
 
                   <div className="col-lg-4 col-md-4">
-                    <div className="single-pricing-box">
-                      <img
-                        src="/images/VaritaMagica.svg"
-                        className="varita dorado"
-                      />
+                    <div className="single-pricing-box gold">
                       <div className="pricing-header">
-                        <h3>Magic Gold</h3>
+                        <h3>
+                          Magic Gold{" "}
+                          <img
+                            src="/images/VaritaMagica.svg"
+                            className="varita dorado"
+                          />
+                        </h3>
                         <p>
                           Duración 6 horas a la semana <br />
                         </p>
@@ -198,7 +212,7 @@ export default class PricingPlan extends Component {
 
                       <div className="buy-btn">
                         <Link href="/#">
-                          <a className="btn btn-primary">
+                          <a className="btn btn-primary btn-gold">
                             Conoce más sobre este paquete
                           </a>
                         </Link>
@@ -229,13 +243,15 @@ export default class PricingPlan extends Component {
                   </div>
 
                   <div className="col-lg-4 col-md-4">
-                    <div className="single-pricing-box">
-                      <img
-                        src="/images/VaritaMagica.svg"
-                        className="varita diamante"
-                      />
+                    <div className="single-pricing-box diamond">
                       <div className="pricing-header">
-                        <h3>Magic Diamond</h3>
+                        <h3>
+                          Magic Diamond{" "}
+                          <img
+                            src="/images/VaritaMagica.svg"
+                            className="varita diamante"
+                          />
+                        </h3>
                         <p>
                           Duración 9 horas a la semana <br />
                         </p>
@@ -247,7 +263,7 @@ export default class PricingPlan extends Component {
 
                       <div className="buy-btn">
                         <Link href="/#">
-                          <a className="btn btn-primary">
+                          <a className="btn btn-primary btn-diamond">
                             Conoce más sobre este paquete
                           </a>
                         </Link>

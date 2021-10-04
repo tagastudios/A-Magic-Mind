@@ -10,12 +10,13 @@ const MainBanner = () => {
           <h1>{slogan}!!</h1>
           <p className="main-banner-text">
             Los niños aprenden mientras juegan, más importante aún, en el juego,
-            los niños aprenden como aprender..! La educación no consiste en
-            ofrecer las cosas ya hechas o dar las respuestas acertadas. Se trata
+            los niños aprenden cómo aprender.! La educación no consiste en
+            ofrecer las cosas ya hechas o dar las respuestas acertadas, se trata
             de mostrarles el camino para que con lo aprendido sean ellos los
-            protagonistas de sus propias decisiones y de sus propios errores.
-            Así irán construyendo y desarrollando su personalidad y sus
-            capacidades físicas e intelectuales.
+            protagonistas de sus propias decisiones y de sus propios errores,
+            siempre con el apoyo y la guía necesaria. Así irán construyendo y
+            desarrollando su personalidad y sus capacidades físicas e
+            intelectuales.
           </p>
 
           <div className="btn-box">

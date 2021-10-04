@@ -27,7 +27,7 @@ const MainServices = () => {
               </div>
             </a>
           </Link>
-          <Link href="/blogs/">
+          <Link href="/playpals/">
             <a className="col-lg-3 col-sm-6 col-md-4">
               <div className="single-main-services-box">
                 <div className="icon-new">

@@ -860,7 +860,7 @@
 }
 
 .subcategorias li {
-  line-height: 6px !important;
+  line-height: 14px !important;
 }
 
 .lista-actividades {
@@ -887,12 +887,344 @@
 }
 
 .varita {
-  position: absolute;
   width: 50px;
   height: auto;
   z-index: 10;
-  top: 0;
-  left: 0;
+}
+
+.icon-new2 img {
+  height: 60px;
+  width: 60px;
+}
+
+.basico:hover {
+  background: #eeaeca;
+  background: radial-gradient(circle, #eeaeca 0%, #94bbe9 100%);
+  border: 1px solid #d68d52 !important;
+  box-shadow: 5px 5px #d68d52 !important;
+}
+
+.basico:hover img,
+.basico:hover h3,
+.basico:hover div,
+.basico:hover a,
+.basico:hover p,
+.basico:hover li:nth-child(1),
+.basico:hover li:nth-child(2),
+.basico:hover li:nth-child(3) {
+  color: white;
+  text-shadow: 0 0 40px white, 0 0 40px white, 0 0 40px white, 0 0 40px #d68d52, 0 0 25px #d68d52, 0 0 30px #d68d52, 0 0 35px #d68d52, 0 0 40px #d68d52;
+}
+
+.basico:hover img {
+  transition: color 1s ease;
+}
+
+.basico:hover h3 {
+  transition: color 0.5s 0.25s ease;
+}
+
+.basico:hover p {
+  transition: color 0.5s 0.5s ease;
+}
+
+.basico:hover div {
+  transition: color 0.5s 0.75s ease;
+}
+
+.basico:hover a {
+  transition: color 0.5s 1s ease;
+}
+
+.basico:hover li:nth-child(1) {
+  transition: color 0.5s 1.25s ease;
+}
+
+.basico:hover li:nth-child(2) {
+  transition: color 0.5s 1.5s ease;
+}
+
+.basico:hover li:nth-child(3) {
+  transition: color 0.5s 1.75s ease;
+}
+
+.bronce:hover {
+  background: linear-gradient(-72deg, #ca7345, #ffdeca 16%, #ca7345 21%, #ffdeca 24%, #a14521 27%, #ca7345 36%, #ffdeca 45%, #ffdeca 60%, #ca7345 72%, #ffdeca 80%, #ca7345 84%, #732100);
+  border: 1px solid #d6ac52 !important;
+  box-shadow: 5px 5px #d6ac52 !important;
+}
+
+.bronce:hover img,
+.bronce:hover h3,
+.bronce:hover div,
+.bronce:hover a,
+.bronce:hover p,
+.bronce:hover li:nth-child(1),
+.bronce:hover li:nth-child(2),
+.bronce:hover li:nth-child(3) {
+  color: white;
+  text-shadow: 0 0 40px white, 0 0 40px white, 0 0 40px white, 0 0 40px #d68d52, 0 0 25px #d68d52, 0 0 30px #d68d52, 0 0 35px #d68d52, 0 0 40px #d68d52;
+}
+
+.bronce:hover img {
+  transition: color 1s ease;
+}
+
+.bronce:hover h3 {
+  transition: color 0.5s 0.25s ease;
+}
+
+.bronce:hover p {
+  transition: color 0.5s 0.5s ease;
+}
+
+.bronce:hover div {
+  transition: color 0.5s 0.75s ease;
+}
+
+.bronce:hover a {
+  transition: color 0.5s 1s ease;
+}
+
+.bronce:hover li:nth-child(1) {
+  transition: color 0.5s 1.25s ease;
+}
+
+.bronce:hover li:nth-child(2) {
+  transition: color 0.5s 1.5s ease;
+}
+
+.bronce:hover li:nth-child(3) {
+  transition: color 0.5s 1.75s ease;
+}
+
+.silver:hover {
+  background: linear-gradient(-72deg, #dedede, #ffffff 16%, #dedede 21%, #ffffff 24%, #454545 27%, #dedede 36%, #ffffff 45%, #ffffff 60%, #dedede 72%, #ffffff 80%, #dedede 84%, #a1a1a1);
+  border: 1px solid #5f52d6 !important;
+  box-shadow: 5px 5px #5f52d6 !important;
+}
+
+.silver:hover img,
+.silver:hover h3,
+.silver:hover div,
+.silver:hover a,
+.silver:hover p,
+.silver:hover li:nth-child(1),
+.silver:hover li:nth-child(2),
+.silver:hover li:nth-child(3) {
+  color: white;
+  text-shadow: 0 0 40px white, 0 0 40px white, 0 0 40px white, 0 0 40px #454545, 0 0 25px #454545, 0 0 30px #454545, 0 0 35px #454545, 0 0 40px #454545;
+}
+
+.silver:hover img {
+  transition: color 1s ease;
+}
+
+.silver:hover h3 {
+  transition: color 0.5s 0.25s ease;
+}
+
+.silver:hover p {
+  transition: color 0.5s 0.5s ease;
+}
+
+.silver:hover div {
+  transition: color 0.5s 0.75s ease;
+}
+
+.silver:hover a {
+  transition: color 0.5s 1s ease;
+}
+
+.silver:hover li:nth-child(1) {
+  transition: color 0.5s 1.25s ease;
+}
+
+.silver:hover li:nth-child(2) {
+  transition: color 0.5s 1.5s ease;
+}
+
+.silver:hover li:nth-child(3) {
+  transition: color 0.5s 1.75s ease;
+}
+
+.gold:hover {
+  background: linear-gradient(-72deg, #ffdea1, #ffffff 16%, #ffdea1 21%, #ffffff 24%, #736445 27%, #ffdea1 36%, #ffffff 45%, #ffffff 60%, #ffdea1 72%, #ffffff 80%, #ffdea1 84%, #736445);
+  border: 1px solid #fff06d !important;
+  box-shadow: 5px 5px #fff06d !important;
+}
+
+.gold:hover img,
+.gold:hover h3,
+.gold:hover div,
+.gold:hover a,
+.gold:hover p,
+.gold:hover li:nth-child(1),
+.gold:hover li:nth-child(2),
+.gold:hover li:nth-child(3),
+.gold:hover li:nth-child(4),
+.gold:hover li:nth-child(5) {
+  color: brown;
+  text-shadow: 0 0 40px white, 0 0 40px white, 0 0 40px white, 0 0 40px #d68d52, 0 0 25px #d68d52, 0 0 30px #d68d52, 0 0 35px #d68d52, 0 0 40px #d68d52;
+}
+
+.gold:hover img {
+  transition: color 1s ease;
+}
+
+.gold:hover h3 {
+  transition: color 0.5s 0.25s ease;
+}
+
+.gold:hover p {
+  transition: color 0.5s 0.5s ease;
+}
+
+.gold:hover div {
+  transition: color 0.5s 0.75s ease;
+}
+
+.gold:hover a {
+  transition: color 0.5s 1s ease;
+}
+
+.gold:hover li:nth-child(1) {
+  transition: color 0.5s 1.25s ease;
+}
+
+.gold:hover li:nth-child(2) {
+  transition: color 0.5s 1.5s ease;
+}
+
+.gold:hover li:nth-child(3) {
+  transition: color 0.5s 1.75s ease;
+}
+
+.gold:hover li:nth-child(4) {
+  transition: color 0.5s 2s ease;
+}
+
+.gold:hover li:nth-child(5) {
+  transition: color 0.5s 2.25s ease;
+}
+
+.diamond:hover {
+  background: linear-gradient(-72deg, #dedede, #ffffff 16%, #dedede 21%, #ffffff 24%, #caa1de 27%, #dea1ca 30%, #dedede 38%, #ffffff 45%, #ffffff 60%, #dedede 72%, #ffffff 80%, #dedede 84%, #caa1de 93%, #dea1ca);
+}
+
+.diamond:hover img,
+.diamond:hover h3,
+.diamond:hover div,
+.diamond:hover a,
+.diamond:hover p,
+.diamond:hover li:nth-child(1),
+.diamond:hover li:nth-child(2),
+.diamond:hover li:nth-child(3),
+.diamond:hover li:nth-child(4),
+.diamond:hover li:nth-child(5) {
+  color: purple;
+  text-shadow: 0 0 40px #fff, 0 0 40px #fff, 0 0 40px #fff, 0 0 40px #ff5d5b, 0 0 25px #ff5d5b, 0 0 30px #ff5d5b, 0 0 35px #ff5d5b, 0 0 40px #ff5d5b;
+}
+
+.diamond:hover img {
+  transition: color 1s ease;
+}
+
+.diamond:hover h3 {
+  transition: color 0.5s 0.25s ease;
+}
+
+.diamond:hover p {
+  transition: color 0.5s 0.5s ease;
+}
+
+.diamond:hover div {
+  transition: color 0.5s 0.75s ease;
+}
+
+.diamond:hover a {
+  transition: color 0.5s 1s ease;
+}
+
+.diamond:hover li:nth-child(1) {
+  transition: color 0.5s 1.25s ease;
+}
+
+.diamond:hover li:nth-child(2) {
+  transition: color 0.5s 1.5s ease;
+}
+
+.diamond:hover li:nth-child(3) {
+  transition: color 0.5s 1.75s ease;
+}
+
+.diamond:hover li:nth-child(4) {
+  transition: color 0.5s 2s ease;
+}
+
+.diamond:hover li:nth-child(5) {
+  transition: color 0.5s 2.25s ease;
+}
+
+.btn-basico {
+  background: #d68d52 !important;
+}
+
+.btn-basico:hover {
+  background: #ffd4b1 !important;
+}
+
+.btn-bronce {
+  background: #d6ac52;
+}
+
+.btn-bronce:hover {
+  background: #fff3b1 !important;
+}
+
+.btn-silver {
+  background: #a398ff;
+}
+
+.btn-silver:hover {
+  background: #5f52d6 !important;
+}
+
+.btn-gold {
+  background: #fff06d;
+}
+
+.btn-gold:hover {
+  background: #faffb1 !important;
+}
+
+.basico {
+  border: 1px solid #ffd4b1 !important;
+  box-shadow: 5px 5px #ffd4b1 !important;
+}
+
+.bronce {
+  border: 1px solid #ffd4b1 !important;
+  box-shadow: 5px 5px #ffd4b1 !important;
+}
+
+.silver {
+  border: 1px solid #a398ff !important;
+  box-shadow: 5px 5px #a398ff !important;
+}
+
+.gold {
+  border: 1px solid #faffb1 !important;
+  box-shadow: 5px 5px #faffb1 !important;
+}
+
+.single-pricing-box .pricing-features li i {
+  color: black !important;
+}
+
+.pricing-bg-color.pricing-tab .tabs li.current,
+.pricing-bg-color.pricing-tab .tabs li:hover {
+  background-color: #b660e5;
 }
 
 @keyframes floating1 {
