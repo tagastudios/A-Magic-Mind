@@ -4,35 +4,48 @@ const Avioncito = () => {
   const [data, setData] = useState([
     {
       titulo: "Beneficios del Juego",
-      texto:
-        "1. Proporciona mayor desarrollo sensorial -sentido y percepción 2.Aumenta la motricidad fina y gruesa 3. Estimula la memoria, atención, cognición y procesamiento lógico e imaginación 4. Facilita la comunicación, expresión, socialización  ",
+      texto1:
+        "Proporciona mayor desarrollo sensorial (sentido - percepción) y aumenta la motricidad fina y gruesa",
+      texto2:
+        "Estimula la memoria, atención, cognición y procesamiento lógico e imaginación",
+      texto3: "Facilita la comunicación, expresión, socialización  ",
       clase: "texto-rojo",
     },
     {
       titulo: "Escuchar",
-      texto: "Les impartimos las instrucciones y los invitamos a jugar",
+      texto1: "Nos aseguramos de captar la atención de nuestros niños",
+      texto2: "Les impartimos las instrucciones",
+      texto3: " Y los invitamos a jugar",
       clase: "texto-naranja",
     },
     {
       titulo: "Entender",
-      texto:
+      texto1:
         "Nos aseguramos que las instrucciones sean comprendidas por nuestros peques",
+      texto2: "Con ejemplos cotidianos y familiares para ellos ",
+      texto3:
+        "Que los hagan comprender cada una de las indicaciones que se les da",
       clase: "texto-verde",
     },
     {
       titulo: "Hacer",
-      texto: "manos a la obra! hacer para aprender",
+      texto1: "Manos a la obra!",
+      texto2: "Hacer para aprender",
+      texto3: "Las metas se alacanzas con acciones",
       clase: "texto-azul",
     },
     {
       titulo: "Vivir",
-      texto:
-        "apoyamos y acompañamos a nuestros peques a seguirlo intentando con alegrias y frustraciones hasta que lo logren.",
+      texto1:
+        "Apoyamos y acompañamos a nuestros peques a seguirlo intentando con alegrias y frustraciones hasta que lo logren.",
+      texto2:
+        "Les mostramos a nuestros peques que con esfuerzo y dedicación pueden lograr sus objetivos",
       clase: "texto-morado",
     },
     {
       titulo: "Aprender",
-      texto: "celebramos con ellos sus logros. ",
+      texto1: "Celebramos con ellos sus logros. ",
+      texto2: "Celebramos su esfuerzo y dedicación",
       clase: "texto-amarillo",
     },
   ]);
@@ -114,8 +127,18 @@ const Avioncito = () => {
         <div
           className={`avioncito-right ${play ? "avioncito-right-items" : ""}`}
         >
-          <h2 className={`${active.clase} texto-avioncito`}>{active.titulo}</h2>
-          <p>{active.texto}</p>
+          <h2 className={`${active.clase} texto-avioncito `}>
+            {active.titulo}
+          </h2>
+          <p className={`${active.clase} texto-parrafo-avioncito`}>
+            {active.texto1}
+          </p>
+          <p className={`${active.clase} texto-parrafo-avioncito`}>
+            {active.texto2}
+          </p>
+          <p className={`${active.clase} texto-parrafo-avioncito`}>
+            {active.texto3}
+          </p>
         </div>
       ) : (
         <div className="avioncito-right">

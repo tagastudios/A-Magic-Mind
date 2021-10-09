@@ -3,7 +3,7 @@ import dynamic from "next/dynamic";
 const OwlCarousel = dynamic(import("react-owl-carousel3"));
 
 const options = {
-  loop: true,
+  loop: false,
   nav: false,
   dots: false,
   autoplayHoverPause: true,
@@ -13,23 +13,6 @@ const options = {
     "<i className='flaticon-left-chevron'></i>",
     "<i className='flaticon-right-chevron'></i>",
   ],
-  responsive: {
-    0: {
-      items: 2,
-    },
-    576: {
-      items: 3,
-    },
-    768: {
-      items: 4,
-    },
-    1024: {
-      items: 4,
-    },
-    1200: {
-      items: 5,
-    },
-  },
 };
 
 const PartnerSlider = () => {
@@ -46,38 +29,19 @@ const PartnerSlider = () => {
           <h2>Magic Partner</h2>
         </div>
 
-        {display ? (
-          <OwlCarousel
-            className="partner-slides owl-carousel owl-theme"
-            {...options}
-          >
-            <div className="single-partner-item">
-              <a href="/#" target="_blank">
-                <img src="/images/partner/partner1.png" alt="image" />
-              </a>
-            </div>
+        <div className="flex flex-center">
+          <div className="single-partner-item">
+            <a href="/#" target="_blank">
+              <img src="/images/partner/partner1.png" alt="image" />
+            </a>
+          </div>
 
-            <div className="single-partner-item">
-              <a href="/#" target="_blank">
-                <img src="/images/partner/partner2.png" alt="image" />
-              </a>
-            </div>
-
-            <div className="single-partner-item">
-              <a href="/#" target="_blank">
-                <img src="/images/partner/partner1.png" alt="image" />
-              </a>
-            </div>
-
-            <div className="single-partner-item">
-              <a href="/#" target="_blank">
-                <img src="/images/partner/partner2.png" alt="image" />
-              </a>
-            </div>
-          </OwlCarousel>
-        ) : (
-          ""
-        )}
+          <div className="single-partner-item">
+            <a href="/#" target="_blank">
+              <img src="/images/partner/partner2.png" alt="image" />
+            </a>
+          </div>
+        </div>
       </div>
 
       <div className="dot-shape1">

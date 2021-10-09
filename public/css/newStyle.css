@@ -912,41 +912,47 @@
 .basico:hover li:nth-child(1),
 .basico:hover li:nth-child(2),
 .basico:hover li:nth-child(3) {
-  color: white;
+  color: black;
   font-weight: 800;
-  text-shadow: 0 0 40px white, 0 0 40px white, 0 0 40px white, 0 0 40px #d68d52, 0 0 25px #d68d52, 0 0 30px #d68d52, 0 0 35px #d68d52, 0 0 40px #d68d52;
+  text-shadow: 0 0 5px #ff5d5b, 0 0 10px #ff5d5b, 0 0 15px #ff5d5b, 0 0 20px #ddeb24, 0 0 25px #ddeb24;
+  -webkit-text-fill-color: #f4ecff;
+  -webkit-text-stroke-color: #000000;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-text-fill-color: #f4ecff;
+  -moz-text-stroke-color: black;
+  -moz-text-stroke-width: 0.2px;
 }
 
 .basico:hover img {
-  transition: color 1s ease;
+  transition: all 1s ease;
 }
 
 .basico:hover h3 {
-  transition: color 0.5s 0.25s ease;
+  transition: all 0.5s 0.25s ease;
 }
 
 .basico:hover p {
-  transition: color 0.5s 0.5s ease;
+  transition: all 0.5s 0.5s ease;
 }
 
 .basico:hover div {
-  transition: color 0.5s 0.75s ease;
+  transition: all 0.5s 0.75s ease;
 }
 
 .basico:hover a {
-  transition: color 0.5s 1s ease;
+  transition: all 0.5s 1s ease;
 }
 
 .basico:hover li:nth-child(1) {
-  transition: color 0.5s 1.25s ease;
+  transition: all 0.5s 1.25s ease;
 }
 
 .basico:hover li:nth-child(2) {
-  transition: color 0.5s 1.5s ease;
+  transition: all 0.5s 1.5s ease;
 }
 
 .basico:hover li:nth-child(3) {
-  transition: color 0.5s 1.75s ease;
+  transition: all 0.5s 1.75s ease;
 }
 
 .bronce:hover {
@@ -1023,11 +1029,11 @@
 .silver:hover li:nth-child(3) {
   color: black;
   font-weight: 800;
-  text-shadow: 0 0 5px #026186, 0 0 10px #026186 0 0 15px #026186 0 0 20px #06c5ff, 0 0 25px #06c5ff;
-  -webkit-text-fill-color: #240a80;
+  text-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 15px blue, 0 0 20px #ddeb24, 0 0 25px #ddeb24;
+  -webkit-text-fill-color: #f4ecff;
   -webkit-text-stroke-color: #000000;
   -webkit-text-stroke-width: 0.2px;
-  -moz-text-fill-color: #240a80;
+  -moz-text-fill-color: #f4ecff;
   -moz-text-stroke-color: black;
   -moz-text-stroke-width: 0.2px;
 }
@@ -1080,48 +1086,55 @@
 .gold:hover li:nth-child(3),
 .gold:hover li:nth-child(4),
 .gold:hover li:nth-child(5) {
-  color: brown;
-  text-shadow: 0 0 40px white, 0 0 40px white, 0 0 40px white, 0 0 40px #d68d52, 0 0 25px #d68d52, 0 0 30px #d68d52, 0 0 35px #d68d52, 0 0 40px #d68d52;
+  color: black;
+  font-weight: 800;
+  text-shadow: 0 0 5px #e73d1f, 0 0 10px #e73d1f, 0 0 15px #e73d1f, 0 0 20px #ddeb24, 0 0 25px #ddeb24;
+  -webkit-text-fill-color: #f4ecff;
+  -webkit-text-stroke-color: #000000;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-text-fill-color: #f4ecff;
+  -moz-text-stroke-color: black;
+  -moz-text-stroke-width: 0.2px;
 }
 
 .gold:hover img {
-  transition: color 1s ease;
+  transition: all 1s ease;
 }
 
 .gold:hover h3 {
-  transition: color 0.5s 0.25s ease;
+  transition: all 0.5s 0.25s ease;
 }
 
 .gold:hover p {
-  transition: color 0.5s 0.5s ease;
+  transition: all 0.5s 0.5s ease;
 }
 
 .gold:hover div {
-  transition: color 0.5s 0.75s ease;
+  transition: all 0.5s 0.75s ease;
 }
 
 .gold:hover a {
-  transition: color 0.5s 1s ease;
+  transition: all 0.5s 1s ease;
 }
 
 .gold:hover li:nth-child(1) {
-  transition: color 0.5s 1.25s ease;
+  transition: all 0.5s 1.25s ease;
 }
 
 .gold:hover li:nth-child(2) {
-  transition: color 0.5s 1.5s ease;
+  transition: all 0.5s 1.5s ease;
 }
 
 .gold:hover li:nth-child(3) {
-  transition: color 0.5s 1.75s ease;
+  transition: all 0.5s 1.75s ease;
 }
 
 .gold:hover li:nth-child(4) {
-  transition: color 0.5s 2s ease;
+  transition: all 0.5s 2s ease;
 }
 
 .gold:hover li:nth-child(5) {
-  transition: color 0.5s 2.25s ease;
+  transition: all 0.5s 2.25s ease;
 }
 
 .diamond:hover {
@@ -1139,47 +1152,54 @@
 .diamond:hover li:nth-child(4),
 .diamond:hover li:nth-child(5) {
   color: purple;
-  text-shadow: 0 0 40px #fff, 0 0 40px #fff, 0 0 40px #fff, 0 0 40px #ff5d5b, 0 0 25px #ff5d5b, 0 0 30px #ff5d5b, 0 0 35px #ff5d5b, 0 0 40px #ff5d5b;
+  font-weight: 800;
+  text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px #ff5d5b, 0 0 25px #ff5d5b;
+  -webkit-text-fill-color: purple;
+  -webkit-text-stroke-color: #000000;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-text-fill-color: purple;
+  -moz-text-stroke-color: black;
+  -moz-text-stroke-width: 0.2px;
 }
 
 .diamond:hover img {
-  transition: color 1s ease;
+  transition: all 1s ease;
 }
 
 .diamond:hover h3 {
-  transition: color 0.5s 0.25s ease;
+  transition: all 0.5s 0.25s ease;
 }
 
 .diamond:hover p {
-  transition: color 0.5s 0.5s ease;
+  transition: all 0.5s 0.5s ease;
 }
 
 .diamond:hover div {
-  transition: color 0.5s 0.75s ease;
+  transition: all 0.5s 0.75s ease;
 }
 
 .diamond:hover a {
-  transition: color 0.5s 1s ease;
+  transition: all 0.5s 1s ease;
 }
 
 .diamond:hover li:nth-child(1) {
-  transition: color 0.5s 1.25s ease;
+  transition: all 0.5s 1.25s ease;
 }
 
 .diamond:hover li:nth-child(2) {
-  transition: color 0.5s 1.5s ease;
+  transition: all 0.5s 1.5s ease;
 }
 
 .diamond:hover li:nth-child(3) {
-  transition: color 0.5s 1.75s ease;
+  transition: all 0.5s 1.75s ease;
 }
 
 .diamond:hover li:nth-child(4) {
-  transition: color 0.5s 2s ease;
+  transition: all 0.5s 2s ease;
 }
 
 .diamond:hover li:nth-child(5) {
-  transition: color 0.5s 2.25s ease;
+  transition: all 0.5s 2.25s ease;
 }
 
 .btn-basico {
@@ -1241,6 +1261,91 @@
 .pricing-bg-color.pricing-tab .tabs li.current,
 .pricing-bg-color.pricing-tab .tabs li:hover {
   background-color: #b660e5;
+}
+
+.flex-center {
+  justify-content: center;
+}
+
+.flex-center img {
+  height: 150px;
+  width: auto;
+}
+
+.texto-rojo {
+  color: black;
+  font-weight: 800;
+  text-shadow: 0 0 5px #ff5d5b, 0 0 10px #ff5d5b, 0 0 15px #ff5d5b, 0 0 20px #ddeb24, 0 0 25px #ddeb24;
+  -webkit-text-fill-color: black;
+  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-text-fill-color: Black;
+  -moz-text-stroke-color: white;
+  -moz-text-stroke-width: 0.2px;
+}
+
+.texto-naranja {
+  color: black;
+  font-weight: 800;
+  text-shadow: 0 0 5px #e73d1f, 0 0 10px #e73d1f, 0 0 15px #e73d1f, 0 0 20px #ddeb24, 0 0 25px #ddeb24;
+  -webkit-text-fill-color: black;
+  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-text-fill-color: Black;
+  -moz-text-stroke-color: white;
+  -moz-text-stroke-width: 0.2px;
+}
+
+.texto-verde {
+  color: black;
+  font-weight: 800;
+  text-shadow: 0 0 5px #83c853, 0 0 10px #83c853, 0 0 15px #83c853, 0 0 20px #ddeb24, 0 0 25px #ddeb24;
+  -webkit-text-fill-color: black;
+  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-text-fill-color: Black;
+  -moz-text-stroke-color: white;
+  -moz-text-stroke-width: 0.2px;
+}
+
+.texto-azul {
+  color: black;
+  font-weight: 800;
+  text-shadow: 0 0 5px #27b7d9, 0 0 10px #27b7d9, 0 0 15px #27b7d9, 0 0 20px #ddeb24, 0 0 25px #ddeb24;
+  -webkit-text-fill-color: black;
+  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-text-fill-color: Black;
+  -moz-text-stroke-color: white;
+  -moz-text-stroke-width: 0.2px;
+}
+
+.texto-morado {
+  color: black;
+  font-weight: 800;
+  text-shadow: 0 0 5px #b660e5, 0 0 10px #b660e5, 0 0 15px #b660e5, 0 0 20px #ddeb24, 0 0 25px #ddeb24;
+  -webkit-text-fill-color: black;
+  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-text-fill-color: Black;
+  -moz-text-stroke-color: white;
+  -moz-text-stroke-width: 0.2px;
+}
+
+.texto-amarillo {
+  color: black;
+  font-weight: 800;
+  text-shadow: 0 0 5px #e73d1f, 0 0 10px #e73d1f, 0 0 15px #e73d1f, 0 0 20px #ddeb24, 0 0 25px #ddeb24;
+  -webkit-text-fill-color: black;
+  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-text-fill-color: Black;
+  -moz-text-stroke-color: white;
+  -moz-text-stroke-width: 0.2px;
+}
+
+.texto-parrafo-avioncito {
+  font-size: large;
 }
 
 @keyframes floating1 {

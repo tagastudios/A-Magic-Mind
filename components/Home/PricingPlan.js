@@ -201,9 +201,9 @@ export default class PricingPlan extends Component {
                             className="varita dorado"
                           />
                         </h3>
-                        <p>
+                        <h5>
                           Duración 6 horas a la semana <br />
-                        </p>
+                        </h5>
                       </div>
 
                       <div className="price">
@@ -252,9 +252,9 @@ export default class PricingPlan extends Component {
                             className="varita diamante"
                           />
                         </h3>
-                        <p>
+                        <h5>
                           Duración 9 horas a la semana <br />
-                        </p>
+                        </h5>
                       </div>
 
                       <div className="price">

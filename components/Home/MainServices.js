@@ -12,7 +12,7 @@ const MainServices = () => {
       <div className="container">
         <div className="row">
           <Link href="services/playpals/">
-            <a className="col-lg-3 col-sm-6 col-md-4">
+            <a className="col-lg-4 col-sm-6 col-md-4">
               <div className="single-main-services-box">
                 <div className="icon-new">
                   <Icons icon="category" color="black" />
@@ -28,7 +28,7 @@ const MainServices = () => {
             </a>
           </Link>
           <Link href="/playpals/">
-            <a className="col-lg-3 col-sm-6 col-md-4">
+            <a className="col-lg-4 col-sm-6 col-md-4">
               <div className="single-main-services-box">
                 <div className="icon-new">
                   <Icons icon="tips" color="black" />
@@ -44,7 +44,7 @@ const MainServices = () => {
             </a>
           </Link>
           <Link href="/about-us/">
-            <a className="col-lg-3 col-sm-6 col-md-4">
+            <a className="col-lg-4 col-sm-6 col-md-4">
               <div className="single-main-services-box">
                 <div className="icon-new">
                   <Icons icon="team" color="black" />
@@ -60,14 +60,14 @@ const MainServices = () => {
               </div>
             </a>
           </Link>
-          <Link href="/#">
-            <a className="col-lg-3 col-sm-6 col-md-4">
+          <Link href="https://drive.google.com/file/d/1H-b0mIFPQ3bny9LXX-e-xgxzTRmmbV42/view?usp=sharing">
+            <a className="col-lg-4 col-sm-6 col-md-4">
               <div className="single-main-services-box">
                 <div className="icon-new">
                   <Icons icon="enroll" color="black" />
                 </div>
                 <h3>
-                  <Link href="/#">
+                  <Link href="https://drive.google.com/file/d/1H-b0mIFPQ3bny9LXX-e-xgxzTRmmbV42/view?usp=sharing">
                     <a>Planilla de Inscripción</a>
                   </Link>
                 </h3>
@@ -77,7 +77,7 @@ const MainServices = () => {
             </a>
           </Link>
           <Link href="/contact/">
-            <a className="col-lg-3 col-sm-6 col-md-4">
+            <a className="col-lg-4 col-sm-6 col-md-4">
               <div className="single-main-services-box">
                 <div className="icon-new ml-1">
                   <Icons icon="info" color="black" />

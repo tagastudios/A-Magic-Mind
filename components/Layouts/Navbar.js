@@ -52,13 +52,13 @@ export default function Navbar() {
           <div>
             <a href="tel:+17863012529">
               <Icons icon="phone" color={Colors("red")} />
-              <span>+1(786)301-2529</span>
+              <span>+1 (786) 301-2529</span>
             </a>
           </div>
           <div>
             <a href="mailto:info@magicmindus.com?subject=Information%20Request%20-%20WebLink.1&body=Hi%20I%20want%to%request%more%information%about%Magic%Mind:">
               <Icons icon="email" color={Colors("orange")} />
-              <span>info@magicmindus.com</span>
+              <span>info@amagicmindus.com</span>
             </a>
           </div>
           <div>
