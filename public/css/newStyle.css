@@ -898,8 +898,8 @@
 }
 
 .basico:hover {
-  background: #eeaeca;
-  background: radial-gradient(circle, #eeaeca 0%, #94bbe9 100%);
+  background: rgba(238, 174, 202, 0.5);
+  background: radial-gradient(circle, #eeaeca 0%, rgba(148, 187, 233, 0.5) 100%);
   border: 1px solid #d68d52 !important;
   box-shadow: 5px 5px #d68d52 !important;
 }
@@ -913,6 +913,7 @@
 .basico:hover li:nth-child(2),
 .basico:hover li:nth-child(3) {
   color: white;
+  font-weight: 800;
   text-shadow: 0 0 40px white, 0 0 40px white, 0 0 40px white, 0 0 40px #d68d52, 0 0 25px #d68d52, 0 0 30px #d68d52, 0 0 35px #d68d52, 0 0 40px #d68d52;
 }
 
@@ -949,7 +950,8 @@
 }
 
 .bronce:hover {
-  background: linear-gradient(-72deg, #ca7345, #ffdeca 16%, #ca7345 21%, #ffdeca 24%, #a14521 27%, #ca7345 36%, #ffdeca 45%, #ffdeca 60%, #ca7345 72%, #ffdeca 80%, #ca7345 84%, #732100);
+  --opacidad: 0.7;
+  background: linear-gradient(-72deg, rgba(202, 115, 68, var(--opacidad)), rgba(255, 222, 202, var(--opacidad)) 16%, rgba(202, 115, 69, var(--opacidad)) 21%, rgba(255, 222, 202, var(--opacidad)) 24%, rgba(161, 69, 33, var(--opacidad)) 27%, rgba(202, 116, 69, var(--opacidad)) 36%, rgba(255, 222, 202, var(--opacidad)) 45%, rgba(255, 222, 202, var(--opacidad)) 60%, rgba(202, 116, 69, var(--opacidad)) 72%, rgba(255, 222, 202, var(--opacidad)) 80%, rgba(202, 116, 69, var(--opacidad)) 84%, rgba(115, 33, 0, var(--opacidad)));
   border: 1px solid #d6ac52 !important;
   box-shadow: 5px 5px #d6ac52 !important;
 }
@@ -962,40 +964,47 @@
 .bronce:hover li:nth-child(1),
 .bronce:hover li:nth-child(2),
 .bronce:hover li:nth-child(3) {
-  color: white;
-  text-shadow: 0 0 40px white, 0 0 40px white, 0 0 40px white, 0 0 40px #d68d52, 0 0 25px #d68d52, 0 0 30px #d68d52, 0 0 35px #d68d52, 0 0 40px #d68d52;
+  color: black;
+  font-weight: 800;
+  text-shadow: 0 0 5px #e73d1f, 0 0 10px #e73d1f, 0 0 15px #e73d1f, 0 0 20px #ddeb24, 0 0 25px #ddeb24;
+  -webkit-text-fill-color: #f4ecff;
+  -webkit-text-stroke-color: #000000;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-text-fill-color: #f4ecff;
+  -moz-text-stroke-color: black;
+  -moz-text-stroke-width: 0.2px;
 }
 
 .bronce:hover img {
-  transition: color 1s ease;
+  transition: all 1s ease;
 }
 
 .bronce:hover h3 {
-  transition: color 0.5s 0.25s ease;
+  transition: all 0.5s 0.25s ease;
 }
 
 .bronce:hover p {
-  transition: color 0.5s 0.5s ease;
+  transition: all 0.5s 0.5s ease;
 }
 
 .bronce:hover div {
-  transition: color 0.5s 0.75s ease;
+  transition: all 0.5s 0.75s ease;
 }
 
 .bronce:hover a {
-  transition: color 0.5s 1s ease;
+  transition: all 0.5s 1s ease;
 }
 
 .bronce:hover li:nth-child(1) {
-  transition: color 0.5s 1.25s ease;
+  transition: all 0.5s 1.25s ease;
 }
 
 .bronce:hover li:nth-child(2) {
-  transition: color 0.5s 1.5s ease;
+  transition: all 0.5s 1.5s ease;
 }
 
 .bronce:hover li:nth-child(3) {
-  transition: color 0.5s 1.75s ease;
+  transition: all 0.5s 1.75s ease;
 }
 
 .silver:hover {
@@ -1012,40 +1021,47 @@
 .silver:hover li:nth-child(1),
 .silver:hover li:nth-child(2),
 .silver:hover li:nth-child(3) {
-  color: white;
-  text-shadow: 0 0 40px white, 0 0 40px white, 0 0 40px white, 0 0 40px #454545, 0 0 25px #454545, 0 0 30px #454545, 0 0 35px #454545, 0 0 40px #454545;
+  color: black;
+  font-weight: 800;
+  text-shadow: 0 0 5px #026186, 0 0 10px #026186 0 0 15px #026186 0 0 20px #06c5ff, 0 0 25px #06c5ff;
+  -webkit-text-fill-color: #240a80;
+  -webkit-text-stroke-color: #000000;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-text-fill-color: #240a80;
+  -moz-text-stroke-color: black;
+  -moz-text-stroke-width: 0.2px;
 }
 
 .silver:hover img {
-  transition: color 1s ease;
+  transition: all 1s ease;
 }
 
 .silver:hover h3 {
-  transition: color 0.5s 0.25s ease;
+  transition: all 0.5s 0.25s ease;
 }
 
 .silver:hover p {
-  transition: color 0.5s 0.5s ease;
+  transition: all 0.5s 0.5s ease;
 }
 
 .silver:hover div {
-  transition: color 0.5s 0.75s ease;
+  transition: all 0.5s 0.75s ease;
 }
 
 .silver:hover a {
-  transition: color 0.5s 1s ease;
+  transition: all 0.5s 1s ease;
 }
 
 .silver:hover li:nth-child(1) {
-  transition: color 0.5s 1.25s ease;
+  transition: all 0.5s 1.25s ease;
 }
 
 .silver:hover li:nth-child(2) {
-  transition: color 0.5s 1.5s ease;
+  transition: all 0.5s 1.5s ease;
 }
 
 .silver:hover li:nth-child(3) {
-  transition: color 0.5s 1.75s ease;
+  transition: all 0.5s 1.75s ease;
 }
 
 .gold:hover {
