@@ -11,14 +11,14 @@ const MainServices = () => {
       </div>
       <div className="container">
         <div className="row">
-          <Link href="services/playpals/">
+          <Link href="/services/custom/">
             <a className="col-lg-4 col-sm-6 col-md-4">
               <div className="single-main-services-box">
                 <div className="icon-new">
                   <Icons icon="category" color="black" />
                 </div>
                 <h3>
-                  <Link href="services/playpals/">
+                  <Link href="/services/custom/">
                     <a>Nuestos Servicios</a>
                   </Link>
                 </h3>
