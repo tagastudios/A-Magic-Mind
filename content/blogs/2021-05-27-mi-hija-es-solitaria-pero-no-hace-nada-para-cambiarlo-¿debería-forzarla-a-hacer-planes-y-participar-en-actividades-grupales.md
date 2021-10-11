@@ -2,7 +2,7 @@
 title: Mordidas, golpes y peleas ¿Qué hacer?
 date: Monday, October 11th 2021, 08:00 pm
 published: true
-image: /images/uploads/img_2154-2-.jpg-copy-2.jpg
+image: /images/uploads/img_0858.jpg.jpg
 author: Damarys Yajure
 ---
 Todos tenemos momentos de agresividad, pero como adultos los aprendemos a controlar, los niños sin embargo son muy seguido físicamente agresivos, muerden, golpean, pellizcan etc. Este comportamiento aparece aproximadamente después del primer año de vida y los padres luchan e intentan controlar este comportamiento destructivo pero…¿Cuál es la mejor manera?
