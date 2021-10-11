@@ -170,14 +170,6 @@ export default function Navbar() {
                     </Link>
                   </li>
 
-                  <li className="nav-item">
-                    <Link href="/contact">
-                      <a className="nav-link" onClick={toggleNavbar}>
-                        Contacto
-                      </a>
-                    </Link>
-                  </li>
-
                   {/* <li className="nav-item">
                     <Link href="/#">
                       <a

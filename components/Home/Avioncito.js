@@ -130,15 +130,9 @@ const Avioncito = () => {
           <h2 className={`${active.clase} texto-avioncito `}>
             {active.titulo}
           </h2>
-          <p className={`${active.clase} texto-parrafo-avioncito`}>
-            {active.texto1}
-          </p>
-          <p className={`${active.clase} texto-parrafo-avioncito`}>
-            {active.texto2}
-          </p>
-          <p className={`${active.clase} texto-parrafo-avioncito`}>
-            {active.texto3}
-          </p>
+          <p className={` texto-parrafo-avioncito`}>{active.texto1}</p>
+          <p className={` texto-parrafo-avioncito`}>{active.texto2}</p>
+          <p className={` texto-parrafo-avioncito`}>{active.texto3}</p>
         </div>
       ) : (
         <div className="avioncito-right">

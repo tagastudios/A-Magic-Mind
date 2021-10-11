@@ -1051,6 +1051,10 @@
   );
   border: 1px solid #d68d52 !important;
   box-shadow: 5px 5px #d68d52 !important;
+  & img {
+    content: url("/images/varita/7.png");
+    animation: varita 2s ease forwards;
+  }
 }
 .basico:hover img,
 .basico:hover h3,
@@ -1097,69 +1101,21 @@
 }
 
 .bronce:hover {
-  --opacidad: 0.7;
-  background: -moz-linear-gradient(
-    -72deg,
-    rgba(202, 115, 68, var(--opacidad)),
-    rgba(255, 222, 202, var(--opacidad)) 16%,
-    rgba(202, 115, 69, var(--opacidad)) 21%,
-    rgba(255, 222, 202, var(--opacidad)) 24%,
-    rgba(161, 69, 33, var(--opacidad)) 27%,
-    rgba(202, 116, 69, var(--opacidad)) 36%,
-    rgba(255, 222, 202, var(--opacidad)) 45%,
-    rgba(255, 222, 202, var(--opacidad)) 60%,
-    rgba(202, 116, 69, var(--opacidad)) 72%,
-    rgba(255, 222, 202, var(--opacidad)) 80%,
-    rgba(202, 116, 69, var(--opacidad)) 84%,
-    rgba(115, 33, 0, var(--opacidad))
-  );
-  background: -webkit-linear-gradient(
-    -72deg,
-    rgba(202, 115, 68, var(--opacidad)),
-    rgba(255, 222, 202, var(--opacidad)) 16%,
-    rgba(202, 115, 69, var(--opacidad)) 21%,
-    rgba(255, 222, 202, var(--opacidad)) 24%,
-    rgba(161, 69, 33, var(--opacidad)) 27%,
-    rgba(202, 116, 69, var(--opacidad)) 36%,
-    rgba(255, 222, 202, var(--opacidad)) 45%,
-    rgba(255, 222, 202, var(--opacidad)) 60%,
-    rgba(202, 116, 69, var(--opacidad)) 72%,
-    rgba(255, 222, 202, var(--opacidad)) 80%,
-    rgba(202, 116, 69, var(--opacidad)) 84%,
-    rgba(115, 33, 0, var(--opacidad))
-  );
-  background: -o-linear-gradient(
-    -72deg,
-    rgba(202, 115, 68, var(--opacidad)),
-    rgba(255, 222, 202, var(--opacidad)) 16%,
-    rgba(202, 115, 69, var(--opacidad)) 21%,
-    rgba(255, 222, 202, var(--opacidad)) 24%,
-    rgba(161, 69, 33, var(--opacidad)) 27%,
-    rgba(202, 116, 69, var(--opacidad)) 36%,
-    rgba(255, 222, 202, var(--opacidad)) 45%,
-    rgba(255, 222, 202, var(--opacidad)) 60%,
-    rgba(202, 116, 69, var(--opacidad)) 72%,
-    rgba(255, 222, 202, var(--opacidad)) 80%,
-    rgba(202, 116, 69, var(--opacidad)) 84%,
-    rgba(115, 33, 0, var(--opacidad))
-  );
+  background: rgb(202, 115, 69);
   background: linear-gradient(
-    -72deg,
-    rgba(202, 115, 68, var(--opacidad)),
-    rgba(255, 222, 202, var(--opacidad)) 16%,
-    rgba(202, 115, 69, var(--opacidad)) 21%,
-    rgba(255, 222, 202, var(--opacidad)) 24%,
-    rgba(161, 69, 33, var(--opacidad)) 27%,
-    rgba(202, 116, 69, var(--opacidad)) 36%,
-    rgba(255, 222, 202, var(--opacidad)) 45%,
-    rgba(255, 222, 202, var(--opacidad)) 60%,
-    rgba(202, 116, 69, var(--opacidad)) 72%,
-    rgba(255, 222, 202, var(--opacidad)) 80%,
-    rgba(202, 116, 69, var(--opacidad)) 84%,
-    rgba(115, 33, 0, var(--opacidad))
+    45deg,
+    rgba(202, 115, 69, 1) 0%,
+    rgba(228, 167, 134, 1) 49%,
+    rgba(196, 121, 86, 1) 73%,
+    rgba(115, 33, 0, 1) 100%
   );
+
   border: 1px solid #d6ac52 !important;
   box-shadow: 5px 5px #d6ac52 !important;
+  & img {
+    content: url("/images/varita/8.png");
+    animation: varita 2s ease forwards;
+  }
 }
 .bronce:hover img,
 .bronce:hover h3,
@@ -1206,68 +1162,20 @@
 }
 
 .silver:hover {
-  background: -moz-linear-gradient(
-    -72deg,
-    #dedede,
-    #ffffff 16%,
-    #dedede 21%,
-    #ffffff 24%,
-    #454545 27%,
-    #dedede 36%,
-    #ffffff 45%,
-    #ffffff 60%,
-    #dedede 72%,
-    #ffffff 80%,
-    #dedede 84%,
-    #a1a1a1
-  );
-  background: -webkit-linear-gradient(
-    -72deg,
-    #dedede,
-    #ffffff 16%,
-    #dedede 21%,
-    #ffffff 24%,
-    #454545 27%,
-    #dedede 36%,
-    #ffffff 45%,
-    #ffffff 60%,
-    #dedede 72%,
-    #ffffff 80%,
-    #dedede 84%,
-    #a1a1a1
-  );
-  background: -o-linear-gradient(
-    -72deg,
-    #dedede,
-    #ffffff 16%,
-    #dedede 21%,
-    #ffffff 24%,
-    #454545 27%,
-    #dedede 36%,
-    #ffffff 45%,
-    #ffffff 60%,
-    #dedede 72%,
-    #ffffff 80%,
-    #dedede 84%,
-    #a1a1a1
-  );
+  background: rgb(255, 255, 255);
   background: linear-gradient(
-    -72deg,
-    #dedede,
-    #ffffff 16%,
-    #dedede 21%,
-    #ffffff 24%,
-    #454545 27%,
-    #dedede 36%,
-    #ffffff 45%,
-    #ffffff 60%,
-    #dedede 72%,
-    #ffffff 80%,
-    #dedede 84%,
-    #a1a1a1
+    45deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(222, 222, 222, 1) 49%,
+    rgba(161, 161, 161, 1) 73%,
+    rgba(69, 69, 69, 1) 100%
   );
   border: 1px solid #5f52d6 !important;
   box-shadow: 5px 5px #5f52d6 !important;
+  & img {
+    content: url("/images/varita/9.png");
+    animation: varita 2s ease forwards;
+  }
 }
 .silver:hover img,
 .silver:hover h3,
@@ -1314,68 +1222,20 @@
 }
 
 .gold:hover {
-  background: -moz-linear-gradient(
-    -72deg,
-    #ffdea1,
-    #ffffff 16%,
-    #ffdea1 21%,
-    #ffffff 24%,
-    #736445 27%,
-    #ffdea1 36%,
-    #ffffff 45%,
-    #ffffff 60%,
-    #ffdea1 72%,
-    #ffffff 80%,
-    #ffdea1 84%,
-    #736445
-  );
-  background: -webkit-linear-gradient(
-    -72deg,
-    #ffdea1,
-    #ffffff 16%,
-    #ffdea1 21%,
-    #ffffff 24%,
-    #736445 27%,
-    #ffdea1 36%,
-    #ffffff 45%,
-    #ffffff 60%,
-    #ffdea1 72%,
-    #ffffff 80%,
-    #ffdea1 84%,
-    #736445
-  );
-  background: -o-linear-gradient(
-    -72deg,
-    #ffdea1,
-    #ffffff 16%,
-    #ffdea1 21%,
-    #ffffff 24%,
-    #736445 27%,
-    #ffdea1 36%,
-    #ffffff 45%,
-    #ffffff 60%,
-    #ffdea1 72%,
-    #ffffff 80%,
-    #ffdea1 84%,
-    #736445
-  );
+  background: rgb(255, 215, 49);
   background: linear-gradient(
-    -72deg,
-    #ffdea1,
-    #ffffff 16%,
-    #ffdea1 21%,
-    #ffffff 24%,
-    #736445 27%,
-    #ffdea1 36%,
-    #ffffff 45%,
-    #ffffff 60%,
-    #ffdea1 72%,
-    #ffffff 80%,
-    #ffdea1 84%,
-    #736445
+    45deg,
+    rgba(255, 215, 49, 1) 0%,
+    rgba(247, 239, 138, 1) 31%,
+    rgba(210, 172, 71, 1) 73%,
+    rgba(237, 201, 103, 1) 100%
   );
   border: 1px solid #fff06d !important;
   box-shadow: 5px 5px #fff06d !important;
+  & img {
+    content: url("/images/varita/10.png");
+    animation: varita 2s ease forwards;
+  }
 }
 .gold:hover img,
 .gold:hover h3,
@@ -1430,74 +1290,18 @@
 }
 
 .diamond:hover {
-  background: -moz-linear-gradient(
-    -72deg,
-    #dedede,
-    #ffffff 16%,
-    #dedede 21%,
-    #ffffff 24%,
-    #caa1de 27%,
-    #dea1ca 30%,
-    #dedede 38%,
-    #ffffff 45%,
-    #ffffff 60%,
-    #dedede 72%,
-    #ffffff 80%,
-    #dedede 84%,
-    #caa1de 93%,
-    #dea1ca
-  );
-  background: -webkit-linear-gradient(
-    -72deg,
-    #dedede,
-    #ffffff 16%,
-    #dedede 21%,
-    #ffffff 24%,
-    #caa1de 27%,
-    #dea1ca 30%,
-    #dedede 38%,
-    #ffffff 45%,
-    #ffffff 60%,
-    #dedede 72%,
-    #ffffff 80%,
-    #dedede 84%,
-    #caa1de 93%,
-    #dea1ca
-  );
-  background: -o-linear-gradient(
-    -72deg,
-    #dedede,
-    #ffffff 16%,
-    #dedede 21%,
-    #ffffff 24%,
-    #caa1de 27%,
-    #dea1ca 30%,
-    #dedede 38%,
-    #ffffff 45%,
-    #ffffff 60%,
-    #dedede 72%,
-    #ffffff 80%,
-    #dedede 84%,
-    #caa1de 93%,
-    #dea1ca
-  );
+  background: rgb(158, 181, 241);
   background: linear-gradient(
-    -72deg,
-    #dedede,
-    #ffffff 16%,
-    #dedede 21%,
-    #ffffff 24%,
-    #caa1de 27%,
-    #dea1ca 30%,
-    #dedede 38%,
-    #ffffff 45%,
-    #ffffff 60%,
-    #dedede 72%,
-    #ffffff 80%,
-    #dedede 84%,
-    #caa1de 93%,
-    #dea1ca
+    45deg,
+    rgba(158, 181, 241, 1) 0%,
+    rgba(235, 169, 198, 1) 0%,
+    rgba(152, 241, 228, 1) 82%,
+    rgba(237, 229, 103, 1) 100%
   );
+  & img {
+    content: url("/images/varita/11.png");
+    animation: varita 2s ease forwards;
+  }
 }
 .diamond:hover img,
 .diamond:hover h3,
@@ -1513,7 +1317,7 @@
   font-weight: 800;
   text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px $rojo,
     0 0 25px $rojo;
-  -webkit-text-fill-color: purple;
+  -webkit-text-fill-color: #800080;
   -webkit-text-stroke-color: #000000;
   -webkit-text-stroke-width: 0.2px;
   -moz-text-fill-color: purple;
@@ -1691,6 +1495,26 @@
 
 .texto-parrafo-avioncito {
   font-size: large;
+  font-weight: 800;
+  color: black;
+}
+@keyframes varita {
+  0% {
+    transform: rotate(10deg);
+    transform-origin: bottom;
+  }
+  33% {
+    transform: rotate(-30deg);
+    transform-origin: bottom;
+  }
+  66% {
+    transform: rotate(0deg);
+    transform-origin: bottom;
+  }
+  100% {
+    transform: rotate(0deg);
+    transform-origin: bottom;
+  }
 }
 @keyframes floating1 {
   0% {
