@@ -6,10 +6,10 @@ function AboutUs() {
   return (
     <>
       <PageBanner
-        pageTitle="Contacto"
+        pageTitle="Magic Team"
         homePageUrl="/"
         homePageText="Home"
-        activePageText="Contact"
+        activePageText="Nosotros"
         bgImgClass="item-bg3"
       />
       <About />

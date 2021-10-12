@@ -51,20 +51,20 @@ function Footer() {
 
           <div className="col-lg-3 col-md-6 col-sm-6 mb-5">
             <div className="single-footer-widget">
-              <h3>Servicios / Productos</h3>
+              <h3>Servicios</h3>
 
               <ul className="footer-services-list">
                 <li>
-                  <Link href="/services/playpals/">
+                  <Link href="/playpals/">
                     <a>PlayPals</a>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/services/custom/">
-                    <a>Servicios Personalizados</a>
+                  <Link href="/services/MagicActivities/">
+                    <a>Magic Activities</a>
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link href="/products/books/">
                     <a>Libros</a>
                   </Link>
@@ -83,7 +83,7 @@ function Footer() {
                   <Link href="/products/merchandise/">
                     <a>Mercancía</a>
                   </Link>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>

@@ -145,7 +145,7 @@ export default function Navbar() {
                         </Link>
                       </li>
                       <li className="nav-item">
-                        <Link href="/services/custom">
+                        <Link href="/services/MagicActivities">
                           <a className="nav-link" onClick={toggleNavbar}>
                             Magic Activities
                           </a>

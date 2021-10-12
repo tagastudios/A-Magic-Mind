@@ -9,7 +9,7 @@ function Contact() {
         pageTitle="Contacto"
         homePageUrl="/"
         homePageText="Home"
-        activePageText="Contact"
+        activePageText="Contacto"
         bgImgClass="item-bg3"
       />
 

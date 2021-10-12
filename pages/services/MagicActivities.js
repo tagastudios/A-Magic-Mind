@@ -6,10 +6,10 @@ function Custom() {
   return (
     <>
       <PageBanner
-        pageTitle="Custom"
+        pageTitle="Magic Activities"
         homePageUrl="/"
         homePageText="Home"
-        activePageText="Service Details"
+        activePageText="Detalles de Servicio"
         bgImgClass="item-bg2"
       />
 
