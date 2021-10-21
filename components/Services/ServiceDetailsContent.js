@@ -11,7 +11,7 @@ function ServiceDetailsContent() {
               Todas nuestras actividades extracurriculares son llevadas a cabo
               por nuestros PLAYPALS, quienes son personas calificadas que van a
               jugar, estimular y enseñar a su hijo de manera lúdica en la
-              comodidad de su hogar. No son nannies , ni babysitters, son
+              comodidad de su hogar. No son nannies, ni babysitters, son
               compañeros de juego.
             </p>
           </div>

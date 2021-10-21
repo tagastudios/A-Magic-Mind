@@ -119,11 +119,15 @@ function Footer() {
               <ul className="footer-contact-list">
                 <li>
                   <span>Dirección:</span>
-                  {address}
+                  9721 SW 152th Street #309.
+                  <br></br>
+                  Miami, FL 33157
                 </li>
                 <li>
                   <span>Email:</span>
-                  <a href={`mailto:${email}`}>{email}</a>
+                  <a href={`mailto: info@amagicmindus.com`}>
+                    info@amagicmindus.com
+                  </a>
                 </li>
                 <li>
                   <span>Phone:</span>

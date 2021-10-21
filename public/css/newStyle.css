@@ -125,11 +125,12 @@
 }
 
 .main-logo {
-  max-height: 180px !important;
+  max-height: 300px !important;
+  margin-top: 30px;
 }
 
 .optional-logo {
-  height: 100px;
+  height: 150px;
 }
 
 .navbar-nav .nav-item a.active {
@@ -229,6 +230,10 @@
   font-weight: 600 !important;
 }
 
+.main-banner {
+  border-left: 12px #ffb001 solid;
+}
+
 .maryan-img {
   height: 800px;
 }
@@ -246,7 +251,7 @@
 .navbar-area {
   background-color: white !important;
   height: 74px;
-  border-bottom: 3px #a8a8a8 dashed;
+  border-bottom: 3px #a8a8a8 solid;
 }
 
 .testimonials-fix {
@@ -364,6 +369,10 @@
   margin-bottom: 20px;
 }
 
+.feedback-item {
+  padding-top: 10px !important;
+}
+
 .feedback-item::after {
   background-color: #27b7d9;
 }
@@ -391,7 +400,7 @@
 @media only screen and (min-width: 992px) {
   .navbar-area {
     height: 88px;
-    border-bottom: 4px #a8a8a8 dashed;
+    border-bottom: 4px #a8a8a8 solid;
   }
   .bg-blurry {
     max-height: calc(100vh - 65px) !important;
@@ -485,7 +494,7 @@
     padding-top: 0px !important;
     padding-bottom: 0px !important;
     height: 80px;
-    border-bottom: 2px #a8a8a8 dashed;
+    border-bottom: 2px #a8a8a8 solid;
   }
   .navbar-toggler {
     transform: translateY(-50%);
@@ -760,7 +769,7 @@
 .avioncito-right {
   display: flex;
   padding: 0 20px;
-  height: 80vh;
+  height: 90vh;
   flex: 1;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -780,7 +789,7 @@
 }
 
 .avioncito-right-items {
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .avioncito-right-items h2,
@@ -826,6 +835,12 @@
   width: auto;
   animation-name: floating5;
   -webkit-animation-name: floating5;
+}
+
+.avioncito-foto {
+  height: 125px !important;
+  width: auto;
+  opacity: 1 !important;
 }
 
 .floating {
@@ -1301,80 +1316,45 @@
 }
 
 .texto-rojo {
-  color: black;
+  color: #ff5d5b;
   font-weight: 800;
-  text-shadow: 0 0 5px #ff5d5b, 0 0 10px #ff5d5b, 0 0 15px #ff5d5b, 0 0 20px #ddeb24, 0 0 25px #ddeb24;
-  -webkit-text-fill-color: black;
-  -webkit-text-stroke-color: white;
-  -webkit-text-stroke-width: 0.2px;
-  -moz-text-fill-color: Black;
-  -moz-text-stroke-color: white;
-  -moz-text-stroke-width: 0.2px;
+  font-size: 48px;
 }
 
 .texto-naranja {
-  color: black;
+  color: #f87443;
   font-weight: 800;
-  text-shadow: 0 0 5px #e73d1f, 0 0 10px #e73d1f, 0 0 15px #e73d1f, 0 0 20px #ddeb24, 0 0 25px #ddeb24;
-  -webkit-text-fill-color: black;
-  -webkit-text-stroke-color: white;
-  -webkit-text-stroke-width: 0.2px;
-  -moz-text-fill-color: Black;
-  -moz-text-stroke-color: white;
-  -moz-text-stroke-width: 0.2px;
+  font-size: 48px;
 }
 
 .texto-verde {
-  color: black;
+  color: #83c853;
   font-weight: 800;
-  text-shadow: 0 0 5px #83c853, 0 0 10px #83c853, 0 0 15px #83c853, 0 0 20px #ddeb24, 0 0 25px #ddeb24;
-  -webkit-text-fill-color: black;
-  -webkit-text-stroke-color: white;
-  -webkit-text-stroke-width: 0.2px;
-  -moz-text-fill-color: Black;
-  -moz-text-stroke-color: white;
-  -moz-text-stroke-width: 0.2px;
+  font-size: 48px;
 }
 
 .texto-azul {
-  color: black;
+  color: #27b7d9;
   font-weight: 800;
-  text-shadow: 0 0 5px #27b7d9, 0 0 10px #27b7d9, 0 0 15px #27b7d9, 0 0 20px #ddeb24, 0 0 25px #ddeb24;
-  -webkit-text-fill-color: black;
-  -webkit-text-stroke-color: white;
-  -webkit-text-stroke-width: 0.2px;
-  -moz-text-fill-color: Black;
-  -moz-text-stroke-color: white;
-  -moz-text-stroke-width: 0.2px;
+  font-size: 48px;
 }
 
 .texto-morado {
-  color: black;
+  color: #b660e5;
   font-weight: 800;
-  text-shadow: 0 0 5px #b660e5, 0 0 10px #b660e5, 0 0 15px #b660e5, 0 0 20px #ddeb24, 0 0 25px #ddeb24;
-  -webkit-text-fill-color: black;
-  -webkit-text-stroke-color: white;
-  -webkit-text-stroke-width: 0.2px;
-  -moz-text-fill-color: Black;
-  -moz-text-stroke-color: white;
-  -moz-text-stroke-width: 0.2px;
+  font-size: 48px;
 }
 
 .texto-amarillo {
-  color: black;
+  color: #ffb001;
   font-weight: 800;
-  text-shadow: 0 0 5px #e73d1f, 0 0 10px #e73d1f, 0 0 15px #e73d1f, 0 0 20px #ddeb24, 0 0 25px #ddeb24;
-  -webkit-text-fill-color: black;
-  -webkit-text-stroke-color: white;
-  -webkit-text-stroke-width: 0.2px;
-  -moz-text-fill-color: Black;
-  -moz-text-stroke-color: white;
-  -moz-text-stroke-width: 0.2px;
+  font-size: 48px;
 }
 
 .texto-parrafo-avioncito {
-  font-size: large;
-  font-weight: 800;
+  font-size: 22px;
+  margin: 0;
+  padding: 6px 0 !important;
   color: black;
 }
 

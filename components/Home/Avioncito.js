@@ -10,6 +10,7 @@ const Avioncito = () => {
         "Estimula la memoria, atención, cognición y procesamiento lógico e imaginación",
       texto3: "Facilita la comunicación, expresión, socialización  ",
       clase: "texto-rojo",
+      foto: "/images/avioncito/16.svg",
     },
     {
       titulo: "Escuchar",
@@ -17,6 +18,7 @@ const Avioncito = () => {
       texto2: "Les impartimos las instrucciones",
       texto3: " Y los invitamos a jugar",
       clase: "texto-naranja",
+      foto: "/images/avioncito/17.svg",
     },
     {
       titulo: "Entender",
@@ -26,6 +28,7 @@ const Avioncito = () => {
       texto3:
         "Que los hagan comprender cada una de las indicaciones que se les da",
       clase: "texto-verde",
+      foto: "/images/avioncito/18.svg",
     },
     {
       titulo: "Hacer",
@@ -33,6 +36,7 @@ const Avioncito = () => {
       texto2: "Hacer para aprender",
       texto3: "Las metas se alacanzas con acciones",
       clase: "texto-azul",
+      foto: "/images/avioncito/19.svg",
     },
     {
       titulo: "Vivir",
@@ -41,12 +45,14 @@ const Avioncito = () => {
       texto2:
         "Les mostramos a nuestros peques que con esfuerzo y dedicación pueden lograr sus objetivos",
       clase: "texto-morado",
+      foto: "/images/avioncito/20.svg",
     },
     {
       titulo: "Aprender",
       texto1: "Celebramos con ellos sus logros. ",
       texto2: "Celebramos su esfuerzo y dedicación",
       clase: "texto-amarillo",
+      foto: "/images/avioncito/21.svg",
     },
   ]);
 
@@ -130,9 +136,12 @@ const Avioncito = () => {
           <h2 className={`${active.clase} texto-avioncito `}>
             {active.titulo}
           </h2>
-          <p className={` texto-parrafo-avioncito`}>{active.texto1}</p>
-          <p className={` texto-parrafo-avioncito`}>{active.texto2}</p>
-          <p className={` texto-parrafo-avioncito`}>{active.texto3}</p>
+          <div className="flex flex-column m-0">
+            <p className={` texto-parrafo-avioncito`}>{active.texto1}</p>
+            <p className={` texto-parrafo-avioncito`}>{active.texto2}</p>
+            <p className={` texto-parrafo-avioncito`}>{active.texto3}</p>
+          </div>
+          <img className="avioncito-foto" src={active.foto} />
         </div>
       ) : (
         <div className="avioncito-right">

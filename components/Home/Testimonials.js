@@ -61,7 +61,6 @@ class FeedbackSlider extends Component {
                       </div>
 
                       <h3>Dasa Orsagova</h3>
-                      <span>Team</span>
                     </div>
                   </div>
                 </div>
@@ -96,7 +95,6 @@ class FeedbackSlider extends Component {
                       </div>
 
                       <h3>Pedro Perez</h3>
-                      <span>Team</span>
                     </div>
                   </div>
                 </div>
@@ -130,7 +128,6 @@ class FeedbackSlider extends Component {
                       </div>
 
                       <h3>Adelaida Pifano</h3>
-                      <span>MagicPadres</span>
                     </div>
                   </div>
                 </div>

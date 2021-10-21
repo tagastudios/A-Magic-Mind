@@ -65,7 +65,7 @@ const WhyChooseUs = () => {
                     <p>
                       En MagicMind entendemos la importancia de la salud mental,
                       emocional y física de los niños y trabajamos para que el
-                      acompañamiento en el aprendizaje sea provechosos y
+                      acompañamiento en el aprendizaje sea provechoso y
                       positivo.
                     </p>
                   </div>

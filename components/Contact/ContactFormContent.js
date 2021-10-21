@@ -9,10 +9,6 @@ function ContactFormContent() {
         <div className="section-title">
           <span>Contáctanos</span>
           <h2>Envíanos un mensaje y responderemos cualquier inquietud</h2>
-          <p>
-            No dudes consultarnos cualquier duda o sugerencia que tengas para
-            nosotros..
-          </p>
         </div>
 
         <div className="contact-form">
@@ -34,9 +30,9 @@ function ContactFormContent() {
           <div className="contact-info-content">
             <h3>Contáctanos</h3>
             <h2>
-              <span className="number">+1 (786) 3012529</span>
-              <span className="or">O</span>
-              <span className="email">amagicmind.us@gmail.com</span>
+              <span className="number">+1 (786) 301-2529</span>
+              <span className="or">&</span>
+              <span className="email">info@amagicmindus.com</span>
             </h2>
 
             <ul className="social">
