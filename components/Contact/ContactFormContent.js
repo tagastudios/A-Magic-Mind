@@ -36,31 +36,28 @@ function ContactFormContent() {
             </h2>
 
             <ul className="social">
-              <li>
-                <a href="#" target="_blank">
-                  <i className="fab fa-twitter"></i>
-                </a>
-              </li>
+              
               <li>
                 <a href="#" target="_blank">
                   <i className="fab fa-youtube"></i>
                 </a>
               </li>
+              
               <li>
-                <a href="#" target="_blank">
-                  <i className="fab fa-facebook-f"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#" target="_blank">
-                  <i className="fab fa-linkedin-in"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#" target="_blank">
-                  <i className="fab fa-instagram"></i>
-                </a>
-              </li>
+                  <Link href="https://m.facebook.com/A-Magic-Mind-108413051350515/">
+                    <a target="_blank">
+                      <i className="flaticon-facebook-letter-logo"></i>
+                    </a>
+                  </Link>
+                </li>
+
+                <li>
+                  <Link href="https://instagram.com/amagicmindus?utm_medium=copy_link">
+                    <a target="_blank">
+                      <i className="flaticon-instagram-logo"></i>
+                    </a>
+                  </Link>
+                </li>
             </ul>
           </div>
         </div>

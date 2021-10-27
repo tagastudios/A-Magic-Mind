@@ -56,13 +56,13 @@ export default function Navbar() {
             </a>
           </div>
           <div>
-            <a href="mailto:info@magicmindus.com?subject=Information%20Request%20-%20WebLink.1&body=Hi%20I%20want%to%request%more%information%about%Magic%Mind:">
+            <a href="mailto:info@amagicmindus.com?subject=Information%20Request%20-%20WebLink.1&body=Hi%20I%20want%to%request%more%information%about%Magic%Mind:">
               <Icons icon="email" color={Colors("orange")} />
               <span>info@amagicmindus.com</span>
             </a>
           </div>
           <div>
-            <Link href="/login">
+            <Link href="#">
               <a>
                 {/* <img src="/images/icons/sign-in-alt-solid.svg" /> */}
                 <Icons icon="login" color={Colors("yellow")} />

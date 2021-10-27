@@ -407,6 +407,12 @@
   position: inherit;
 }
 
+.leermas {
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
 ////////////////////////////////////
 // MAIN SERVICES
 // MAIN SERVICES
@@ -484,6 +490,33 @@
 .feedback-item::after {
   background-color: $azul;
 }
+////////////////////////////////////
+// NOSOTROS
+// NOSOTROS
+// NOSOTROS
+////////////////////////////////////
+.item-bg3 {
+  background-position: center 25%;
+}
+
+////////////////////////////////////
+// MAGIC PLANS
+// MAGIC PLANS
+// MAGIC PLANS
+////////////////////////////////////
+.magicplans p {
+  font-size: 18px;
+}
+.magicplans h2 {
+  font-size: 32px;
+}
+.magicplans h3 {
+  font-size: 28px !important;
+}
+.varita {
+  position: absolute;
+  top: 20px
+}
 
 ////////////////////////////////////
 // MOBILE
@@ -556,6 +589,10 @@
   .bg-blurry {
     min-height: calc(100vh - 43px) !important;
   }
+  .navbar {
+    margin-top: -9px;
+  }
+  
 }
 
 @media only screen and (max-width: 959px) {
@@ -572,6 +609,16 @@
   }
   .grid-container {
     height: 60vh !important;
+  }
+  .main-logo {
+    margin-top: 0 !important;
+  }
+  .navbar {
+    margin-top: -31px;
+  }
+  .item-bg3 {
+    background-position: center bottom !important;
+    background-size: 800px;
   }
 }
 
@@ -713,6 +760,20 @@
 
   .bg-blurry {
     min-height: calc(100vh - 43px);
+  }
+
+  .main-logo {
+    height: 100px !important;
+  }
+  .optional-logo {
+    height: 100px !important;
+  }
+  .navbar {
+    margin-top: 0;
+  }
+  .item-bg3 {
+    background-position: left top !important;
+    background-size: 1000px;
   }
 }
 

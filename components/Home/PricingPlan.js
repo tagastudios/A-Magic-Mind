@@ -24,7 +24,7 @@ export default class PricingPlan extends Component {
 
   render() {
     return (
-      <div className="pricing-area ptb-110 pt-0">
+      <div className="pricing-area magicplans ptb-110 pt-0">
         <div className="container">
           <div className="section-title titulo-espacio">
             <h2>Magic Plans</h2>

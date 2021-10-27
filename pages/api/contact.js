@@ -15,9 +15,9 @@ export default async (req, res) => {
     const {name, email, number, subject, text} = req.body;
 
     const data = {
-        to: 'yourdomain@gmail.com',
+        to: 'jose.it@lgaint.com',
         from: email,
-        subject: 'Hi there',
+        subject: 'Contact Form - A Magic Mind',
         text: text,
         html: `
             <b>From:</b> ${name} <br /> 

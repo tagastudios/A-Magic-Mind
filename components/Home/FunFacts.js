@@ -58,7 +58,7 @@ const FunFacts = () => {
 
           <Link href="/#">
             <a className="btn btn-primary">
-              LOGO DE YES<span></span>
+              YES MUSIC FOUNDATION<span></span>
             </a>
           </Link>
         </div>

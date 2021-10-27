@@ -5,36 +5,36 @@ const Avioncito = () => {
     {
       titulo: "Beneficios del Juego",
       texto1:
-        "Proporciona mayor desarrollo sensorial (sentido - percepción) y aumenta la motricidad fina y gruesa",
+        "Proporciona mayor desarrollo sensorial (sentido - percepción) y aumenta la motricidad fina y gruesa.",
       texto2:
-        "Estimula la memoria, atención, cognición y procesamiento lógico e imaginación",
-      texto3: "Facilita la comunicación, expresión, socialización  ",
+        "Estimula la memoria, atención, cognición y procesamiento lógico e imaginación.",
+      texto3: "Facilita la comunicación, expresión, socialización.",
       clase: "texto-rojo",
       foto: "/images/avioncito/16.svg",
     },
     {
       titulo: "Escuchar",
-      texto1: "Nos aseguramos de captar la atención de nuestros niños",
-      texto2: "Les impartimos las instrucciones",
-      texto3: " Y los invitamos a jugar",
+      texto1: "Nos aseguramos de captar la atención de nuestros niños.",
+      texto2: "Les impartimos las instrucciones.",
+      texto3: "Y los invitamos a jugar.",
       clase: "texto-naranja",
       foto: "/images/avioncito/17.svg",
     },
     {
       titulo: "Entender",
       texto1:
-        "Nos aseguramos que las instrucciones sean comprendidas por nuestros peques",
-      texto2: "Con ejemplos cotidianos y familiares para ellos ",
+        "Nos aseguramos que las instrucciones sean comprendidas por nuestros peques.",
+      texto2: "Con ejemplos cotidianos y familiares para ellos.",
       texto3:
-        "Que los hagan comprender cada una de las indicaciones que se les da",
+        "Que los hagan comprender cada una de las indicaciones que se les da.",
       clase: "texto-verde",
       foto: "/images/avioncito/18.svg",
     },
     {
       titulo: "Hacer",
       texto1: "Manos a la obra!",
-      texto2: "Hacer para aprender",
-      texto3: "Las metas se alacanzas con acciones",
+      texto2: "Hacer para aprender.",
+      texto3: "Las metas se alacanzas con acciones.",
       clase: "texto-azul",
       foto: "/images/avioncito/19.svg",
     },
@@ -43,14 +43,14 @@ const Avioncito = () => {
       texto1:
         "Apoyamos y acompañamos a nuestros peques a seguirlo intentando con alegrias y frustraciones hasta que lo logren.",
       texto2:
-        "Les mostramos a nuestros peques que con esfuerzo y dedicación pueden lograr sus objetivos",
+        "Les mostramos a nuestros peques que con esfuerzo y dedicación pueden lograr sus objetivos.",
       clase: "texto-morado",
       foto: "/images/avioncito/20.svg",
     },
     {
       titulo: "Aprender",
-      texto1: "Celebramos con ellos sus logros. ",
-      texto2: "Celebramos su esfuerzo y dedicación",
+      texto1: "Celebramos con ellos sus logros.",
+      texto2: "Celebramos su esfuerzo y dedicación.",
       clase: "texto-amarillo",
       foto: "/images/avioncito/21.svg",
     },

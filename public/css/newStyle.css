@@ -311,6 +311,12 @@
   position: inherit;
 }
 
+.leermas {
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
 .main-services-area {
   text-align: center;
   position: relative;
@@ -377,6 +383,27 @@
   background-color: #27b7d9;
 }
 
+.item-bg3 {
+  background-position: center 25%;
+}
+
+.magicplans p {
+  font-size: 18px;
+}
+
+.magicplans h2 {
+  font-size: 32px;
+}
+
+.magicplans h3 {
+  font-size: 28px !important;
+}
+
+.varita {
+  position: absolute;
+  top: 20px;
+}
+
 @media only screen and (min-width: 501px) {
   .main-services-area::after {
     top: 12vh !important;
@@ -422,6 +449,9 @@
   .bg-blurry {
     min-height: calc(100vh - 43px) !important;
   }
+  .navbar {
+    margin-top: -9px;
+  }
 }
 
 @media only screen and (max-width: 959px) {
@@ -438,6 +468,16 @@
   }
   .grid-container {
     height: 60vh !important;
+  }
+  .main-logo {
+    margin-top: 0 !important;
+  }
+  .navbar {
+    margin-top: -31px;
+  }
+  .item-bg3 {
+    background-position: center bottom !important;
+    background-size: 800px;
   }
 }
 
@@ -566,6 +606,19 @@
   }
   .bg-blurry {
     min-height: calc(100vh - 43px);
+  }
+  .main-logo {
+    height: 100px !important;
+  }
+  .optional-logo {
+    height: 100px !important;
+  }
+  .navbar {
+    margin-top: 0;
+  }
+  .item-bg3 {
+    background-position: left top !important;
+    background-size: 1000px;
   }
 }
 
@@ -997,7 +1050,7 @@
 .bronce:hover li:nth-child(3) {
   color: black;
   font-weight: 800;
-  text-shadow: 0 0 5px #e73d1f, 0 0 10px #e73d1f, 0 0 15px #e73d1f, 0 0 20px #ddeb24, 0 0 25px #ddeb24;
+  text-shadow: 0 0 5px #e73d1f, 0 0 10px #e73d1f, 0 0 15px #e73d1f, 0 0 20px #ddeb24, 0 0 25px #ddeb24;
   -webkit-text-fill-color: #f4ecff;
   -webkit-text-stroke-color: #000000;
   -webkit-text-stroke-width: 0.2px;
@@ -1060,7 +1113,7 @@
 .silver:hover li:nth-child(3) {
   color: black;
   font-weight: 800;
-  text-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 15px blue, 0 0 20px #ddeb24, 0 0 25px #ddeb24;
+  text-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 15px blue, 0 0 20px #ddeb24, 0 0 25px #ddeb24;
   -webkit-text-fill-color: #f4ecff;
   -webkit-text-stroke-color: #000000;
   -webkit-text-stroke-width: 0.2px;
@@ -1125,7 +1178,7 @@
 .gold:hover li:nth-child(5) {
   color: black;
   font-weight: 800;
-  text-shadow: 0 0 5px #e73d1f, 0 0 10px #e73d1f, 0 0 15px #e73d1f, 0 0 20px #ddeb24, 0 0 25px #ddeb24;
+  text-shadow: 0 0 5px #e73d1f, 0 0 10px #e73d1f, 0 0 15px #e73d1f, 0 0 20px #ddeb24, 0 0 25px #ddeb24;
   -webkit-text-fill-color: #f4ecff;
   -webkit-text-stroke-color: #000000;
   -webkit-text-stroke-width: 0.2px;

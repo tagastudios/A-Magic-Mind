@@ -15,7 +15,7 @@ const ProfessionalSolutions = () => {
         <div className="section-title letras">
           <p className="letras2"> </p>
           <p>{leerMas ? text.largo : text.corto}</p>
-          <a onClick={() => setLeerMas(!leerMas)}>
+          <a className="leermas" onClick={() => setLeerMas(!leerMas)}>
             {leerMas ? "Leer menos" : "Leer mas"}
           </a>
         </div>
