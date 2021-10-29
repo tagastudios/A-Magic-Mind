@@ -10,7 +10,7 @@ function Contact() {
         homePageUrl="/"
         homePageText="Home"
         activePageText="Contacto"
-        bgImgClass="item-bg3"
+        bgImgClass="item-bg4"
       />
 
       <ContactFormContent />

@@ -34,7 +34,7 @@ const Avioncito = () => {
       titulo: "Hacer",
       texto1: "Manos a la obra!",
       texto2: "Hacer para aprender.",
-      texto3: "Las metas se alacanzas con acciones.",
+      texto3: "Las metas se alcanzan con acciones.",
       clase: "texto-azul",
       foto: "/images/avioncito/19.svg",
     },
@@ -147,7 +147,10 @@ const Avioncito = () => {
         <div className="avioncito-right">
           <h2> Cómo enseñamos en Magic Mind? </h2>
           <h3>Para conocer nuestro Magic Método, Vamos a jugar el avioncito</h3>
-          <p> Te mostramos nuestra estrategia en 5 pasos!</p>
+          <p className="parrafo-avioncito-0">
+            {" "}
+            Te mostramos nuestra estrategia en 5 pasos!
+          </p>
           <img src="/images/avioncito/kids6.svg"></img>
         </div>
       )}

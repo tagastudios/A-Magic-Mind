@@ -129,6 +129,27 @@
   margin-top: 30px;
 }
 
+.logo-footer {
+  margin-top: -20px !important;
+}
+
+.margenes-peques {
+  margin-left: 3% !important;
+  margin-right: 3% !important;
+}
+
+.margin-izq-1 {
+  padding-left: 5% !important;
+}
+
+.margin-izq-2 {
+  padding-left: 7.5% !important;
+}
+
+.margin-izq-3 {
+  padding-left: 10% !important;
+}
+
 .optional-logo {
   height: 150px;
 }
@@ -212,6 +233,10 @@
   top: 0;
   left: 0;
   overflow: hidden;
+}
+
+.item-bg4 {
+  background-image: url(/images/page-title-bg4.jpg);
 }
 
 .letras2 {
@@ -373,6 +398,10 @@
   height: 30px;
   width: 30px;
   margin-bottom: 20px;
+}
+
+.parrafo-avioncito-0 {
+  font-size: 25px;
 }
 
 .feedback-item {
@@ -1050,7 +1079,7 @@
 .bronce:hover li:nth-child(3) {
   color: black;
   font-weight: 800;
-  text-shadow: 0 0 5px #e73d1f, 0 0 10px #e73d1f, 0 0 15px #e73d1f, 0 0 20px #ddeb24, 0 0 25px #ddeb24;
+  text-shadow: 0 0 5px #e73d1f, 0 0 10px #e73d1f, 0 0 15px #e73d1f, 0 0 20px #ddeb24, 0 0 25px #ddeb24;
   -webkit-text-fill-color: #f4ecff;
   -webkit-text-stroke-color: #000000;
   -webkit-text-stroke-width: 0.2px;
@@ -1113,7 +1142,7 @@
 .silver:hover li:nth-child(3) {
   color: black;
   font-weight: 800;
-  text-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 15px blue, 0 0 20px #ddeb24, 0 0 25px #ddeb24;
+  text-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 15px blue, 0 0 20px #ddeb24, 0 0 25px #ddeb24;
   -webkit-text-fill-color: #f4ecff;
   -webkit-text-stroke-color: #000000;
   -webkit-text-stroke-width: 0.2px;
@@ -1178,7 +1207,7 @@
 .gold:hover li:nth-child(5) {
   color: black;
   font-weight: 800;
-  text-shadow: 0 0 5px #e73d1f, 0 0 10px #e73d1f, 0 0 15px #e73d1f, 0 0 20px #ddeb24, 0 0 25px #ddeb24;
+  text-shadow: 0 0 5px #e73d1f, 0 0 10px #e73d1f, 0 0 15px #e73d1f, 0 0 20px #ddeb24, 0 0 25px #ddeb24;
   -webkit-text-fill-color: #f4ecff;
   -webkit-text-stroke-color: #000000;
   -webkit-text-stroke-width: 0.2px;

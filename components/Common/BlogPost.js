@@ -9,7 +9,7 @@ function BlogPost() {
 
   return (
     <section className="blog-area ptb-110">
-      <div className="container">
+      <div className="container" id="MainBlogs">
         <div className="section-title">
           <h2>Magic Blogs</h2>
           <p>Conoce nuestra sección informativa </p>
@@ -46,7 +46,6 @@ function BlogPost() {
                             <a>{author || defaultBlog.author}</a>
                           </Link>
                         </li>
-                        <li>{date}</li>
                       </ul>
                     </div>
 
@@ -58,7 +57,7 @@ function BlogPost() {
 
                     <h2>{}</h2>
 
-                    <Link href={slug || "#"}>
+                    <Link href={slug || "/blogs/blog1"}>
                       <a className="learn-more-btn">
                         Leer más.. <i className="flaticon-add"></i>
                       </a>

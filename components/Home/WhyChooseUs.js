@@ -45,7 +45,7 @@ const WhyChooseUs = () => {
                 <div className="col-lg-6 col-md-6 col-sm-6">
                   <div className="single-why-choose-us-box">
                     <h3>
-                      Los niños juegan como viven y jugando aprender a vivir
+                      Los niños juegan como viven y jugando aprenden a vivir
                     </h3>
                     <p>
                       En una experiencia basada en juegos está ocurriendo un
@@ -84,7 +84,7 @@ const WhyChooseUs = () => {
                 </div>
               </div>
 
-              <Link href="/#">
+              <Link href="about-us/">
                 <a className="btn btn-primary">Leer más..</a>
               </Link>
             </div>

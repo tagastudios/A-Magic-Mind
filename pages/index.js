@@ -7,7 +7,7 @@ import FunFacts from "../components/Home/FunFacts";
 import Projects from "../components/Home/Projects";
 import Webinar from "../components/Home/Webinar";
 import Testimonials from "../components/Home/Testimonials";
-import BlogPost from "../components/Common/BlogPost";
+import BlogPostManual from "../components/Common/BlogPostManual";
 import PricingPlan from "../components/Home/PricingPlan";
 import FreeTrialForm from "../components/Home/FreeTrialForm";
 import PartnerSlide from "../components/Home/PartnerSlider";
@@ -26,7 +26,7 @@ export default function Home() {
       <FunFacts />
 
       <Testimonials />
-      <BlogPost />
+      <BlogPostManual />
       {/* <PricingPlan /> */}
       <FreeTrialForm />
       <PartnerSlide />

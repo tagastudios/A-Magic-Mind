@@ -7,14 +7,14 @@ function Footer() {
   let currentYear = new Date().getFullYear();
   return (
     <footer className="footer-area">
-      <div className="container">
+      <div className="container margenes-peques">
         <div className="row">
           <div className="col-lg-3 col-md-6 col-sm-6 mb-5">
             <div className="single-footer-widget">
               <div className="logo">
                 <a href="/">
                   <img
-                    className="main-logo"
+                    className="main-logo logo-footer"
                     src="/images/LOGO.png"
                     alt="image"
                   />
@@ -49,7 +49,7 @@ function Footer() {
             </div>
           </div>
 
-          <div className="col-lg-3 col-md-6 col-sm-6 mb-5">
+          <div className="col-lg-3 col-md-6 col-sm-6 mb-5 margin-izq-1">
             <div className="single-footer-widget">
               <h3>Servicios</h3>
 
@@ -88,7 +88,7 @@ function Footer() {
             </div>
           </div>
 
-          <div className="col-lg-3 col-md-6 col-sm-6 mb-5">
+          <div className="col-lg-3 col-md-6 col-sm-6 mb-5 margin-izq-2">
             <div className="single-footer-widget">
               <h3>Atajos</h3>
 
@@ -99,7 +99,7 @@ function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/blogs/">
+                  <Link href="/#MainBlogs">
                     <a>Blogs</a>
                   </Link>
                 </li>
@@ -112,17 +112,11 @@ function Footer() {
             </div>
           </div>
 
-          <div className="col-lg-3 col-md-6 col-sm-6 mb-5">
+          <div className="col-lg-3 col-md-6 col-sm-6 mb-5 margin-izq-3">
             <div className="single-footer-widget">
               <h3>Contactános</h3>
 
               <ul className="footer-contact-list">
-                <li>
-                  <span>Dirección:</span>
-                  9721 SW 152th Street #309.
-                  <br></br>
-                  Miami, FL 33157
-                </li>
                 <li>
                   <span>Email:</span>
                   <a href={`mailto: info@amagicmindus.com`}>

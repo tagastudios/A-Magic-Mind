@@ -163,7 +163,7 @@ export default function Navbar() {
                   </li>
 
                   <li className="nav-item">
-                    <Link href="/blogs">
+                    <Link href="/#MainBlogs">
                       <a className="nav-link" onClick={toggleNavbar}>
                         Blogs
                       </a>
