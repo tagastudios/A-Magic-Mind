@@ -5,6 +5,10 @@ import Icons from "../../utils/Icons";
 import Colors from "../../utils/Colors";
 
 export default function Navbar() {
+  const [idioma, setIdioma] = React.useState(useRouter().locale);
+  // Language Support
+  const { locale, locales, asPath, reload } = useRouter();
+
   // Search Form
   const [searchForm, setSearchForm] = useState(false);
   const handleSearchForm = () => {
@@ -114,7 +118,7 @@ export default function Navbar() {
                   <li className="nav-item">
                     <Link href="/">
                       <a className="nav-link" onClick={toggleNavbar}>
-                        Inicio
+                        {idioma === "es-ES" ? "Inicio" : "Home "}
                       </a>
                     </Link>
                   </li>
@@ -125,7 +129,8 @@ export default function Navbar() {
                         className="nav-link"
                         onClick={(e) => e.preventDefault()}
                       >
-                        Servicios <i className="fas fa-chevron-down"></i>
+                        {idioma === "es-ES" ? "Servicios" : "Services "}
+                        <i className="fas fa-chevron-down"></i>
                       </a>
                     </Link>
 
@@ -157,7 +162,7 @@ export default function Navbar() {
                   <li className="nav-item">
                     <Link href="/about-us">
                       <a className="nav-link" onClick={toggleNavbar}>
-                        Nosotros
+                        {idioma === "es-ES" ? "Nosotros" : "About Us "}
                       </a>
                     </Link>
                   </li>
@@ -266,12 +271,36 @@ export default function Navbar() {
                       </div>
                     </>
                   ) : null}
-
                   <Link href="/contact">
-                    <a className="btn btn-primary" onClick={toggleNavbar}>
-                      Tienes Dudas?
+                    <a className="btn btn-primary mr-2" onClick={toggleNavbar}>
+                      {idioma === "es-ES"
+                        ? "Tienes Dudas?"
+                        : "Have questions? "}
                     </a>
                   </Link>
+
+                  {/* <Link href="/">
+                    <a>ESP</a>
+                  </Link>
+                  <span>/</span>
+                  <Link href="/en-US/">
+                    <a>ENG</a>
+                  </Link> */}
+
+                  {locales.map((l, i) => {
+                    return (
+                      <span
+                        key={i}
+                        className={l === locale ? "idiomaActivo" : ""}
+                      >
+                        <Link href={asPath} locale={l}>
+                          <a className={"px-1"}>
+                            {l.slice(0, 2).toUpperCase()}
+                          </a>
+                        </Link>
+                      </span>
+                    );
+                  })}
                 </div>
               </div>
             </nav>

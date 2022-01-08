@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 const ProfessionalSolutions = () => {
+  const [idioma, setIdioma] = React.useState(useRouter().locale);
   const text = {
     corto:
       "En A MAGIC MIND Consideramos que  para el desarrollo exitoso de nuestros niños deben existir los siguientes elementos: Comunicación entre los educadores, criadores y cuidadores para que actúen como una misma persona. ...",

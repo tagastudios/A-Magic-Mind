@@ -1,13 +1,23 @@
 import React from "react";
 import Link from "next/link";
 import Icons from "../../utils/Icons";
+import { useRouter } from "next/router";
 
 const MainServices = () => {
+  const [idioma, setIdioma] = React.useState(useRouter().locale);
   return (
     <section className="main-services-area ptb-110">
       <div className="services-area-title">
-        <h3>Links de ayuda y temas populares</h3>
-        <p>Descubre todo lo que podemos ofrecerte y mucho mas</p>
+        <h3>
+          {idioma === "es-ES"
+            ? "Links de ayuda y temas populares"
+            : "Help links and popular topics"}
+        </h3>
+        <p>
+          {idioma === "es-ES"
+            ? "Descubre todo lo que podemos ofrecerte y mucho mas"
+            : "Discover everything we can offer you and much more"}
+        </p>
       </div>
       <div className="container">
         <div className="row">
@@ -19,11 +29,17 @@ const MainServices = () => {
                 </div>
                 <h3>
                   <Link href="/services/MagicPlans/">
-                    <a>Nuestos Servicios</a>
+                    <a>
+                      {idioma === "es-ES"
+                        ? "Nuestos Servicios"
+                        : "Our Services"}
+                    </a>
                   </Link>
                 </h3>
                 <img src="/images/Helpfull-links/Categorias.png"></img>
-                <a className="link-btn">Leer más..</a>
+                <a className="link-btn">
+                  {idioma === "es-ES" ? "Leer más.." : "Read more"}
+                </a>
               </div>
             </a>
           </Link>
@@ -35,11 +51,13 @@ const MainServices = () => {
                 </div>
                 <h3>
                   <Link href="/playpals/">
-                    <a>Playpals</a>
+                    <a>{idioma === "es-ES" ? "Playpals" : "Playpals"}</a>
                   </Link>
                 </h3>
                 <img src="/images/Helpfull-links/Tips.png"></img>
-                <a className="link-btn">Leer más..</a>
+                <a className="link-btn">
+                  {idioma === "es-ES" ? "Leer más.." : "Read more"}
+                </a>
               </div>
             </a>
           </Link>
@@ -51,12 +69,14 @@ const MainServices = () => {
                 </div>
                 <h3>
                   <Link href="/about-us/">
-                    <a>Nuestro Equipo</a>
+                    <a>{idioma === "es-ES" ? "Nuestro Equipo" : "Our Team"}</a>
                   </Link>
                 </h3>
                 <img src="/images/Helpfull-links/team.png"></img>
 
-                <a className="link-btn">Leer más..</a>
+                <a className="link-btn">
+                  {idioma === "es-ES" ? "Leer más.." : "Read more"}
+                </a>
               </div>
             </a>
           </Link>
@@ -68,11 +88,17 @@ const MainServices = () => {
                 </div>
                 <h3>
                   <Link href="/file/Planilla-de-Inscripcion.pdf">
-                    <a>Planilla de Inscripción</a>
+                    <a>
+                      {idioma === "es-ES"
+                        ? "PLanilla de Inscripción"
+                        : "Registration form"}{" "}
+                    </a>
                   </Link>
                 </h3>
                 <img src="/images/Helpfull-links/Planilla.png"></img>
-                <a className="link-btn">Leer más..</a>
+                <a className="link-btn">
+                  {idioma === "es-ES" ? "Leer más.." : "Read more"}
+                </a>
               </div>
             </a>
           </Link>
@@ -84,11 +110,17 @@ const MainServices = () => {
                 </div>
                 <h3>
                   <Link href="/contact/">
-                    <a>Más Información</a>
+                    <a>
+                      {idioma === "es-ES"
+                        ? "Más información"
+                        : "More Information"}
+                    </a>
                   </Link>
                 </h3>
                 <img src="/images/Helpfull-links/informacion.png"></img>
-                <a className="link-btn">Leer más..</a>
+                <a className="link-btn">
+                  {idioma === "es-ES" ? "Leer más.." : "Read more"}
+                </a>
               </div>
             </a>
           </Link>

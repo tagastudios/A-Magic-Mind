@@ -1,7 +1,9 @@
 import React from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 const FunFacts = () => {
+  const [idioma, setIdioma] = React.useState(useRouter().locale);
   return (
     <div className="fun-facts-area espacioabajo my-1">
       <div className="container">
@@ -11,8 +13,10 @@ const FunFacts = () => {
           <img src="/images/logoLGAYES.png" className="logoLGAYES" />
         </div>
         <p className="text-center">
-          "La constancia es la virtud por la cual todas las otras virtudes dan
-          frutos"
+          {" "}
+          {idioma === "es-ES"
+            ? "La constancia es la virtud por la cual todas las otras virtudes dan rutos"
+            : "Constancy is the virtue by which all other virtues give fruits "}
         </p>
 
         {/* <div className="row">
@@ -54,7 +58,11 @@ const FunFacts = () => {
         </div> */}
 
         <div className="contact-cta-box">
-          <h3>Parte de nuestros ingresos son a beneficio de YES!</h3>
+          <h3>
+            {idioma === "es-ES"
+              ? "Parte de nuestros ingresos son a beneficio de YES!"
+              : "Part of our income is for the benefit of YES! "}
+          </h3>
 
           <Link href="/#">
             <a className="btn btn-primary">

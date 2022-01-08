@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+import { useRouter } from "next/router";
 
 const Avioncito = () => {
+  const [idioma, setIdioma] = React.useState(useRouter().locale);
   const [data, setData] = useState([
     {
       titulo: "Beneficios del Juego",
@@ -56,6 +58,61 @@ const Avioncito = () => {
     },
   ]);
 
+  const [dataenglish, setDataenglish] = useState([
+    {
+      titulo: "Benefits of the Game",
+      texto1:
+        "Provides greater sensory development (sense - perception) and increases fine and gross motor skills.",
+      texto2:
+        "Stimulates memory, attention, cognition and logical processing and imagination.",
+      texto3: "Facilitates communication, expression, socialization.",
+      clase: "texto-rojo",
+      foto: "/images/avioncito/16.svg",
+    },
+    {
+      titulo: "Listen",
+      texto1: "We make sure to grab the attention of our children.",
+      texto2: "We give you the instructions.",
+      texto3: "And we invite you to play.",
+      clase: "texto-naranja",
+      foto: "/images/avioncito/17.svg",
+    },
+    {
+      titulo: "Understand",
+      texto1:
+        "We make sure that the instructions are understood by our little ones.",
+      texto2: "With everyday and familiar examples for them.",
+      texto3:
+        "That they make them understand each one of the indications that they are given.",
+      clase: "texto-verde",
+      foto: "/images/avioncito/18.svg",
+    },
+    {
+      titulo: "Do",
+      texto1: "Get to work!",
+      texto2: "Doing to learn.",
+      texto3: "Goals are achieved with actions.",
+      clase: "texto-azul",
+      foto: "/images/avioncito/19.svg",
+    },
+    {
+      titulo: "Live",
+      texto1:
+        "We support and accompany our little ones to keep trying with joys and frustrations until they succeed.",
+      texto2:
+        "We show our little ones that with effort and dedication they can achieve their goals.",
+      clase: "texto-morado",
+      foto: "/images/avioncito/20.svg",
+    },
+    {
+      titulo: "Learn",
+      texto1: "We celebrate their achievements with them.",
+      texto2: "We celebrate your effort and dedication.",
+      clase: "texto-amarillo",
+      foto: "/images/avioncito/21.svg",
+    },
+  ]);
+
   const [play, setPlay] = useState(false);
   const [active, setActive] = useState("");
 
@@ -65,12 +122,21 @@ const Avioncito = () => {
       <a
         href="#path"
         className={`grid-item item${i}`}
-        onClick={() => {
-          if (active.titulo === data[i].titulo && play) {
-            setPlay(false);
-          } else setPlay(true);
-          setActive(data[i]);
-        }}
+        onClick={
+          idioma === "es-ES"
+            ? () => {
+                if (active.titulo === data[i].titulo && play) {
+                  setPlay(false);
+                } else setPlay(true);
+                setActive(data[i]);
+              }
+            : () => {
+                if (active.titulo === dataenglish[i].titulo && play) {
+                  setPlay(false);
+                } else setPlay(true);
+                setActive(dataenglish[i]);
+              }
+        }
       >
         {i}
       </a>
@@ -145,11 +211,22 @@ const Avioncito = () => {
         </div>
       ) : (
         <div className="avioncito-right">
-          <h2> Cómo enseñamos en Magic Mind? </h2>
-          <h3>Para conocer nuestro Magic Método, Vamos a jugar el avioncito</h3>
+          <h2>
+            {" "}
+            {idioma === "es-ES"
+              ? "Cómo enseñamos en Magic Mind?"
+              : "How do we teach at Magic Mind?"}{" "}
+          </h2>
+          <h3>
+            {idioma === "es-ES"
+              ? "Para conocer nuestro Magic Método, Vamos a jugar el avioncito"
+              : "To know our Magic Method, let's play the little plane"}
+          </h3>
           <p className="parrafo-avioncito-0">
             {" "}
-            Te mostramos nuestra estrategia en 5 pasos!
+            {idioma === "es-ES"
+              ? "Te mostramos nuestra estrategia en 5 pasos!"
+              : "We show you our strategy in 5 steps!"}
           </p>
           <img src="/images/avioncito/kids6.svg"></img>
         </div>

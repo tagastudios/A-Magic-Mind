@@ -3,8 +3,10 @@ import Link from "next/link";
 import { homeBlogContext } from "../Context/BlogProvider";
 import { blogs as defaultBlog } from "../../content/settings/settings.json";
 import parseMarkdown from "front-matter-markdown";
+import { useRouter } from "next/router";
 
 function BlogPost() {
+  const [idioma, setIdioma] = React.useState(useRouter().locale);
   const blogs = homeBlogContext();
   const blogLinks = ["#", "#", "/blogs/blog3"];
 
@@ -13,7 +15,11 @@ function BlogPost() {
       <div className="container" id="MainBlogs">
         <div className="section-title">
           <h2>Magic Blogs</h2>
-          <p>Conoce nuestra sección informativa </p>
+          <p>
+            {idioma === "es-ES"
+              ? "Conoce nuestra sección informativa"
+              : "Meet our informative section"}{" "}
+          </p>
         </div>
 
         <div className="row">
@@ -60,7 +66,8 @@ function BlogPost() {
 
                     <Link href={slug || blogLinks[index]}>
                       <a className="learn-more-btn">
-                        Leer más.. <i className="flaticon-add"></i>
+                        {idioma === "es-ES" ? "Leer más.." : "Read more.."}{" "}
+                        <i className="flaticon-add"></i>
                       </a>
                     </Link>
                   </div>

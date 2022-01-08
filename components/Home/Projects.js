@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 const OwlCarousel = dynamic(import("react-owl-carousel3"));
+import { useRouter } from "next/router";
 
 const options = {
   loop: true,
@@ -35,6 +36,7 @@ const options = {
 };
 
 const Projects = () => {
+  const [idioma, setIdioma] = React.useState(useRouter().locale);
   const [display, setDisplay] = React.useState(false);
 
   React.useEffect(() => {
@@ -45,7 +47,11 @@ const Projects = () => {
     <div className="projects-area pt-0 ptb-110">
       <div className="container">
         <div className="section-title">
-          <h2>Un día con nuestros PLAYPALS!</h2>
+          <h2>
+            {idioma === "es-ES"
+              ? "Un día con nuestros PLAYPALS!"
+              : "A day with our PLAYPALS! "}
+          </h2>
         </div>
       </div>
 

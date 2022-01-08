@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 export default class PricingPlan extends Component {
   // Tab
@@ -23,15 +24,16 @@ export default class PricingPlan extends Component {
   };
 
   render() {
+    const idioma = "en-US";
     return (
       <div className="pricing-area magicplans ptb-110 pt-0">
         <div className="container">
           <div className="section-title titulo-espacio">
             <h2>Magic Plans</h2>
             <p>
-              Ofrecemos planes personalizados, con las características de una
-              membresía, flexibles y adaptables a las necesidades tanto del niño
-              como de los padres.
+              {idioma === "es-ES"
+                ? "Ofrecemos planes personalizados, con las características de una membresía, flexibles y adaptables a las necesidades tanto del niño como de los padres."
+                : "We offer personalized plans, with the characteristics of a membership, flexible and adaptable to the needs of both the child and the parents."}
             </p>
           </div>
 
@@ -41,10 +43,11 @@ export default class PricingPlan extends Component {
                 className="current"
                 onClick={(e) => this.openTabSection(e, "tab1")}
               >
-                Planes Básicos
+                {" "}
+                {idioma === "es-ES" ? "Planes Básicos" : "Basic Plans"}
               </li>
               <li onClick={(e) => this.openTabSection(e, "tab2")}>
-                Planes Avanzados
+                {idioma === "es-ES" ? "Planes Avanzados" : "Advanced Plans"}
               </li>
             </ul>
 
@@ -65,34 +68,46 @@ export default class PricingPlan extends Component {
                         </h3>
 
                         <p>
-                          Duración 1.5 Horas a la semana
+                          {idioma === "es-ES"
+                            ? "Duración 1.5 Horas a la semana"
+                            : "Duration 1.5 Hours per week"}
                           <br />
                         </p>
                       </div>
 
                       <div className="price">
-                        Incluye <span></span>
+                        {idioma === "es-ES" ? "Incluye" : "Include"}{" "}
+                        <span></span>
                       </div>
 
                       <div className="buy-btn">
                         <Link href="/index-5/#">
                           <a className="btn btn-primary btn-basico">
-                            Conocer más de este paquete
+                            {idioma === "es-ES"
+                              ? "Conocer más de este paquete"
+                              : "Learn more about this package"}
                           </a>
                         </Link>
                       </div>
 
                       <ul className="pricing-features">
                         <li>
-                          <i className="flaticon-tick"></i> Material Educativo
+                          <i className="flaticon-tick"></i>
+                          {idioma === "es-ES"
+                            ? "Material Educativo"
+                            : "Educational material"}
                         </li>
                         <li>
-                          <i className="flaticon-tick"></i> Planificación y
-                          atención personalizada
+                          <i className="flaticon-tick"></i>{" "}
+                          {idioma === "es-ES"
+                            ? "Planificación y atención personalizada"
+                            : "Planning and personalized attention"}
                         </li>
                         <li>
-                          <i className="flaticon-tick"></i> Exclusividad en la
-                          comodidad de tu hogar
+                          <i className="flaticon-tick"></i>{" "}
+                          {idioma === "es-ES"
+                            ? "Exclusividad en la comodidad de tu hogar"
+                            : "Exclusivity in the comfort of your home"}
                         </li>
                       </ul>
                     </div>
@@ -110,34 +125,47 @@ export default class PricingPlan extends Component {
                           />
                         </h3>
                         <p>
-                          Duración 3 Horas a la Semana
+                          {idioma === "es-ES"
+                            ? "Duración 3 Horas a la semana"
+                            : "Duration 3 Hours per week"}
+
                           <br />
                         </p>
                       </div>
 
                       <div className="price">
-                        Incluye <span></span>
+                        {idioma === "es-ES" ? "Incluye" : "Include"}{" "}
+                        <span></span>
                       </div>
 
                       <div className="buy-btn">
                         <Link href="/index-5/#">
                           <a className="btn btn-primary btn-bronce">
-                            Conoce más de este paquete
+                            {idioma === "es-ES"
+                              ? "Conocer más de este paquete"
+                              : "Learn more about this package"}
                           </a>
                         </Link>
                       </div>
 
                       <ul className="pricing-features">
                         <li>
-                          <i className="flaticon-tick"></i> Material Educativo
+                          <i className="flaticon-tick"></i>{" "}
+                          {idioma === "es-ES"
+                            ? "Material Educativo"
+                            : "Educational material"}
                         </li>
                         <li>
-                          <i className="flaticon-tick"></i> Planificación y
-                          atención personalizada
+                          <i className="flaticon-tick"></i>{" "}
+                          {idioma === "es-ES"
+                            ? "Planificación y atención personalizada"
+                            : "Planning and personalized attention"}
                         </li>
                         <li>
-                          <i className="flaticon-tick"></i> Exclusividad en la
-                          comodidad de tu hogar
+                          <i className="flaticon-tick"></i>{" "}
+                          {idioma === "es-ES"
+                            ? "Exclusividad en la comodidad de tu hogar"
+                            : "Exclusivity in the comfort of your home"}
                         </li>
                       </ul>
                     </div>
@@ -158,34 +186,46 @@ export default class PricingPlan extends Component {
                           />
                         </h3>
                         <p>
-                          Duración 4.5 horas a la semana
+                          {idioma === "es-ES"
+                            ? "Duración 4.5 Horas a la semana"
+                            : "Duration 4.5 Hours per week"}
                           <br />
                         </p>
                       </div>
 
                       <div className="price">
-                        Incluye <span></span>
+                        {idioma === "es-ES" ? "Incluye" : "Include"}{" "}
+                        <span></span>
                       </div>
 
                       <div className="buy-btn">
                         <Link href="/#">
                           <a className="btn btn-primary btn-silver">
-                            Conoce Más sobre este paquete{" "}
+                            {idioma === "es-ES"
+                              ? "Conocer más de este paquete"
+                              : "Learn more about this package"}
                           </a>
                         </Link>
                       </div>
 
                       <ul className="pricing-features">
                         <li>
-                          <i className="flaticon-tick"></i> Material Educativo
+                          <i className="flaticon-tick"></i>{" "}
+                          {idioma === "es-ES"
+                            ? "Material Educativo"
+                            : "Educational material"}
                         </li>
                         <li>
-                          <i className="flaticon-tick"></i> Planificación y
-                          atención personalizada
+                          <i className="flaticon-tick"></i>
+                          {idioma === "es-ES"
+                            ? "Planificación y atención personalizada"
+                            : "Planning and personalized attention"}
                         </li>
                         <li>
-                          <i className="flaticon-tick"></i> Exclusividad en la
-                          comodidad de tu hogar
+                          <i className="flaticon-tick"></i>{" "}
+                          {idioma === "es-ES"
+                            ? "Exclusividad en la comodidad de tu hogar"
+                            : "Exclusivity in the comfort of your home"}
                         </li>
                       </ul>
                     </div>
@@ -202,41 +242,58 @@ export default class PricingPlan extends Component {
                           />
                         </h3>
                         <h5>
-                          Duración 6 horas a la semana <br />
+                          {idioma === "es-ES"
+                            ? "Duración 6 Horas a la semana"
+                            : "Duration 6 Hours per week"}{" "}
+                          <br />
                         </h5>
                       </div>
 
                       <div className="price">
-                        Incluye <span></span>
+                        {idioma === "es-ES" ? "Incluye" : "Include"}{" "}
+                        <span></span>
                       </div>
 
                       <div className="buy-btn">
                         <Link href="/#">
                           <a className="btn btn-primary btn-gold">
-                            Conoce más sobre este paquete
+                            {idioma === "es-ES"
+                              ? "Conocer más de este paquete"
+                              : "Learn more about this package"}
                           </a>
                         </Link>
                       </div>
 
                       <ul className="pricing-features">
                         <li>
-                          <i className="flaticon-tick"></i> Cámaras de seguridad
+                          <i className="flaticon-tick"></i>{" "}
+                          {idioma === "es-ES"
+                            ? "Cámaras de seguridad"
+                            : "Live Camera"}
                         </li>
                         <li>
-                          <i className="flaticon-tick"></i> Horas ilimitadas de
-                          actividaes especiales (cumpleaños/ aniversarios/play
-                          date/ holidays)
+                          <i className="flaticon-tick"></i>{" "}
+                          {idioma === "es-ES"
+                            ? "Horas ilimitadas de actividaes especiales (cumpleaños / aniversarios / play date / vacaciones)"
+                            : "Unlimited hours of special activities (birthdays / anniversaries / play date / holidays)"}
                         </li>
                         <li>
-                          <i className="flaticon-tick"></i> Material educativo
+                          <i className="flaticon-tick"></i>{" "}
+                          {idioma === "es-ES"
+                            ? "Material Educativo"
+                            : "Educational material"}
                         </li>
                         <li>
-                          <i className="flaticon-tick"></i> Planificación y
-                          atención personalizada
+                          <i className="flaticon-tick"></i>{" "}
+                          {idioma === "es-ES"
+                            ? "Planificación y atención personalizada"
+                            : "Planning and personalized attention"}
                         </li>
                         <li>
-                          <i className="flaticon-tick"></i> Exclusividad en la
-                          comodidad de tu hogar
+                          <i className="flaticon-tick"></i>{" "}
+                          {idioma === "es-ES"
+                            ? "Exclusividad en la comodidad de tu hogar"
+                            : "Exclusivity in the comfort of your home"}
                         </li>
                       </ul>
                     </div>
@@ -253,41 +310,58 @@ export default class PricingPlan extends Component {
                           />
                         </h3>
                         <h5>
-                          Duración 9 horas a la semana <br />
+                          {idioma === "es-ES"
+                            ? "Duración 9 Horas a la semana"
+                            : "Duration 9 Hours per week"}{" "}
+                          <br />
                         </h5>
                       </div>
 
                       <div className="price">
-                        Incluye <span></span>
+                        {idioma === "es-ES" ? "Incluye" : "Include"}{" "}
+                        <span></span>
                       </div>
 
                       <div className="buy-btn">
                         <Link href="/#">
                           <a className="btn btn-primary btn-diamond">
-                            Conoce más sobre este paquete
+                            {idioma === "es-ES"
+                              ? "Conocer más de este paquete"
+                              : "Learn more about this package"}
                           </a>
                         </Link>
                       </div>
 
                       <ul className="pricing-features">
                         <li>
-                          <i className="flaticon-tick"></i> Cámaras de seguridad
+                          <i className="flaticon-tick"></i>{" "}
+                          {idioma === "es-ES"
+                            ? "Cámaras de seguridad"
+                            : "Live Camera"}
                         </li>
                         <li>
-                          <i className="flaticon-tick"></i> Horas ilimitadas de
-                          actividaes especiales (cumpleaños/ aniversarios/play
-                          date/ holidays)
+                          <i className="flaticon-tick"></i>{" "}
+                          {idioma === "es-ES"
+                            ? "Horas ilimitadas de actividaes especiales (cumpleaños / aniversarios / play date / vacaciones)"
+                            : "Unlimited hours of special activities (birthdays / anniversaries / play date / holidays)"}
                         </li>
                         <li>
-                          <i className="flaticon-tick"></i> Material educativo
+                          <i className="flaticon-tick"></i>{" "}
+                          {idioma === "es-ES"
+                            ? "Material Educativo"
+                            : "Educational material"}
                         </li>
                         <li>
-                          <i className="flaticon-tick"></i> Planificación y
-                          atención personalizada
+                          <i className="flaticon-tick"></i>{" "}
+                          {idioma === "es-ES"
+                            ? "Planificación y atención personalizada"
+                            : "Planning and personalized attention"}
                         </li>
                         <li>
-                          <i className="flaticon-tick"></i> Exclusividad en la
-                          comodidad de tu hogar
+                          <i className="flaticon-tick"></i>{" "}
+                          {idioma === "es-ES"
+                            ? "Exclusividad en la comodidad de tu hogar"
+                            : "Exclusivity in the comfort of your home"}
                         </li>
                       </ul>
                     </div>
