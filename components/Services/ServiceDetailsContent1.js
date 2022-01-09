@@ -22,7 +22,7 @@ function ServiceDetailsContent() {
                     <div className="icon-new2">
                       <img
                         className="iconos-actividades"
-                        src="/images/iconos/5.png"
+                        src="/images/Iconos/5.png"
                       />
                     </div>
                     <h3>
@@ -44,7 +44,7 @@ function ServiceDetailsContent() {
                     <div className="icon-new2">
                       <img
                         className="iconos-actividades"
-                        src="/images/iconos/4.png"
+                        src="/images/Iconos/4.png"
                       />
                     </div>
                     <h3>
@@ -93,7 +93,7 @@ function ServiceDetailsContent() {
                     <div className="icon-new2">
                       <img
                         className="iconos-actividades"
-                        src="/images/iconos/1.png"
+                        src="/images/Iconos/1.png"
                       />
                     </div>
                     <h3>
@@ -110,7 +110,7 @@ function ServiceDetailsContent() {
                     <div className="icon-new2">
                       <img
                         className="iconos-actividades"
-                        src="/images/iconos/2.png"
+                        src="/images/Iconos/2.png"
                       />
                     </div>
                     <h3>
@@ -130,7 +130,7 @@ function ServiceDetailsContent() {
                     <div className="icon-new2">
                       <img
                         className="iconos-actividades"
-                        src="/images/iconos/3.png"
+                        src="/images/Iconos/3.png"
                       />
                     </div>
                     <h3>

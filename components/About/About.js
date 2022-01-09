@@ -99,7 +99,7 @@ class AboutContact extends Component {
                       </ul>
                     </p>
                   </div>
-                  <img src="/images/mounstrico.png" className="mounstro-img" />
+                  <img src="/images/Mounstrico.png" className="mounstro-img" />
                 </div>
               </div>
             </div>
