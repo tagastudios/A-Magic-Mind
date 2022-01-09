@@ -1,6 +1,6 @@
 backend:
-  name: [github] #test-repo for production & git-gateway for live site
-  repo: A-Magic-Mind
+  name: github #test-repo for production & git-gateway for live site
+  repo: tagastudios/A-Magic-Mind
   branch: master
 
 site_url: https://amagicmindus.com/
