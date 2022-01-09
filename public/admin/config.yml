@@ -1,276 +1,277 @@
 backend:
-  name: git-gateway #test-repo for production & git-gateway for live site
-branch: master
-site_url: https://a-magic-mind.netlify.app/
-display_url: https://a-magic-mind.netlify.app
-logo_url: https://a-magic-mind.netlify.app/images/logo.png
-# locale: "es" # LANGUAGE: ESP
-media_folder: public/images/uploads
-public_folder: /images/uploads
-collections:
-  # ***** BLOGS SECTION *****
+  name: [github] #test-repo for production & git-gateway for live site
+  repo: A-Magic-Mind
+  branch: master
+  site_url: https://amagicmindus.com/
+  display_url: https://amagicmindus.com
+  logo_url: https://amagicmindus.com/images/logo.png
+  # locale: "es" # LANGUAGE: ESP
+  media_folder: public/images/uploads
+  public_folder: /images/uploads
+  collections:
+    # ***** BLOGS SECTION *****
 
-  - name: "blogs"
-    label: "Blog Posts"
-    label_singular: "Post"
-    description: "Entradas de Blog para el sitio web."
-    folder: "content/blogs"
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    summary: "POST: {{title}} ***** DATE: {{date}}"
-    create: true
-    view_filters:
-      - label: Posts Activos
-        field: published
-        pattern: true
-    view_groups:
-      - label: Year
-        field: date
-        pattern: \d{4}
-      - label: Autor
-        field: author
-    fields:
-      - {
-          label: "Titulo",
-          name: "title",
-          widget: "string",
-          tagname: "h1",
-          required: true,
-        }
-      - {
-          label: "Fecha del Post",
-          name: "date",
-          widget: "datetime",
-          date_format: "YYYY-MM-DD",
-          time_format: "HH:mm",
-          format: "dddd, MMMM Do YYYY, hh:mm a",
-          required: true,
-        }
-      - {
-          label: "Post Activo",
-          name: "published",
-          widget: "boolean",
-          default: true,
-          required: true,
-        }
-      - {
-          label: "Imagen de Vista Previa",
-          name: "image",
-          widget: "image",
-          required: true,
-          tagname: "",
-        }
-      - {
-          label: "Autor",
-          name: "author",
-          widget: "relation",
-          collection: "settings",
-          file: "authors",
-          search_fields: ["authors.*.name"],
-          display_fields: ["authors.*.name"],
-          value_field: "authors.*.name",
-          required: true,
-        }
-      - {
-          label: "Body",
-          name: "body",
-          widget: "markdown",
-          hint: "Redacte el contenido del Blog Post aqui.",
-          required: true,
-        }
+    - name: "blogs"
+      label: "Blog Posts"
+      label_singular: "Post"
+      description: "Entradas de Blog para el sitio web."
+      folder: "content/blogs"
+      slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+      summary: "POST: {{title}} ***** DATE: {{date}}"
+      create: true
+      view_filters:
+        - label: Posts Activos
+          field: published
+          pattern: true
+      view_groups:
+        - label: Year
+          field: date
+          pattern: \d{4}
+        - label: Autor
+          field: author
+      fields:
+        - {
+            label: "Titulo",
+            name: "title",
+            widget: "string",
+            tagname: "h1",
+            required: true,
+          }
+        - {
+            label: "Fecha del Post",
+            name: "date",
+            widget: "datetime",
+            date_format: "YYYY-MM-DD",
+            time_format: "HH:mm",
+            format: "dddd, MMMM Do YYYY, hh:mm a",
+            required: true,
+          }
+        - {
+            label: "Post Activo",
+            name: "published",
+            widget: "boolean",
+            default: true,
+            required: true,
+          }
+        - {
+            label: "Imagen de Vista Previa",
+            name: "image",
+            widget: "image",
+            required: true,
+            tagname: "",
+          }
+        - {
+            label: "Autor",
+            name: "author",
+            widget: "relation",
+            collection: "settings",
+            file: "authors",
+            search_fields: ["authors.*.name"],
+            display_fields: ["authors.*.name"],
+            value_field: "authors.*.name",
+            required: true,
+          }
+        - {
+            label: "Body",
+            name: "body",
+            widget: "markdown",
+            hint: "Redacte el contenido del Blog Post aqui.",
+            required: true,
+          }
 
-  # ***** FAQs INFO ******
+    # ***** FAQs INFO ******
 
-  - name: "faqs"
-    label: "FAQs"
-    label_singular: "FAQ"
-    description: "FAQs / Preguntas hechas con frecuencia."
-    folder: "content/faqs"
-    slug: "{{slug}}"
-    summary: "{{title}}"
-    create: true
-    fields:
-      - {
-          label: "Question",
-          name: "title",
-          widget: "string",
-          tagname: "h1",
-          required: true,
-        }
-      - { label: "Answer", name: "body", widget: "markdown", required: true }
+    - name: "faqs"
+      label: "FAQs"
+      label_singular: "FAQ"
+      description: "FAQs / Preguntas hechas con frecuencia."
+      folder: "content/faqs"
+      slug: "{{slug}}"
+      summary: "{{title}}"
+      create: true
+      fields:
+        - {
+            label: "Question",
+            name: "title",
+            widget: "string",
+            tagname: "h1",
+            required: true,
+          }
+        - { label: "Answer", name: "body", widget: "markdown", required: true }
 
-  # ***** WEBSITE PAGES INFO *****
+    # ***** WEBSITE PAGES INFO *****
 
-  - name: "pages"
-    label: "Pages"
-    label_singular: "Page"
-    description: "Contenido de dinamico de paginas dentro del sitio web"
-    delete: false
-    editor:
-      preview: false
-    files:
-      - name: "home"
-        label: "Inicio"
-        file: "content/pages/home.json"
-        description: "Contenido en la pagina de home."
-        fields:
-          - {
-              label: "Texto Principal",
-              name: "highlight_text",
-              widget: "string",
-            }
+    - name: "pages"
+      label: "Pages"
+      label_singular: "Page"
+      description: "Contenido de dinamico de paginas dentro del sitio web"
+      delete: false
+      editor:
+        preview: false
+      files:
+        - name: "home"
+          label: "Inicio"
+          file: "content/pages/home.json"
+          description: "Contenido en la pagina de home."
+          fields:
+            - {
+                label: "Texto Principal",
+                name: "highlight_text",
+                widget: "string",
+              }
 
-          - { label: "Servicios", name: "services", widget: "string" }
-          - { label: "Porque A Magic Mind", name: "whyus", widget: "string" }
-          - { label: "Frase", name: "quote", widget: "string" }
-          - {
-              label: "Video Principal",
-              name: "highlight_video",
-              widget: "string",
-            }
-          - { label: "Call To Action #1", name: "CTA1", widget: "string" }
-          - { label: "Playpals Galeria", name: "gallery", widget: "string" }
-          - { label: "Call TO Action #2", name: "CTA2", widget: "string" }
-          - { label: "Nuestros Socios", name: "partners", widget: "string" }
+            - { label: "Servicios", name: "services", widget: "string" }
+            - { label: "Porque A Magic Mind", name: "whyus", widget: "string" }
+            - { label: "Frase", name: "quote", widget: "string" }
+            - {
+                label: "Video Principal",
+                name: "highlight_video",
+                widget: "string",
+              }
+            - { label: "Call To Action #1", name: "CTA1", widget: "string" }
+            - { label: "Playpals Galeria", name: "gallery", widget: "string" }
+            - { label: "Call TO Action #2", name: "CTA2", widget: "string" }
+            - { label: "Nuestros Socios", name: "partners", widget: "string" }
 
-  # ***** WEBSITE PRODUCTS INFO *****
+    # ***** WEBSITE PRODUCTS INFO *****
 
-  - name: "products"
-    label: "Products"
-    label_singular: "Product"
-    description: "Productos / Merchandising para la pagina web."
-    folder: "content/products"
-    slug: "{{productType}-{{title}}"
-    summary: "{{productType}: {{title}}"
-    create: true
-    fields:
-      - {
-          label: "Tipo de Producto",
-          name: "productType",
-          widget: "select",
-          required: true,
-          options:
-            [
-              { label: "Libro", value: "Book" },
-              { label: "Video", value: "Video" },
-              { label: "Juguete", value: "Toy" },
-              { label: "Merchandise", value: "Merchandise" },
-            ],
-        }
-      - { label: "Titulo", name: "title", widget: "string", required: true }
-      - {
-          label: "Precio",
-          name: "price",
-          widget: "number",
-          value_type: "float",
-          required: true,
-        }
-      - {
-          label: "Disponibilidad",
-          name: "available",
-          widget: "boolean",
-          default: true,
-          required: true,
-        }
-      - {
-          label: "Descripcion",
-          name: "body",
-          widget: "markdown",
-          required: true,
-        }
+    - name: "products"
+      label: "Products"
+      label_singular: "Product"
+      description: "Productos / Merchandising para la pagina web."
+      folder: "content/products"
+      slug: "{{productType}-{{title}}"
+      summary: "{{productType}: {{title}}"
+      create: true
+      fields:
+        - {
+            label: "Tipo de Producto",
+            name: "productType",
+            widget: "select",
+            required: true,
+            options:
+              [
+                { label: "Libro", value: "Book" },
+                { label: "Video", value: "Video" },
+                { label: "Juguete", value: "Toy" },
+                { label: "Merchandise", value: "Merchandise" },
+              ],
+          }
+        - { label: "Titulo", name: "title", widget: "string", required: true }
+        - {
+            label: "Precio",
+            name: "price",
+            widget: "number",
+            value_type: "float",
+            required: true,
+          }
+        - {
+            label: "Disponibilidad",
+            name: "available",
+            widget: "boolean",
+            default: true,
+            required: true,
+          }
+        - {
+            label: "Descripcion",
+            name: "body",
+            widget: "markdown",
+            required: true,
+          }
 
-  # ***** REVIEWS ******
+    # ***** REVIEWS ******
 
-  - name: "reviews"
-    label: "Reviews"
-    label_singular: "Review"
-    description: "Reviews o feedback por clientes."
-    folder: "content/reviews"
-    slug: "{{slug}}"
-    summary: "{{title}} - {{customer}}"
-    create: true
-    fields:
-      - {
-          label: "Highlight",
-          name: "title",
-          widget: "string",
-          tagname: "h2",
-          required: true,
-        }
-      - { label: "Cliente", name: "customer", widget: "string" }
-      - { label: "Review", name: "body", widget: "markdown", required: true }
+    - name: "reviews"
+      label: "Reviews"
+      label_singular: "Review"
+      description: "Reviews o feedback por clientes."
+      folder: "content/reviews"
+      slug: "{{slug}}"
+      summary: "{{title}} - {{customer}}"
+      create: true
+      fields:
+        - {
+            label: "Highlight",
+            name: "title",
+            widget: "string",
+            tagname: "h2",
+            required: true,
+          }
+        - { label: "Cliente", name: "customer", widget: "string" }
+        - { label: "Review", name: "body", widget: "markdown", required: true }
 
-  # ***** CORE WEBSITE SETTINGS *****
+    # ***** CORE WEBSITE SETTINGS *****
 
-  - name: "settings"
-    label: "Settings"
-    description: "Configuracion general de la pagina web."
-    delete: false
-    editor:
-      preview: false
-    files:
-      - name: "authors"
-        label: "Authors"
-        file: "content/settings/authors.yml"
-        description: "Personas enlistadas para publicar un post."
-        fields:
-          - name: authors
-            label: Autores
-            label_singular: "Autor"
-            widget: list
-            fields:
-              - {
-                  label: "Name",
-                  name: "name",
-                  widget: "string",
-                  required: true,
-                  hint: "Nombre y Apellido",
-                }
-              - {
-                  label: "Descripcion",
-                  name: "description",
-                  widget: "markdown",
-                }
+    - name: "settings"
+      label: "Settings"
+      description: "Configuracion general de la pagina web."
+      delete: false
+      editor:
+        preview: false
+      files:
+        - name: "authors"
+          label: "Authors"
+          file: "content/settings/authors.yml"
+          description: "Personas enlistadas para publicar un post."
+          fields:
+            - name: authors
+              label: Autores
+              label_singular: "Autor"
+              widget: list
+              fields:
+                - {
+                    label: "Name",
+                    name: "name",
+                    widget: "string",
+                    required: true,
+                    hint: "Nombre y Apellido",
+                  }
+                - {
+                    label: "Descripcion",
+                    name: "description",
+                    widget: "markdown",
+                  }
 
-      - name: "contact"
-        label: "Contact"
-        file: "content/settings/contact.json"
-        description: "General Contact Information for website"
-        fields:
-          - { label: "Phone Number", name: "phone", widget: "string" }
-          - { label: "Email Address", name: "email", widget: "string" }
-          - { label: "Address", name: "address", widget: "string" }
+        - name: "contact"
+          label: "Contact"
+          file: "content/settings/contact.json"
+          description: "General Contact Information for website"
+          fields:
+            - { label: "Phone Number", name: "phone", widget: "string" }
+            - { label: "Email Address", name: "email", widget: "string" }
+            - { label: "Address", name: "address", widget: "string" }
 
-      - name: "general"
-        label: "Site Settings"
-        file: "content/settings/settings.json"
-        description: "General Site Settings"
-        fields:
-          - { label: "Slogan", name: "slogan", widget: "string" }
-          - label: "Blog Settings"
-            name: blogs
-            widget: "object"
-            fields:
-              - {
-                  label: "Numero de Posts en la pagina principal",
-                  name: front_limit,
-                  widget: number,
-                  required: true,
-                  min: 1,
-                  max: 9,
-                }
-              - {
-                  label: "Autor por defecto",
-                  name: author,
-                  widget: string,
-                  required: true,
-                }
-              - {
-                  label: "Foto Vista Previa por Defecto",
-                  name: thumb,
-                  widget: image,
-                  class: "thumb",
-                  required: false,
-                }
+        - name: "general"
+          label: "Site Settings"
+          file: "content/settings/settings.json"
+          description: "General Site Settings"
+          fields:
+            - { label: "Slogan", name: "slogan", widget: "string" }
+            - label: "Blog Settings"
+              name: blogs
+              widget: "object"
+              fields:
+                - {
+                    label: "Numero de Posts en la pagina principal",
+                    name: front_limit,
+                    widget: number,
+                    required: true,
+                    min: 1,
+                    max: 9,
+                  }
+                - {
+                    label: "Autor por defecto",
+                    name: author,
+                    widget: string,
+                    required: true,
+                  }
+                - {
+                    label: "Foto Vista Previa por Defecto",
+                    name: thumb,
+                    widget: image,
+                    class: "thumb",
+                    required: false,
+                  }
 
   # - name: "kitchenSink" # all the things in one entry, for documentation and quick testing
   #   label: "Kitchen Sink"
