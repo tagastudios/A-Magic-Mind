@@ -5,7 +5,7 @@ module.exports = {
     // providing the locales supported by your application
     locales: ["en-US", "es-ES"],
     //  default locale used when the non-locale paths are visited
-    defaultLocale: "es-ES",
+    defaultLocale: "en-US",
   },
   sassOptions: {
     includePaths: [path.join(__dirname, "styles")],

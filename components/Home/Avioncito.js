@@ -122,6 +122,7 @@ const Avioncito = () => {
       <a
         href="#path"
         className={`grid-item item${i}`}
+        key={i}
         onClick={
           idioma === "es-ES"
             ? () => {
@@ -194,7 +195,7 @@ const Avioncito = () => {
           }}
         ></img>
       </div>
-      <div class="grid-container">{stickers}</div>
+      <div className="grid-container">{stickers}</div>
       {play ? (
         <div
           className={`avioncito-right ${play ? "avioncito-right-items" : ""}`}

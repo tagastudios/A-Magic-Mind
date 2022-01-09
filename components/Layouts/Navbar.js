@@ -32,11 +32,14 @@ export default function Navbar() {
 
   useEffect(() => {
     let elementId = document.getElementById("navbar");
+    let idiomaResp = document.getElementById("idiomaSelector");
     document.addEventListener("scroll", () => {
       if (window.scrollY > 170) {
         elementId.classList.add("is-sticky");
+        idiomaResp.classList.add("idiomas-alt");
       } else {
         elementId.classList.remove("is-sticky");
+        idiomaResp.classList.remove("idiomas-alt");
       }
     });
     window.scrollTo(0, 0);
@@ -48,6 +51,12 @@ export default function Navbar() {
   const classTwo = collapsed
     ? "navbar-toggler navbar-toggler-right collapsed nav-shadow"
     : "navbar-toggler navbar-toggler-right";
+
+  const updateLocale = () => {
+    setTimeout(() => {
+      reload();
+    }, 10);
+  };
 
   return (
     <>
@@ -76,6 +85,7 @@ export default function Navbar() {
           </div>
         </div>
       </div>
+
       <div
         id="navbar"
         className={`navbar-area ${collapsed ? "" : "white-nav"}`}
@@ -97,6 +107,24 @@ export default function Navbar() {
                   />
                 </a>
               </Link>
+
+              <div id="idiomaSelector" className="idiomas">
+                {idioma === "es-ES" ? "Idioma" : "Language"}:{" "}
+                {locales.map((l, i) => {
+                  return (
+                    <span
+                      key={i}
+                      className={l === locale ? "idiomaActivo" : ""}
+                    >
+                      <Link href={asPath} locale={l}>
+                        <a className={"px-1"} onClick={updateLocale}>
+                          {l.slice(0, 2).toUpperCase()}
+                        </a>
+                      </Link>
+                    </span>
+                  );
+                })}
+              </div>
 
               <button
                 onClick={toggleNavbar}
@@ -271,6 +299,7 @@ export default function Navbar() {
                       </div>
                     </>
                   ) : null}
+
                   <Link href="/contact">
                     <a className="btn btn-primary mr-2" onClick={toggleNavbar}>
                       {idioma === "es-ES"
@@ -279,28 +308,21 @@ export default function Navbar() {
                     </a>
                   </Link>
 
-                  {/* <Link href="/">
-                    <a>ESP</a>
-                  </Link>
-                  <span>/</span>
-                  <Link href="/en-US/">
-                    <a>ENG</a>
-                  </Link> */}
-
-                  {locales.map((l, i) => {
-                    return (
-                      <span
-                        key={i}
-                        className={l === locale ? "idiomaActivo" : ""}
-                      >
-                        <Link href={asPath} locale={l}>
-                          <a className={"px-1"}>
-                            {l.slice(0, 2).toUpperCase()}
-                          </a>
-                        </Link>
-                      </span>
-                    );
-                  })}
+                  {collapsed &&
+                    locales.map((l, i) => {
+                      return (
+                        <span
+                          key={i}
+                          className={l === locale ? "idiomaActivo" : ""}
+                        >
+                          <Link href={asPath} locale={l}>
+                            <a className={"px-1"} onClick={updateLocale}>
+                              {l.slice(0, 2).toUpperCase()}
+                            </a>
+                          </Link>
+                        </span>
+                      );
+                    })}
                 </div>
               </div>
             </nav>

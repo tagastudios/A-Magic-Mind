@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import { useRouter } from "next/router";
+import { withRouter } from "next/router";
 
 class FreeTrialForm extends Component {
   render() {
-    const idioma = "en-US";
+    const idioma = this.props.router.locale;
     return (
       <section className="free-trial-area">
         <div className="row m-0">
@@ -49,4 +49,4 @@ class FreeTrialForm extends Component {
   }
 }
 
-export default FreeTrialForm;
+export default withRouter(FreeTrialForm);

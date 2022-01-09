@@ -8,7 +8,7 @@ function Contact() {
   return (
     <>
       <PageBanner
-        pageTitle="Contacto"
+        pageTitle={idioma === "es-ES" ? "Contacto" : "Contact Us"}
         homePageUrl="/"
         homePageText="Home"
         activePageText={idioma === "es-ES" ? "Contacto" : "Contact"}

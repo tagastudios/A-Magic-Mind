@@ -5,6 +5,7 @@ import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
 const MySwal = withReactContent(Swal);
 import baseUrl from "../../utils/baseUrl";
+import { useRouter } from "next/router";
 
 const alertContent = () => {
   MySwal.fire({
@@ -27,6 +28,7 @@ const INITIAL_STATE = {
 };
 
 const ContactForm = () => {
+  const [idioma, setIdioma] = useState(useRouter().locale);
   const [contact, setContact] = useState(INITIAL_STATE);
   const { register, handleSubmit, errors } = useForm();
 
@@ -61,7 +63,7 @@ const ContactForm = () => {
                 type="text"
                 name="name"
                 className="form-control"
-                placeholder="Nombre"
+                placeholder={idioma === "es-ES" ? "Nombre" : "Name"}
                 value={contact.name}
                 onChange={handleChange}
                 ref={register({ required: true })}
@@ -95,7 +97,7 @@ const ContactForm = () => {
                 type="text"
                 name="number"
                 className="form-control"
-                placeholder="Teléfono"
+                placeholder={idioma === "es-ES" ? "Teléfono" : "Phone Number"}
                 value={contact.number}
                 onChange={handleChange}
                 ref={register({ required: true })}
@@ -112,7 +114,7 @@ const ContactForm = () => {
                 type="text"
                 name="subject"
                 className="form-control"
-                placeholder="Asunto"
+                placeholder={idioma === "es-ES" ? "Asunto" : "Subject"}
                 value={contact.subject}
                 onChange={handleChange}
                 ref={register({ required: true })}
@@ -130,7 +132,7 @@ const ContactForm = () => {
                 className="form-control"
                 cols="30"
                 rows="5"
-                placeholder="Tu Mensaje"
+                placeholder={idioma === "es-ES" ? "Tu Mensaje" : "Your Message"}
                 value={contact.text}
                 onChange={handleChange}
                 ref={register({ required: true })}
@@ -143,7 +145,7 @@ const ContactForm = () => {
 
           <div className="col-lg-12 col-md-12">
             <button type="submit" className="btn btn-primary">
-              Enviar Mensaje
+              {idioma === "es-ES" ? "Enviar Mensaje" : "Send Message"}
             </button>
           </div>
         </div>

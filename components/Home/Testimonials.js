@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import dynamic from "next/dynamic";
 const OwlCarousel = dynamic(import("react-owl-carousel3"));
-import { useRouter } from "next/router";
+import { withRouter } from "next/router";
 
 const options = {
   loop: true,
@@ -17,8 +17,7 @@ const options = {
     "<i class='flaticon-right-chevron'></i>",
   ],
 };
-// const idioma = useRouter().locale;
-const idioma = "en-US";
+
 class FeedbackSlider extends Component {
   _isMounted = false;
   state = {
@@ -33,6 +32,8 @@ class FeedbackSlider extends Component {
   }
 
   render() {
+    const idioma = this.props.router.locale;
+
     return (
       <div className="feedback-area">
         <div className="container-fluid p-0">
@@ -131,4 +132,4 @@ class FeedbackSlider extends Component {
   }
 }
 
-export default FeedbackSlider;
+export default withRouter(FeedbackSlider);

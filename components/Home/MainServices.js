@@ -22,7 +22,7 @@ const MainServices = () => {
       <div className="container">
         <div className="row">
           <Link href="/services/MagicPlans/">
-            <a className="col-lg-4 col-sm-6 col-md-4">
+            <div className="col-lg-4 col-sm-6 col-md-4">
               <div className="single-main-services-box">
                 <div className="icon-new">
                   <Icons icon="category" color="black" />
@@ -41,10 +41,10 @@ const MainServices = () => {
                   {idioma === "es-ES" ? "Leer más.." : "Read more"}
                 </a>
               </div>
-            </a>
+            </div>
           </Link>
           <Link href="/playpals/">
-            <a className="col-lg-4 col-sm-6 col-md-4">
+            <div className="col-lg-4 col-sm-6 col-md-4">
               <div className="single-main-services-box">
                 <div className="icon-new">
                   <Icons icon="tips" color="black" />
@@ -59,10 +59,10 @@ const MainServices = () => {
                   {idioma === "es-ES" ? "Leer más.." : "Read more"}
                 </a>
               </div>
-            </a>
+            </div>
           </Link>
           <Link href="/about-us/">
-            <a className="col-lg-4 col-sm-6 col-md-4">
+            <div className="col-lg-4 col-sm-6 col-md-4">
               <div className="single-main-services-box">
                 <div className="icon-new">
                   <Icons icon="team" color="black" />
@@ -73,15 +73,14 @@ const MainServices = () => {
                   </Link>
                 </h3>
                 <img src="/images/Helpfull-links/team.png"></img>
-
                 <a className="link-btn">
                   {idioma === "es-ES" ? "Leer más.." : "Read more"}
                 </a>
               </div>
-            </a>
+            </div>
           </Link>
           <Link href="/file/Planilla-de-Inscripcion.pdf">
-            <a className="col-lg-4 col-sm-6 col-md-4">
+            <div className="col-lg-4 col-sm-6 col-md-4">
               <div className="single-main-services-box">
                 <div className="icon-new">
                   <Icons icon="enroll" color="black" />
@@ -100,10 +99,10 @@ const MainServices = () => {
                   {idioma === "es-ES" ? "Leer más.." : "Read more"}
                 </a>
               </div>
-            </a>
+            </div>
           </Link>
           <Link href="/contact/">
-            <a className="col-lg-4 col-sm-6 col-md-4">
+            <div className="col-lg-4 col-sm-6 col-md-4">
               <div className="single-main-services-box">
                 <div className="icon-new ml-1">
                   <Icons icon="info" color="black" />
@@ -122,7 +121,7 @@ const MainServices = () => {
                   {idioma === "es-ES" ? "Leer más.." : "Read more"}
                 </a>
               </div>
-            </a>
+            </div>
           </Link>
         </div>
       </div>

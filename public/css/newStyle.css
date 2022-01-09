@@ -61,6 +61,23 @@
   height: auto !important;
 }
 
+.idiomas {
+  display: none;
+}
+
+@media only screen and (max-width: 767px) {
+  .idiomas {
+    display: block;
+    margin-top: -40px;
+  }
+  .idiomas-alt {
+    margin-top: 0px;
+  }
+  .navbar-brand {
+    margin-right: 0;
+  }
+}
+
 .MainBanner__fix {
   height: 100vh;
   position: relative;
@@ -1093,7 +1110,7 @@ px-1 {
 .bronce:hover li:nth-child(3) {
   color: black;
   font-weight: 800;
-  text-shadow: 0 0 5px #e73d1f, 0 0 10px #e73d1f, 0 0 15px #e73d1f, 0 0 20px #ddeb24, 0 0 25px #ddeb24;
+  text-shadow: 0 0 5px #e73d1f, 0 0 10px #e73d1f, 0 0 15px #e73d1f, 0 0 20px #ddeb24, 0 0 25px #ddeb24;
   -webkit-text-fill-color: #f4ecff;
   -webkit-text-stroke-color: #000000;
   -webkit-text-stroke-width: 0.2px;
@@ -1156,7 +1173,7 @@ px-1 {
 .silver:hover li:nth-child(3) {
   color: black;
   font-weight: 800;
-  text-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 15px blue, 0 0 20px #ddeb24, 0 0 25px #ddeb24;
+  text-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 15px blue, 0 0 20px #ddeb24, 0 0 25px #ddeb24;
   -webkit-text-fill-color: #f4ecff;
   -webkit-text-stroke-color: #000000;
   -webkit-text-stroke-width: 0.2px;
@@ -1221,7 +1238,7 @@ px-1 {
 .gold:hover li:nth-child(5) {
   color: black;
   font-weight: 800;
-  text-shadow: 0 0 5px #e73d1f, 0 0 10px #e73d1f, 0 0 15px #e73d1f, 0 0 20px #ddeb24, 0 0 25px #ddeb24;
+  text-shadow: 0 0 5px #e73d1f, 0 0 10px #e73d1f, 0 0 15px #e73d1f, 0 0 20px #ddeb24, 0 0 25px #ddeb24;
   -webkit-text-fill-color: #f4ecff;
   -webkit-text-stroke-color: #000000;
   -webkit-text-stroke-width: 0.2px;

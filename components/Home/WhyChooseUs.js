@@ -25,30 +25,30 @@ const WhyChooseUs = () => {
                   ? "Por qúe A Magic Mind?"
                   : "Why A Magic Mind?"}
               </h2>
-              <p>
-                <ul>
-                  <li>
-                    {idioma === "es-ES"
-                      ? "Porque quieres lo mejor para tus hijos."
-                      : "Because you want the best for your children."}
-                  </li>
-                  <li>
-                    {idioma === "es-ES"
-                      ? "Porque quieres que tus hijos sepan que el aprendizaje puede ser divertido."
-                      : "Because you want your children to know that learning can be fun."}
-                  </li>
-                  <li>
-                    {idioma === "es-ES"
-                      ? "Por su salud mental, emocional y física"
-                      : "For your mental, emotional and physical health."}
-                  </li>
-                  <li>
-                    {idioma === "es-ES"
-                      ? "Porque quieres que tengan riqueza cultural."
-                      : "Because you want them to have a cultural richness."}
-                  </li>
-                </ul>
-              </p>
+
+              <ul style={{ textAlign: "left" }}>
+                <li>
+                  {idioma === "es-ES"
+                    ? "Porque quieres lo mejor para tus hijos."
+                    : "Because you want the best for your children."}
+                </li>
+                <li>
+                  {idioma === "es-ES"
+                    ? "Porque quieres que tus hijos sepan que el aprendizaje puede ser divertido."
+                    : "Because you want your children to know that learning can be fun."}
+                </li>
+                <li>
+                  {idioma === "es-ES"
+                    ? "Por su salud mental, emocional y física"
+                    : "For your mental, emotional and physical health."}
+                </li>
+                <li>
+                  {idioma === "es-ES"
+                    ? "Porque quieres que tengan riqueza cultural."
+                    : "Because you want them to have a cultural richness."}
+                </li>
+              </ul>
+
               <div className="row">
                 <div className="col-lg-6 col-md-6 col-sm-6">
                   <div className="single-why-choose-us-box">
@@ -112,7 +112,7 @@ const WhyChooseUs = () => {
                 </div>
               </div>
 
-              <Link href="about-us/">
+              <Link href="/about-us">
                 <a className="btn btn-primary">
                   {idioma === "es-ES" ? "Leer más.." : "Read more.."}
                 </a>

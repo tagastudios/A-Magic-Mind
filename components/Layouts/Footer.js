@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import { phone, email, address } from "../../content/settings/contact.json";
-import { slogan } from "../../content/settings/settings.json";
+import { slogan, slogan_EN } from "../../content/settings/settings.json";
+import { useRouter } from "next/router";
 
 function Footer() {
   let currentYear = new Date().getFullYear();
+  const [idioma, setIdioma] = useState(useRouter().locale);
   return (
     <footer className="footer-area">
       <div className="container margenes-peques">
@@ -19,7 +21,7 @@ function Footer() {
                     alt="image"
                   />
                 </a>
-                <p>{slogan}</p>
+                <p>{idioma === "es-ES" ? slogan : slogan_EN}.</p>
               </div>
 
               <ul className="social">
@@ -51,7 +53,7 @@ function Footer() {
 
           <div className="col-lg-3 col-md-6 col-sm-6 mb-5 margin-izq-1">
             <div className="single-footer-widget">
-              <h3>Servicios</h3>
+              <h3>{idioma === "es-ES" ? "Servicios" : "Services"}</h3>
 
               <ul className="footer-services-list">
                 <li>
@@ -90,12 +92,12 @@ function Footer() {
 
           <div className="col-lg-3 col-md-6 col-sm-6 mb-5 margin-izq-2">
             <div className="single-footer-widget">
-              <h3>Atajos</h3>
+              <h3>{idioma === "es-ES" ? "Atajos" : "Useful Links"}</h3>
 
               <ul className="quick-links-list">
                 <li>
                   <Link href="/about-us/">
-                    <a>Nosotros</a>
+                    <a>{idioma === "es-ES" ? "Nosotros" : "About Us"}</a>
                   </Link>
                 </li>
                 <li>
@@ -105,7 +107,7 @@ function Footer() {
                 </li>
                 <li>
                   <Link href="/contact/">
-                    <a>Contactános</a>
+                    <a>{idioma === "es-ES" ? "Contactános" : "Contact"}</a>
                   </Link>
                 </li>
               </ul>
@@ -114,7 +116,7 @@ function Footer() {
 
           <div className="col-lg-3 col-md-6 col-sm-6 mb-5 margin-izq-3">
             <div className="single-footer-widget">
-              <h3>Contactános</h3>
+              <h3>{idioma === "es-ES" ? "Contactános" : "Contact Us"}</h3>
 
               <ul className="footer-contact-list">
                 <li>
@@ -124,7 +126,7 @@ function Footer() {
                   </a>
                 </li>
                 <li>
-                  <span>Phone:</span>
+                  <span>{idioma === "es-ES" ? "Teléfono" : "Phone"}:</span>
                   <a href={`tel:${phone}`}>{phone}</a>
                 </li>
               </ul>

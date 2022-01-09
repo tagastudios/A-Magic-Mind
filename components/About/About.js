@@ -1,9 +1,10 @@
 import React, { Component } from "react";
-import { useRouter } from "next/router";
+import { withRouter } from "next/router";
 
 class AboutContact extends Component {
   render() {
-    const idioma = "en-US";
+    const idioma = this.props.router.locale;
+
     return (
       <section className="about-area ptb-110">
         <div className="container">
@@ -135,4 +136,4 @@ class AboutContact extends Component {
   }
 }
 
-export default AboutContact;
+export default withRouter(AboutContact);
