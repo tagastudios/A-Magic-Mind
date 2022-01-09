@@ -96,12 +96,12 @@ export default function Navbar() {
               <Link href="/">
                 <a className="navbar-brand">
                   <img
-                    src="/images/LOGO.png"
+                    src="/images/logo.png"
                     className="main-logo"
                     alt="logo"
                   />
                   <img
-                    src="/images/LOGO.png"
+                    src="/images/logo.png"
                     className="optional-logo"
                     alt="logo"
                   />

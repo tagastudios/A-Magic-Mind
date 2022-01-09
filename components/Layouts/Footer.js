@@ -17,7 +17,7 @@ function Footer() {
                 <a href="/">
                   <img
                     className="main-logo logo-footer"
-                    src="/images/LOGO.png"
+                    src="/images/logo.png"
                     alt="image"
                   />
                 </a>
