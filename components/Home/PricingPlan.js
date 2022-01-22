@@ -31,7 +31,7 @@ export default withRouter(
         <div className="pricing-area magicplans ptb-110 pt-0">
           <div className="container">
             <div className="section-title titulo-espacio">
-              <h2>Magic Plans</h2>
+              <h2>{idioma === "es-ES" ? "Membresías" : "Magic Memberships"}</h2>
               <p>
                 {idioma === "es-ES"
                   ? "Ofrecemos planes personalizados, con las características de una membresía, flexibles y adaptables a las necesidades tanto del niño como de los padres."
@@ -46,10 +46,12 @@ export default withRouter(
                   onClick={(e) => this.openTabSection(e, "tab1")}
                 >
                   {" "}
-                  {idioma === "es-ES" ? "Planes Básicos" : "Basic Plans"}
+                  {idioma === "es-ES"
+                    ? "Membresías Básicas"
+                    : "Basic Memberships"}
                 </li>
                 <li onClick={(e) => this.openTabSection(e, "tab2")}>
-                  {idioma === "es-ES" ? "Planes Avanzados" : "Advanced Plans"}
+                  {idioma === "es-ES" ? "Membresías VIP" : " VIP Memberships"}
                 </li>
               </ul>
 
@@ -62,7 +64,9 @@ export default withRouter(
                       <div className="single-pricing-box basico">
                         <div className="pricing-header">
                           <h3>
-                            Magic Basic
+                            {idioma === "es-ES"
+                              ? "Membresía Básica"
+                              : "Basic Membership"}
                             <img
                               src="/images/VaritaMagica.svg"
                               className="varita varita-basico"
@@ -120,7 +124,9 @@ export default withRouter(
                         <div className="pricing-header">
                           <h3>
                             {" "}
-                            Magic Bronce{" "}
+                            {idioma === "es-ES"
+                              ? "Membresía Bronce"
+                              : "Bronze Membership"}
                             <img
                               src="/images/VaritaMagica.svg"
                               className=" varita varita-bronce"
@@ -181,7 +187,9 @@ export default withRouter(
                       <div className="single-pricing-box silver">
                         <div className="pricing-header">
                           <h3>
-                            Magic Silver{" "}
+                            {idioma === "es-ES"
+                              ? "Membresía Plateada"
+                              : "Silver Membership"}
                             <img
                               src="/images/VaritaMagica.svg"
                               className="varita plata"
@@ -237,7 +245,9 @@ export default withRouter(
                       <div className="single-pricing-box gold">
                         <div className="pricing-header">
                           <h3>
-                            Magic Gold{" "}
+                            {idioma === "es-ES"
+                              ? "Membresía Dorada"
+                              : "Gold Membership"}
                             <img
                               src="/images/VaritaMagica.svg"
                               className="varita dorado"
@@ -305,7 +315,9 @@ export default withRouter(
                       <div className="single-pricing-box diamond">
                         <div className="pricing-header">
                           <h3>
-                            Magic Diamond{" "}
+                            {idioma === "es-ES"
+                              ? "Membresía Diamante"
+                              : "Diamond Membership"}
                             <img
                               src="/images/VaritaMagica.svg"
                               className="varita diamante"

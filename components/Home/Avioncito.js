@@ -221,7 +221,7 @@ const Avioncito = () => {
           <h3>
             {idioma === "es-ES"
               ? "Para conocer nuestro Magic Método, Vamos a jugar el avioncito"
-              : "To know our Magic Method, let's play the little plane"}
+              : "To know our Magic Method, let's play Hopscotch"}
           </h3>
           <p className="parrafo-avioncito-0">
             {" "}

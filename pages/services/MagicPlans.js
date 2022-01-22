@@ -8,7 +8,7 @@ function PlayPals() {
   return (
     <>
       <PageBanner
-        pageTitle="Magic Plans"
+        pageTitle={idioma === "es-ES" ? "Membresías" : "Magic Memberships"}
         homePageUrl="/"
         homePageText="Inicio"
         activePageText={

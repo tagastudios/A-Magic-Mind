@@ -1161,7 +1161,7 @@ px-1 {
   position: relative;
 }
 .varita {
-  width: 50px;
+  width: 75px;
   height: auto;
   z-index: 10;
 }
@@ -1179,6 +1179,7 @@ px-1 {
   );
   border: 1px solid #d68d52 !important;
   box-shadow: 5px 5px #d68d52 !important;
+
   & img {
     content: url("/images/varita/7.png");
     animation: varita 2s ease forwards;

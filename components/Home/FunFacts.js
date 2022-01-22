@@ -56,20 +56,6 @@ const FunFacts = () => {
             </div>
           </div>
         </div> */}
-
-        <div className="contact-cta-box">
-          <h3>
-            {idioma === "es-ES"
-              ? "Parte de nuestros ingresos son a beneficio de YES!"
-              : "Part of our income is for the benefit of YES! "}
-          </h3>
-
-          <Link href="/#">
-            <a className="btn btn-primary">
-              YES MUSIC FOUNDATION<span></span>
-            </a>
-          </Link>
-        </div>
       </div>
 
       {/* Shape Images  */}
