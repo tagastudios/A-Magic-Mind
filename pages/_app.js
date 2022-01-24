@@ -17,11 +17,14 @@ import NavBar from "../components/Layouts/Navbar";
 import Footer from "../components/Layouts/Footer";
 
 import { BlogProvider } from "../components/Context/BlogProvider";
+// import sanity from "../config/sanity";
 
 function MyApp({ Component, pageProps }) {
   // Preloader
   const [loading, setLoading] = useState(true);
 
+  const query = `*[]
+  `;
   // Blog Data
   function updateBlogData() {
     console.log("Loading blogs..");

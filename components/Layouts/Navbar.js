@@ -117,8 +117,20 @@ export default function Navbar() {
                       className={l === locale ? "idiomaActivo" : ""}
                     >
                       <Link href={asPath} locale={l}>
-                        <a className={"px-1"} onClick={updateLocale}>
-                          {l.slice(0, 2).toUpperCase()}
+                        <a onClick={updateLocale}>
+                          {l.slice(0, 2).toUpperCase() === "ES" ? (
+                            <img
+                              src="/images/icons/flag_spain.png"
+                              className="flag-icon"
+                              alt="Spanish"
+                            />
+                          ) : (
+                            <img
+                              src="/images/icons/flag_usa.png"
+                              className="flag-icon"
+                              alt="English"
+                            />
+                          )}
                         </a>
                       </Link>
                     </span>
@@ -173,7 +185,9 @@ export default function Navbar() {
                       <li className="nav-item">
                         <Link href="/services/MagicPlans">
                           <a className="nav-link" onClick={toggleNavbar}>
-                            Magic Plans
+                            {idioma === "es-ES"
+                              ? "Membresías"
+                              : "Magic Memberships"}
                           </a>
                         </Link>
                       </li>
@@ -199,6 +213,19 @@ export default function Navbar() {
                     <Link href="/#MainBlogs">
                       <a className="nav-link" onClick={toggleNavbar}>
                         Blogs
+                      </a>
+                    </Link>
+                  </li>
+
+                  <li className="nav-item">
+                    <Link href="/contact">
+                      <a
+                        className="btn btn-primary fix-btn"
+                        onClick={toggleNavbar}
+                      >
+                        {idioma === "es-ES"
+                          ? "Tienes Dudas?"
+                          : "Have questions? "}
                       </a>
                     </Link>
                   </li>
@@ -300,29 +327,34 @@ export default function Navbar() {
                     </>
                   ) : null}
 
-                  <Link href="/contact">
-                    <a className="btn btn-primary mr-2" onClick={toggleNavbar}>
-                      {idioma === "es-ES"
-                        ? "Tienes Dudas?"
-                        : "Have questions? "}
-                    </a>
-                  </Link>
-
-                  {collapsed &&
-                    locales.map((l, i) => {
+                  <div className="idiomaSelector-big">
+                    {locales.map((l, i) => {
                       return (
                         <span
                           key={i}
                           className={l === locale ? "idiomaActivo" : ""}
                         >
                           <Link href={asPath} locale={l}>
-                            <a className={"px-1"} onClick={updateLocale}>
-                              {l.slice(0, 2).toUpperCase()}
+                            <a onClick={updateLocale}>
+                              {l.slice(0, 2).toUpperCase() === "ES" ? (
+                                <img
+                                  src="/images/icons/flag_spain.png"
+                                  className="flag-icon"
+                                  alt="Spanish"
+                                />
+                              ) : (
+                                <img
+                                  src="/images/icons/flag_usa.png"
+                                  className="flag-icon"
+                                  alt="English"
+                                />
+                              )}
                             </a>
                           </Link>
                         </span>
                       );
                     })}
+                  </div>
                 </div>
               </div>
             </nav>

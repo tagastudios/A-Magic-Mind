@@ -108,6 +108,11 @@
   }
 }
 
+.flag-icon {
+  width: 40px;
+  border-radius: 30px;
+}
+
 .navbar {
   height: 70px;
 }
@@ -124,6 +129,11 @@
   display: none;
 }
 
+.fix-btn {
+  padding: 0.35rem 0.44rem !important;
+  margin: -1rem -0.5rem -1rem 0.25rem !important;
+}
+
 @media only screen and (max-width: 767px) {
   .idiomas {
     display: block;
@@ -134,6 +144,9 @@
   }
   .navbar-brand {
     margin-right: 0;
+  }
+  .idiomaSelector-big {
+    display: none;
   }
 }
 
@@ -335,8 +348,12 @@ mr-2 {
 
 .idiomaActivo {
   font-weight: 800;
-  border-bottom: 4px solid darkgray;
-  transition: all 0.3s ease;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+  border-radius: 100%;
+  transition: all 0.1s ease;
+  padding-bottom: 0.3rem;
+  padding-top: 0.1rem;
 }
 
 px-1 {
@@ -682,7 +699,7 @@ px-1 {
     display: none !important;
   }
   .collapse {
-    margin: -20px !important;
+    margin: -40px !important;
     width: 100%;
     z-index: -1;
   }
@@ -737,6 +754,10 @@ px-1 {
 
     height: 80px;
     border-bottom: 2px $gris solid;
+  }
+
+  .navbar-area.is-sticky {
+    padding-top: 20px !important;
   }
   .navbar-toggler {
     transform: translateY(-50%);

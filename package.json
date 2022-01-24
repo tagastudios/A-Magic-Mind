@@ -13,6 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "@fortawesome/react-fontawesome": "^0.1.15",
+    "@sanity/client": "^2.23.2",
     "animate.css": "^4.1.1",
     "axios": "^0.21.1",
     "front-matter-markdown": "^0.4.5",
@@ -28,6 +29,7 @@
     "react-image-lightbox": "^5.1.1",
     "react-modal-video": "^1.2.6",
     "react-owl-carousel3": "^2.2.5",
+    "sanity": "^2.20.0",
     "sass": "^1.32.10",
     "showdown": "^1.9.1",
     "sweetalert2": "^10.16.3",
