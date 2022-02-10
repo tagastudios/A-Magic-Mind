@@ -36,7 +36,9 @@ function ContactFormContent() {
           <div className="contact-info-content">
             <h3>{idioma === "es-ES" ? "Contáctanos" : "Contact Us "}</h3>
             <h2>
-              <span className="number">+1 (786) 301-2529</span>
+              <span className="number">
+                <a href="tel:+17863012529">+1 (786) 301-2529</a>
+              </span>
               <span className="or">&</span>
               <span className="email">info@amagicmindus.com</span>
             </h2>

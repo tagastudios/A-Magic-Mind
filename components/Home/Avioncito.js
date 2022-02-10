@@ -71,9 +71,8 @@ const Avioncito = () => {
     },
     {
       titulo: "Listen",
-      texto1: "We make sure to grab the attention of our children.",
-      texto2: "We give you the instructions.",
-      texto3: "And we invite you to play.",
+      texto1: "We make sure we capture the child attention.",
+      texto2: "We give them the instructions and we invite them to play.",
       clase: "texto-naranja",
       foto: "/images/avioncito/17.svg",
     },
@@ -81,16 +80,16 @@ const Avioncito = () => {
       titulo: "Understand",
       texto1:
         "We make sure that the instructions are understood by our little ones.",
-      texto2: "With everyday and familiar examples for them.",
+      texto2: "With everyday examples.",
       texto3:
-        "That they make them understand each one of the indications that they are given.",
+        "This will ensure that each indication given to them is understood.",
       clase: "texto-verde",
       foto: "/images/avioncito/18.svg",
     },
     {
       titulo: "Do",
-      texto1: "Get to work!",
-      texto2: "Doing to learn.",
+      texto1: "Let’s do it!",
+      texto2: "Do it to learn.",
       texto3: "Goals are achieved with actions.",
       clase: "texto-azul",
       foto: "/images/avioncito/19.svg",
@@ -98,16 +97,13 @@ const Avioncito = () => {
     {
       titulo: "Live",
       texto1:
-        "We support and accompany our little ones to keep trying with joys and frustrations until they succeed.",
-      texto2:
-        "We show our little ones that with effort and dedication they can achieve their goals.",
+        "We support our little ones in their frustration and joys and we encourage them to keep trying until they succeed.",
       clase: "texto-morado",
       foto: "/images/avioncito/20.svg",
     },
     {
       titulo: "Learn",
-      texto1: "We celebrate their achievements with them.",
-      texto2: "We celebrate your effort and dedication.",
+      texto1: "We celebrate their efforts and achievements together.",
       clase: "texto-amarillo",
       foto: "/images/avioncito/21.svg",
     },

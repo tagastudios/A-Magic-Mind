@@ -127,7 +127,7 @@ function Footer() {
                 </li>
                 <li>
                   <span>{idioma === "es-ES" ? "Teléfono" : "Phone"}:</span>
-                  <a href={`tel:${phone}`}>{phone}</a>
+                  <a href={`tel:+17863012529`}>+1 (786) 301-2529</a>
                 </li>
               </ul>
             </div>

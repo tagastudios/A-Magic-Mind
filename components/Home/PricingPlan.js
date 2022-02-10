@@ -73,12 +73,12 @@ export default withRouter(
                             />
                           </h3>
 
-                          <p>
+                          <h5>
                             {idioma === "es-ES"
-                              ? "Duración 1.5 Horas a la semana"
-                              : "Duration 1.5 Hours per week"}
+                              ? "1.5 Horas a la semana"
+                              : "1.5 Hours per week"}
                             <br />
-                          </p>
+                          </h5>
                         </div>
 
                         <div className="price">
@@ -132,13 +132,13 @@ export default withRouter(
                               className=" varita varita-bronce"
                             />
                           </h3>
-                          <p>
+                          <h5>
                             {idioma === "es-ES"
-                              ? "Duración 3 Horas a la semana"
-                              : "Duration 3 Hours per week"}
+                              ? "3 Horas a la semana"
+                              : "3 Hours per week"}
 
                             <br />
-                          </p>
+                          </h5>
                         </div>
 
                         <div className="price">
@@ -195,12 +195,12 @@ export default withRouter(
                               className="varita plata"
                             />
                           </h3>
-                          <p>
+                          <h5>
                             {idioma === "es-ES"
-                              ? "Duración 4.5 Horas a la semana"
-                              : "Duration 4.5 Hours per week"}
+                              ? "4.5 Horas a la semana"
+                              : "4.5 Hours per week"}
                             <br />
-                          </p>
+                          </h5>
                         </div>
 
                         <div className="price">
@@ -255,8 +255,8 @@ export default withRouter(
                           </h3>
                           <h5>
                             {idioma === "es-ES"
-                              ? "Duración 6 Horas a la semana"
-                              : "Duration 6 Hours per week"}{" "}
+                              ? "6 Horas a la semana"
+                              : "6 Hours per week"}{" "}
                             <br />
                           </h5>
                         </div>
@@ -325,8 +325,8 @@ export default withRouter(
                           </h3>
                           <h5>
                             {idioma === "es-ES"
-                              ? "Duración 9 Horas a la semana"
-                              : "Duration 9 Hours per week"}{" "}
+                              ? "9 Horas a la semana"
+                              : "9 Hours per week"}{" "}
                             <br />
                           </h5>
                         </div>
