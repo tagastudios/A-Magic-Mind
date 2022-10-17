@@ -129,6 +129,23 @@ function Footer() {
                   <span>{idioma === "es-ES" ? "Teléfono" : "Phone"}:</span>
                   <a href={`tel:+17863012529`}>+1 (786) 301-2529</a>
                 </li>
+                <li>
+                  <span>{idioma === "es-ES" ? "Horario: " : "Schedule: "}</span>
+
+                  <div>
+                    {idioma === "es-ES"
+                      ? "Lunes a Sábado "
+                      : " Monday to Saturday"}
+                  </div>
+
+                  <li>
+                    <span>
+                      {idioma === "es-ES"
+                        ? "10:00 am - 6:00pm"
+                        : " 10:00 am - 6:00pm "}
+                    </span>
+                  </li>
+                </li>
               </ul>
             </div>
           </div>

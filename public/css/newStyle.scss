@@ -1213,7 +1213,8 @@ px-1 {
 .basico:hover p,
 .basico:hover li:nth-child(1),
 .basico:hover li:nth-child(2),
-.basico:hover li:nth-child(3) {
+.basico:hover li:nth-child(3),
+.basico:hover li:nth-child(4) {
   color: black;
   font-weight: 800;
   text-shadow: 0 0 5px $rojo, 0 0 10px $rojo, 0 0 15px $rojo, 0 0 20px #ddeb24,
@@ -1249,6 +1250,9 @@ px-1 {
 .basico:hover li:nth-child(3) {
   transition: all 0.5s 1.75s ease;
 }
+.basico:hover li:nth-child(4) {
+  transition: all 0.5s 2s ease;
+}
 
 .bronce:hover {
   background: rgb(202, 115, 69);
@@ -1274,7 +1278,10 @@ px-1 {
 .bronce:hover p,
 .bronce:hover li:nth-child(1),
 .bronce:hover li:nth-child(2),
-.bronce:hover li:nth-child(3) {
+.bronce:hover li:nth-child(3),
+.bronce:hover li:nth-child(4),
+.bronce:hover li:nth-child(5),
+.bronce:hover li:nth-child(6) {
   color: black;
   font-weight: 800;
   text-shadow: 0 0 5px #e73d1f, 0 0 10px #e73d1f, 0 0 15px #e73d1f,
@@ -1310,7 +1317,15 @@ px-1 {
 .bronce:hover li:nth-child(3) {
   transition: all 0.5s 1.75s ease;
 }
-
+.bronce:hover li:nth-child(4) {
+  transition: all 0.5s 2s ease;
+}
+.bronce:hover li:nth-child(5) {
+  transition: all 0.5s 2.25s ease;
+}
+.bronce:hover li:nth-child(6) {
+  transition: all 0.5s 2.5s ease;
+}
 .silver:hover {
   background: rgb(255, 255, 255);
   background: linear-gradient(
@@ -1334,7 +1349,10 @@ px-1 {
 .silver:hover p,
 .silver:hover li:nth-child(1),
 .silver:hover li:nth-child(2),
-.silver:hover li:nth-child(3) {
+.silver:hover li:nth-child(3),
+.silver:hover li:nth-child(4),
+.silver:hover li:nth-child(5),
+.silver:hover li:nth-child(6) {
   color: black;
   font-weight: 800;
   text-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 15px blue, 0 0 20px #ddeb24,
@@ -1370,6 +1388,15 @@ px-1 {
 .silver:hover li:nth-child(3) {
   transition: all 0.5s 1.75s ease;
 }
+.silver:hover li:nth-child(4) {
+  transition: all 0.5s 2s ease;
+}
+.silver:hover li:nth-child(5) {
+  transition: all 0.5s 2.25s ease;
+}
+.silver:hover li:nth-child(6) {
+  transition: all 0.5s 2.5s ease;
+}
 
 .gold:hover {
   background: rgb(255, 215, 49);
@@ -1396,7 +1423,8 @@ px-1 {
 .gold:hover li:nth-child(2),
 .gold:hover li:nth-child(3),
 .gold:hover li:nth-child(4),
-.gold:hover li:nth-child(5) {
+.gold:hover li:nth-child(5),
+.gold:hover li:nth-child(6) {
   color: black;
   font-weight: 800;
   text-shadow: 0 0 5px #e73d1f, 0 0 10px #e73d1f, 0 0 15px #e73d1f,
@@ -1438,6 +1466,9 @@ px-1 {
 .gold:hover li:nth-child(5) {
   transition: all 0.5s 2.25s ease;
 }
+.gold:hover li:nth-child(6) {
+  transition: all 0.5s 2.5s ease;
+}
 
 .diamond:hover {
   background: rgb(158, 181, 241);
@@ -1462,7 +1493,8 @@ px-1 {
 .diamond:hover li:nth-child(2),
 .diamond:hover li:nth-child(3),
 .diamond:hover li:nth-child(4),
-.diamond:hover li:nth-child(5) {
+.diamond:hover li:nth-child(5),
+.diamond:hover li:nth-child(6) {
   color: purple;
   font-weight: 800;
   text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px $rojo,
@@ -1503,6 +1535,9 @@ px-1 {
 }
 .diamond:hover li:nth-child(5) {
   transition: all 0.5s 2.25s ease;
+}
+.diamond:hover li:nth-child(6) {
+  transition: all 0.5s 2.5s ease;
 }
 
 .btn-basico {
@@ -1606,6 +1641,9 @@ px-1 {
   margin: 0;
   padding: 6px 0 !important;
   color: black;
+}
+.services-details-full {
+  width: 100%;
 }
 @keyframes varita {
   0% {

@@ -100,20 +100,20 @@ export default withRouter(
                           <li>
                             <i className="flaticon-tick"></i>
                             {idioma === "es-ES"
-                              ? "Material Educativo"
-                              : "Educational material"}
+                              ? "Actividades para los niños"
+                              : "Activities for Children"}
                           </li>
                           <li>
                             <i className="flaticon-tick"></i>{" "}
-                            {idioma === "es-ES"
-                              ? "Planificación y atención personalizada"
-                              : "Planning and personalized attention"}
+                            {idioma === "es-ES" ? "Charlas" : "Conferences"}
                           </li>
                           <li>
                             <i className="flaticon-tick"></i>{" "}
-                            {idioma === "es-ES"
-                              ? "Exclusividad en la comodidad de tu hogar"
-                              : "Exclusivity in the comfort of your home"}
+                            {idioma === "es-ES" ? "Reuniones" : "Meetings"}
+                          </li>
+                          <li>
+                            <i className="flaticon-tick"></i>{" "}
+                            {idioma === "es-ES" ? "Yoga" : "Yoga"}
                           </li>
                         </ul>
                       </div>
@@ -160,20 +160,30 @@ export default withRouter(
                           <li>
                             <i className="flaticon-tick"></i>{" "}
                             {idioma === "es-ES"
-                              ? "Material Educativo"
-                              : "Educational material"}
+                              ? "Actividades para los niños"
+                              : "Activities for Children"}
+                          </li>
+                          <li>
+                            <i className="flaticon-tick"></i>{" "}
+                            {idioma === "es-ES" ? "Charlas" : "Conferences"}
+                          </li>
+                          <li>
+                            <i className="flaticon-tick"></i>{" "}
+                            {idioma === "es-ES" ? "Reuniones" : "Meetings"}
+                          </li>
+                          <li>
+                            <i className="flaticon-tick"></i>{" "}
+                            {idioma === "es-ES" ? "Yoga" : "Yoga"}
+                          </li>
+                          <li>
+                            <i className="flaticon-tick"></i>{" "}
+                            {idioma === "es-ES" ? "Masajes" : "massages"}
                           </li>
                           <li>
                             <i className="flaticon-tick"></i>{" "}
                             {idioma === "es-ES"
-                              ? "Planificación y atención personalizada"
-                              : "Planning and personalized attention"}
-                          </li>
-                          <li>
-                            <i className="flaticon-tick"></i>{" "}
-                            {idioma === "es-ES"
-                              ? "Exclusividad en la comodidad de tu hogar"
-                              : "Exclusivity in the comfort of your home"}
+                              ? "1 Asesoría personalizada al més"
+                              : "1 Private consultation a Month"}
                           </li>
                         </ul>
                       </div>
@@ -222,20 +232,32 @@ export default withRouter(
                           <li>
                             <i className="flaticon-tick"></i>{" "}
                             {idioma === "es-ES"
-                              ? "Material Educativo"
-                              : "Educational material"}
+                              ? "Actividades para los niños"
+                              : "Activities for Children"}
                           </li>
                           <li>
                             <i className="flaticon-tick"></i>
-                            {idioma === "es-ES"
-                              ? "Planificación y atención personalizada"
-                              : "Planning and personalized attention"}
+                            {idioma === "es-ES" ? "Charlas" : "Conferences"}
+                          </li>
+                          <li>
+                            <i className="flaticon-tick"></i>{" "}
+                            {idioma === "es-ES" ? "Reuniones" : "Meetings"}
+                          </li>
+                          <li>
+                            <i className="flaticon-tick"></i>{" "}
+                            {idioma === "es-ES" ? "Masajes" : "Massages"}
                           </li>
                           <li>
                             <i className="flaticon-tick"></i>{" "}
                             {idioma === "es-ES"
-                              ? "Exclusividad en la comodidad de tu hogar"
-                              : "Exclusivity in the comfort of your home"}
+                              ? "1 Asesoría personalizada al mes"
+                              : "1 Private Consultation a Month"}
+                          </li>
+                          <li>
+                            <i className="flaticon-tick"></i>{" "}
+                            {idioma === "es-ES"
+                              ? "2 Horas al mes para una pareja de invitados (Cuidador & Niño)"
+                              : "2 hours a Month for two guess (Guardian & child)"}
                           </li>
                         </ul>
                       </div>
@@ -280,32 +302,32 @@ export default withRouter(
                           <li>
                             <i className="flaticon-tick"></i>{" "}
                             {idioma === "es-ES"
-                              ? "Cámaras de seguridad"
-                              : "Live Camera"}
+                              ? "Actividades para los niños"
+                              : "Activities for Children"}
+                          </li>
+                          <li>
+                            <i className="flaticon-tick"></i>
+                            {idioma === "es-ES" ? "Charlas" : "Conferences"}
+                          </li>
+                          <li>
+                            <i className="flaticon-tick"></i>{" "}
+                            {idioma === "es-ES" ? "Reuniones" : "Meetings"}
+                          </li>
+                          <li>
+                            <i className="flaticon-tick"></i>{" "}
+                            {idioma === "es-ES" ? "Masajes" : "Massages"}
                           </li>
                           <li>
                             <i className="flaticon-tick"></i>{" "}
                             {idioma === "es-ES"
-                              ? "Horas ilimitadas de actividaes especiales (cumpleaños / aniversarios / play date / vacaciones)"
-                              : "Unlimited hours of special activities (birthdays / anniversaries / play date / holidays)"}
+                              ? "3 Asesoría personalizada al mes"
+                              : "3 Private Consultation a Month"}
                           </li>
                           <li>
                             <i className="flaticon-tick"></i>{" "}
                             {idioma === "es-ES"
-                              ? "Material Educativo"
-                              : "Educational material"}
-                          </li>
-                          <li>
-                            <i className="flaticon-tick"></i>{" "}
-                            {idioma === "es-ES"
-                              ? "Planificación y atención personalizada"
-                              : "Planning and personalized attention"}
-                          </li>
-                          <li>
-                            <i className="flaticon-tick"></i>{" "}
-                            {idioma === "es-ES"
-                              ? "Exclusividad en la comodidad de tu hogar"
-                              : "Exclusivity in the comfort of your home"}
+                              ? "4 Horas al mes para una pareja de invitados (Cuidador & Niño)"
+                              : "4 hours a Month for two guess (Guardian & child)"}
                           </li>
                         </ul>
                       </div>
@@ -350,32 +372,32 @@ export default withRouter(
                           <li>
                             <i className="flaticon-tick"></i>{" "}
                             {idioma === "es-ES"
-                              ? "Cámaras de seguridad"
-                              : "Live Camera"}
+                              ? "Actividades para los niños"
+                              : "Activities for Children"}
+                          </li>
+                          <li>
+                            <i className="flaticon-tick"></i>
+                            {idioma === "es-ES" ? "Charlas" : "Conferences"}
+                          </li>
+                          <li>
+                            <i className="flaticon-tick"></i>{" "}
+                            {idioma === "es-ES" ? "Reuniones" : "Meetings"}
+                          </li>
+                          <li>
+                            <i className="flaticon-tick"></i>{" "}
+                            {idioma === "es-ES" ? "Masajes" : "Massages"}
                           </li>
                           <li>
                             <i className="flaticon-tick"></i>{" "}
                             {idioma === "es-ES"
-                              ? "Horas ilimitadas de actividaes especiales (cumpleaños / aniversarios / play date / vacaciones)"
-                              : "Unlimited hours of special activities (birthdays / anniversaries / play date / holidays)"}
+                              ? "4 Asesoría personalizada al mes"
+                              : "4 Private Consultation a Month"}
                           </li>
                           <li>
                             <i className="flaticon-tick"></i>{" "}
                             {idioma === "es-ES"
-                              ? "Material Educativo"
-                              : "Educational material"}
-                          </li>
-                          <li>
-                            <i className="flaticon-tick"></i>{" "}
-                            {idioma === "es-ES"
-                              ? "Planificación y atención personalizada"
-                              : "Planning and personalized attention"}
-                          </li>
-                          <li>
-                            <i className="flaticon-tick"></i>{" "}
-                            {idioma === "es-ES"
-                              ? "Exclusividad en la comodidad de tu hogar"
-                              : "Exclusivity in the comfort of your home"}
+                              ? "4 Horas al mes para una pareja de invitados (Cuidador & Niño)"
+                              : "4 hours a Month for two guess (Guardian & child)"}
                           </li>
                         </ul>
                       </div>
