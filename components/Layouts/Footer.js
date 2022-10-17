@@ -107,7 +107,7 @@ function Footer() {
                 </li>
                 <li>
                   <Link href="/contact/">
-                    <a>{idioma === "es-ES" ? "Contactános" : "Contact"}</a>
+                    <a>{idioma === "es-ES" ? "Contáctanos" : "Contact"}</a>
                   </Link>
                 </li>
               </ul>
