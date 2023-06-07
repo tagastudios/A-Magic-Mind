@@ -1,7 +1,6 @@
 {
-  "name": "bariton",
+  "name": "magic-mind",
   "version": "1.7.0",
-  "description": "Bariton - React Next IT & Machine Learning Template",
   "main": "index.js",
   "scripts": {
     "dev": "next dev",
